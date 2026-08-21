@@ -1,6 +1,6 @@
 # Explicit visual world models
 
-## Two stages (plain English)
+## Two stages
 
 | Name | What happens | What you need |
 |------|----------------|---------------|
