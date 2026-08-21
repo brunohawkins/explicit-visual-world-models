@@ -85,13 +85,11 @@ python scripts/demo_p2.py
 
 Look in `viz_output/demo_p2/demo_p2/` for `summary.json` and `seed_42/mpc.mp4`.
 
-Closer to the thesis planner (still only 5 cases, not 50; slower):
-
 ```bash
 python scripts/demo_p2.py --faithful
 ```
 
-This uses a **built-in Two-Room environment**, not the isolated LeWM/SWM server the thesis used for the published 50-case table. Same start/goal list; enough to see that planning runs.
+This uses a **built-in Two-Room environment**, not the isolated LeWM/SWM server the thesis used for the published 50-case table. Same start/goal list.
 
 ---
 
@@ -109,5 +107,4 @@ You can then point P2 at that new file:
 ```bash
 python scripts/demo_p2.py --sim-path viz_output/demo_p1/simulator_gen.py
 ```
-
 ---
