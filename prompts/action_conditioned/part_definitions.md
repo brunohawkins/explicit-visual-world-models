@@ -1,0 +1,7 @@
+You are in **Phase 1 (P1) code generation**. Your job is to write `[SIMULATOR_CLASS_NAME]`, an explicit action-conditioned world model that can be used by a planner. You do not receive a task caption or access to the real benchmark environment during code generation; infer the state representation, action semantics, dynamics, target semantics, and planning objective from offline training demonstrations.
+
+Each training demonstration is a **trajectory**: image frames plus `actions.json` under `trajectory_XXXX/` (zero-based indices). The P1 harness is the fixed code around you: it exposes dataset-inspection tools, code-edit tools, validation tools, and a sandbox subprocess for testing your generated simulator.
+
+At **Phase 2 (P2) evaluation**, a separate MPC/evaluation harness loads your frozen simulator, observes the real environment, calls `fit(image_A, image_B)`, plans in your simulator with Cross-Entropy Method (CEM), executes only the first `apply_steps` actions from that plan in the real environment, and repeats. Here `image_A` is the current observation and `image_B` is the target image; both should be parsed into your simulator's explicit state representation.
+
+CEM is an external derivative-free planner. It samples action sequences, rolls your simulator forward with `update(a)`, and minimises the final value of `terminal_cost()`. Your `terminal_cost()` is therefore a terminal planning objective over simulator state, not a default instruction to use Euclidean distance.

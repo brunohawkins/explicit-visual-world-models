@@ -1,0 +1,4 @@
+code_snapshot: vda_world_snapshots/2026_07_26_final_p2_evaluator
+code_git: 5eb9fb0 Pin task-qualified Two-Room and Cube manifest hashes for N=50 eval.
+campaign_git: de5dd59f1fbde3b4b899864a8beef42627fa67f5
+p1_example: final_release_stage_A/p1/two_room_lewm/expert_only/repeat_1

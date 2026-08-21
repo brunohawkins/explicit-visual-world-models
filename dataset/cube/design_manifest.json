@@ -1,0 +1,112 @@
+{
+  "schema_version": "fixed_budget_design_v1",
+  "source": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/cube_curated_ablations_opaque/all_four",
+  "source_manifest_sha256": "9e5586e282cc357e651802f0ea22820253dcf5599241c1ca89db03d63f446341",
+  "cells": {
+    "expert_only": {
+      "allocation": {
+        "expert": 8
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "total_actions": 491
+    },
+    "expert_noisy": {
+      "allocation": {
+        "expert": 4,
+        "noisy": 4
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        13
+      ],
+      "total_actions": 515
+    },
+    "expert_partial": {
+      "allocation": {
+        "expert": 4,
+        "partial": 4
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        30,
+        31,
+        32,
+        33
+      ],
+      "total_actions": 382
+    },
+    "expert_random": {
+      "allocation": {
+        "expert": 4,
+        "random": 4
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        20,
+        21,
+        22,
+        23
+      ],
+      "total_actions": 468
+    },
+    "random_partial": {
+      "allocation": {
+        "random": 4,
+        "partial": 4
+      },
+      "source_indices": [
+        20,
+        21,
+        22,
+        23,
+        30,
+        31,
+        32,
+        33
+      ],
+      "total_actions": 394
+    },
+    "all_four": {
+      "allocation": {
+        "expert": 2,
+        "noisy": 2,
+        "random": 2,
+        "partial": 2
+      },
+      "source_indices": [
+        0,
+        1,
+        10,
+        11,
+        20,
+        21,
+        30,
+        31
+      ],
+      "total_actions": 457
+    }
+  },
+  "sandbox_source_index": 8,
+  "audit_source_index": 9
+}

@@ -1,0 +1,12 @@
+{
+  "contract_version": 2,
+  "simulator_class": "GeneratedSimulator",
+  "frame_size": [
+    224,
+    224
+  ],
+  "fps": 10,
+  "fit_world_api_enabled": false,
+  "rollout_world_api_enabled": false,
+  "local_2d_toolbox_version": "4"
+}

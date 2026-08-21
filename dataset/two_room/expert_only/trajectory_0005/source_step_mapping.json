@@ -1,0 +1,968 @@
+[
+  {
+    "source_step": 0,
+    "source_pldm_action": [
+      -0.35026806562955154,
+      -2.171937448961211
+    ],
+    "output_action_start": 0,
+    "output_action_end_exclusive": 2,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      135.87602811871153,
+      185.30262452988399
+    ],
+    "desired_swm_checkpoint": [
+      135.87602811871153,
+      185.30262452988399
+    ],
+    "actual_swm_checkpoint": [
+      135.87603759765625,
+      185.30262756347656
+    ],
+    "checkpoint_error_pixels": 9.952541228673451e-06
+  },
+  {
+    "source_step": 1,
+    "source_pldm_action": [
+      -0.35026799168680034,
+      -2.1719374608859474
+    ],
+    "output_action_start": 2,
+    "output_action_end_exclusive": 4,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      134.15322395093514,
+      177.94874446687245
+    ],
+    "desired_swm_checkpoint": [
+      134.15322395093514,
+      177.94874446687245
+    ],
+    "actual_swm_checkpoint": [
+      134.15322875976562,
+      177.94874572753906
+    ],
+    "checkpoint_error_pixels": 4.971330898513697e-06
+  },
+  {
+    "source_step": 2,
+    "source_pldm_action": [
+      -0.3502679097537575,
+      -2.171937474099274
+    ],
+    "output_action_start": 4,
+    "output_action_end_exclusive": 6,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      132.87587432861326,
+      171.91736440386092
+    ],
+    "desired_swm_checkpoint": [
+      132.87587432861326,
+      171.91736440386092
+    ],
+    "actual_swm_checkpoint": [
+      132.87588500976562,
+      171.91737365722656
+    ],
+    "checkpoint_error_pixels": 1.4131942242762891e-05
+  },
+  {
+    "source_step": 3,
+    "source_pldm_action": [
+      -0.350267818461296,
+      -2.171937488821989
+    ],
+    "output_action_start": 6,
+    "output_action_end_exclusive": 8,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      132.04397925174598,
+      164.67848434084937
+    ],
+    "desired_swm_checkpoint": [
+      132.04397925174598,
+      164.67848434084937
+    ],
+    "actual_swm_checkpoint": [
+      132.04397583007812,
+      164.67848205566406
+    ],
+    "checkpoint_error_pixels": 4.114593878483737e-06
+  },
+  {
+    "source_step": 4,
+    "source_pldm_action": [
+      -0.35026771610854324,
+      -2.1719375053283887
+    ],
+    "output_action_start": 8,
+    "output_action_end_exclusive": 10,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      130.17269023548474,
+      158.28932650006007
+    ],
+    "desired_swm_checkpoint": [
+      130.17269023548474,
+      158.28932650006007
+    ],
+    "actual_swm_checkpoint": [
+      130.17269897460938,
+      158.28932189941406
+    ],
+    "checkpoint_error_pixels": 9.876145155566312e-06
+  },
+  {
+    "source_step": 5,
+    "source_pldm_action": [
+      -0.35026760055592265,
+      -2.1719375239635226
+    ],
+    "output_action_start": 10,
+    "output_action_end_exclusive": 12,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      129.04382546164774,
+      150.6032242148263
+    ],
+    "desired_swm_checkpoint": [
+      129.04382546164774,
+      150.6032242148263
+    ],
+    "actual_swm_checkpoint": [
+      129.0438232421875,
+      150.6032257080078
+    ],
+    "checkpoint_error_pixels": 2.6749943555105997e-06
+  },
+  {
+    "source_step": 6,
+    "source_pldm_action": [
+      -0.35026746907396056,
+      -2.171937545167568
+    ],
+    "output_action_start": 12,
+    "output_action_end_exclusive": 14,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      128.65738493023497,
+      142.96184415181477
+    ],
+    "desired_swm_checkpoint": [
+      128.65738493023497,
+      142.96184415181477
+    ],
+    "actual_swm_checkpoint": [
+      128.65737915039062,
+      142.9618377685547
+    ],
+    "checkpoint_error_pixels": 8.611190972187367e-06
+  },
+  {
+    "source_step": 7,
+    "source_pldm_action": [
+      -0.35026731812493883,
+      -2.171937569511049
+    ],
+    "output_action_start": 14,
+    "output_action_end_exclusive": 16,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      126.61639894427674,
+      136.12546408880326
+    ],
+    "desired_swm_checkpoint": [
+      126.61639894427674,
+      136.12546408880326
+    ],
+    "actual_swm_checkpoint": [
+      126.61639404296875,
+      136.12547302246094
+    ],
+    "checkpoint_error_pixels": 1.018985081251961e-05
+  },
+  {
+    "source_step": 8,
+    "source_pldm_action": [
+      -0.350267440286188,
+      -2.1719375498101603
+    ],
+    "output_action_start": 16,
+    "output_action_end_exclusive": 18,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      125.65723114013672,
+      129.6915840257917
+    ],
+    "desired_swm_checkpoint": [
+      125.65723114013672,
+      129.6915840257917
+    ],
+    "actual_swm_checkpoint": [
+      125.6572265625,
+      129.6915740966797
+    ],
+    "checkpoint_error_pixels": 1.093352749611141e-05
+  },
+  {
+    "source_step": 9,
+    "source_pldm_action": [
+      -0.35026726060224356,
+      -2.1719375787877055
+    ],
+    "output_action_start": 18,
+    "output_action_end_exclusive": 20,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      125.39227821202974,
+      121.20861305368928
+    ],
+    "desired_swm_checkpoint": [
+      125.39227821202974,
+      121.20861305368928
+    ],
+    "actual_swm_checkpoint": [
+      125.39227294921875,
+      121.2086181640625
+    ],
+    "checkpoint_error_pixels": 7.335740860060759e-06
+  },
+  {
+    "source_step": 10,
+    "source_pldm_action": [
+      -0.35026740054015165,
+      -2.1719375562199863
+    ],
+    "output_action_start": 20,
+    "output_action_end_exclusive": 22,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      122.9243500773112,
+      114.56982389976865
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      114.56982389976865
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      114.56982421875
+    ],
+    "checkpoint_error_pixels": 3.189813497783689e-07
+  },
+  {
+    "source_step": 11,
+    "source_pldm_action": [
+      -0.3502672104110855,
+      -2.171937586882007
+    ],
+    "output_action_start": 22,
+    "output_action_end_exclusive": 24,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      122.27063681862572,
+      105.55994383675713
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      105.55994383675713
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      105.5599365234375
+    ],
+    "checkpoint_error_pixels": 7.313319628110548e-06
+  },
+  {
+    "source_step": 12,
+    "source_pldm_action": [
+      -0.35026741258168725,
+      -2.171937554278053
+    ],
+    "output_action_start": 24,
+    "output_action_end_exclusive": 26,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      121.88419628721296,
+      97.91856377374557
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      97.91856377374557
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      97.91856384277344
+    ],
+    "checkpoint_error_pixels": 6.902786253704107e-08
+  },
+  {
+    "source_step": 13,
+    "source_pldm_action": [
+      -0.3502676686059725,
+      -2.171937512989114
+    ],
+    "output_action_start": 26,
+    "output_action_end_exclusive": 28,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      119.27048302852745,
+      91.48468371073405
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      91.48468371073405
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      91.48468017578125
+    ],
+    "checkpoint_error_pixels": 3.5349527962580396e-06
+  },
+  {
+    "source_step": 14,
+    "source_pldm_action": [
+      -0.35026743202412797,
+      -2.171937551142579
+    ],
+    "output_action_start": 28,
+    "output_action_end_exclusive": 30,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      118.88404249711469,
+      84.64830364772251
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      84.64830364772251
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      84.64830017089844
+    ],
+    "checkpoint_error_pixels": 3.476824076642515e-06
+  },
+  {
+    "source_step": 15,
+    "source_pldm_action": [
+      -0.3502671095396692,
+      -2.171937603149484
+    ],
+    "output_action_start": 30,
+    "output_action_end_exclusive": 32,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      117.92487469297467,
+      78.214423584711
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      78.214423584711
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      78.21441650390625
+    ],
+    "checkpoint_error_pixels": 7.0808047496484505e-06
+  },
+  {
+    "source_step": 16,
+    "source_pldm_action": [
+      -0.3502674687175252,
+      -2.1719375452250507
+    ],
+    "output_action_start": 32,
+    "output_action_end_exclusive": 34,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      113.85459577772353,
+      70.70721018836613
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      70.70721018836613
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      70.70721435546875
+    ],
+    "checkpoint_error_pixels": 4.167102616747798e-06
+  },
+  {
+    "source_step": 17,
+    "source_pldm_action": [
+      -0.35026697284341085,
+      -2.1719376251944054
+    ],
+    "output_action_start": 34,
+    "output_action_end_exclusive": 37,
+    "n_swm_substeps": 3,
+    "warped_swm_checkpoint_before_collision_projection": [
+      114.4283572665128,
+      64.70266345868794
+    ],
+    "desired_swm_checkpoint": [
+      114.4283572665128,
+      64.70266345868794
+    ],
+    "actual_swm_checkpoint": [
+      121.14278411865234,
+      64.7026596069336
+    ],
+    "checkpoint_error_pixels": 6.714426852140644
+  },
+  {
+    "source_step": 18,
+    "source_pldm_action": [
+      -0.3838749360371414,
+      -2.166250224115968
+    ],
+    "output_action_start": 37,
+    "output_action_end_exclusive": 38,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      114.48737128055457,
+      65.9967833956764
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      65.9967833956764
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      65.99678039550781
+    ],
+    "checkpoint_error_pixels": 3.0001685900060693e-06
+  },
+  {
+    "source_step": 19,
+    "source_pldm_action": [
+      -0.36947610204255477,
+      -2.168752500867593
+    ],
+    "output_action_start": 38,
+    "output_action_end_exclusive": 39,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      118.73365802186908,
+      64.95640333266486
+    ],
+    "desired_swm_checkpoint": [
+      124.5,
+      64.95640333266486
+    ],
+    "actual_swm_checkpoint": [
+      124.5,
+      64.95640563964844
+    ],
+    "checkpoint_error_pixels": 2.30698357484016e-06
+  },
+  {
+    "source_step": 20,
+    "source_pldm_action": [
+      -0.6642589113484516,
+      -2.097322125638828
+    ],
+    "output_action_start": 39,
+    "output_action_end_exclusive": 41,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      114.60539930863816,
+      58.28102326965332
+    ],
+    "desired_swm_checkpoint": [
+      114.60539930863816,
+      58.28102326965332
+    ],
+    "actual_swm_checkpoint": [
+      114.60539245605469,
+      58.28102111816406
+    ],
+    "checkpoint_error_pixels": 7.182395575159058e-06
+  },
+  {
+    "source_step": 21,
+    "source_pldm_action": [
+      -0.6642598854088209,
+      -2.097321817136479
+    ],
+    "output_action_start": 41,
+    "output_action_end_exclusive": 43,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      112.16986786813447,
+      52.49114320664179
+    ],
+    "desired_swm_checkpoint": [
+      112.16986786813447,
+      52.49114320664179
+    ],
+    "actual_swm_checkpoint": [
+      112.16986083984375,
+      52.49114227294922
+    ],
+    "checkpoint_error_pixels": 7.090038950599835e-06
+  },
+  {
+    "source_step": 22,
+    "source_pldm_action": [
+      -0.7839907245260156,
+      2.0555676938153056
+    ],
+    "output_action_start": 43,
+    "output_action_end_exclusive": 45,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      110.03265317179688,
+      58.64453587090297
+    ],
+    "desired_swm_checkpoint": [
+      110.03265317179688,
+      58.64453587090297
+    ],
+    "actual_swm_checkpoint": [
+      110.03265380859375,
+      58.64453887939453
+    ],
+    "checkpoint_error_pixels": 3.0751474312842035e-06
+  },
+  {
+    "source_step": 23,
+    "source_pldm_action": [
+      -0.783990714819553,
+      2.055567697517337
+    ],
+    "output_action_start": 45,
+    "output_action_end_exclusive": 46,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      108.26609837939168,
+      55.99171641395205
+    ],
+    "desired_swm_checkpoint": [
+      108.26609837939168,
+      55.99171641395205
+    ],
+    "actual_swm_checkpoint": [
+      108.26609802246094,
+      55.99171447753906
+    ],
+    "checkpoint_error_pixels": 1.9690339774405067e-06
+  },
+  {
+    "source_step": 24,
+    "source_pldm_action": [
+      -0.7471051688076246,
+      2.0692592555648823
+    ],
+    "output_action_start": 46,
+    "output_action_end_exclusive": 47,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      110.6154393870928,
+      57.33950301760717
+    ],
+    "desired_swm_checkpoint": [
+      110.6154393870928,
+      57.33950301760717
+    ],
+    "actual_swm_checkpoint": [
+      110.61544036865234,
+      57.33950424194336
+    ],
+    "checkpoint_error_pixels": 1.5692221726601179e-06
+  },
+  {
+    "source_step": 25,
+    "source_pldm_action": [
+      -0.7721586703380473,
+      2.0600415014804385
+    ],
+    "output_action_start": 47,
+    "output_action_end_exclusive": 48,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      111.70396168134364,
+      58.95562295459564
+    ],
+    "desired_swm_checkpoint": [
+      111.70396168134364,
+      58.95562295459564
+    ],
+    "actual_swm_checkpoint": [
+      111.70396423339844,
+      58.955623626708984
+    ],
+    "checkpoint_error_pixels": 2.639075600436962e-06
+  },
+  {
+    "source_step": 26,
+    "source_pldm_action": [
+      -0.8301472195912558,
+      2.0373648651640455
+    ],
+    "output_action_start": 48,
+    "output_action_end_exclusive": 49,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      114.95948339288886,
+      58.31774289158412
+    ],
+    "desired_swm_checkpoint": [
+      114.95948339288886,
+      58.31774289158412
+    ],
+    "actual_swm_checkpoint": [
+      114.95948028564453,
+      58.31774139404297
+    ],
+    "checkpoint_error_pixels": 3.4492893162919845e-06
+  },
+  {
+    "source_step": 27,
+    "source_pldm_action": [
+      -0.6389170049184174,
+      -2.105180529272034
+    ],
+    "output_action_start": 49,
+    "output_action_end_exclusive": 51,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      112.52395195238519,
+      52.527862828572594
+    ],
+    "desired_swm_checkpoint": [
+      112.52395195238519,
+      52.527862828572594
+    ],
+    "actual_swm_checkpoint": [
+      112.5239486694336,
+      52.527862548828125
+    ],
+    "checkpoint_error_pixels": 3.294848729335931e-06
+  },
+  {
+    "source_step": 28,
+    "source_pldm_action": [
+      -0.7848870628134004,
+      2.055225607720027
+    ],
+    "output_action_start": 51,
+    "output_action_end_exclusive": 53,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      110.37431325309142,
+      58.681255492833785
+    ],
+    "desired_swm_checkpoint": [
+      110.37431325309142,
+      58.681255492833785
+    ],
+    "actual_swm_checkpoint": [
+      110.37431335449219,
+      58.68125915527344
+    ],
+    "checkpoint_error_pixels": 3.6638431090362187e-06
+  },
+  {
+    "source_step": 29,
+    "source_pldm_action": [
+      -0.7848870345526869,
+      2.0552256185127438
+    ],
+    "output_action_start": 53,
+    "output_action_end_exclusive": 54,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      109.18085787589091,
+      58.98010270254953
+    ],
+    "desired_swm_checkpoint": [
+      109.18085787589091,
+      58.98010270254953
+    ],
+    "actual_swm_checkpoint": [
+      109.18085479736328,
+      58.9801025390625
+    ],
+    "checkpoint_error_pixels": 3.0828656079619364e-06
+  },
+  {
+    "source_step": 30,
+    "source_pldm_action": [
+      -0.7650042049376667,
+      2.0627090358137496
+    ],
+    "output_action_start": 54,
+    "output_action_end_exclusive": 55,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      110.48819994685627,
+      58.693495366810716
+    ],
+    "desired_swm_checkpoint": [
+      110.48819994685627,
+      58.693495366810716
+    ],
+    "actual_swm_checkpoint": [
+      110.48819732666016,
+      58.69349670410156
+    ],
+    "checkpoint_error_pixels": 2.941729845187993e-06
+  },
+  {
+    "source_step": 31,
+    "source_pldm_action": [
+      -0.7720598058627005,
+      2.060078555825299
+    ],
+    "output_action_start": 55,
+    "output_action_end_exclusive": 56,
+    "n_swm_substeps": 1,
+    "warped_swm_checkpoint_before_collision_projection": [
+      107.38441318564016,
+      57.91900924319312
+    ],
+    "desired_swm_checkpoint": [
+      107.38441318564016,
+      57.91900924319312
+    ],
+    "actual_swm_checkpoint": [
+      107.38441467285156,
+      57.919010162353516
+    ],
+    "checkpoint_error_pixels": 1.7483288003700667e-06
+  },
+  {
+    "source_step": 32,
+    "source_pldm_action": [
+      -0.7210794260804555,
+      2.078471664777627
+    ],
+    "output_action_start": 56,
+    "output_action_end_exclusive": 58,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      102.90431949548554,
+      65.03596251351493
+    ],
+    "desired_swm_checkpoint": [
+      99.5,
+      65.03596251351493
+    ],
+    "actual_swm_checkpoint": [
+      99.5,
+      65.03596496582031
+    ],
+    "checkpoint_error_pixels": 2.4523053809843987e-06
+  },
+  {
+    "source_step": 33,
+    "source_pldm_action": [
+      -0.72107949330223,
+      2.0784716414565296
+    ],
+    "output_action_start": 58,
+    "output_action_end_exclusive": 60,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      102.10161371956094,
+      71.4820824505034
+    ],
+    "desired_swm_checkpoint": [
+      99.5,
+      71.4820824505034
+    ],
+    "actual_swm_checkpoint": [
+      99.5,
+      71.48208618164062
+    ],
+    "checkpoint_error_pixels": 3.7311372267367915e-06
+  },
+  {
+    "source_step": 34,
+    "source_pldm_action": [
+      -0.7210795762937314,
+      2.0784716126644724
+    ],
+    "output_action_start": 60,
+    "output_action_end_exclusive": 62,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      98.71996057521531,
+      77.92820238749187
+    ],
+    "desired_swm_checkpoint": [
+      98.71996057521531,
+      77.92820238749187
+    ],
+    "actual_swm_checkpoint": [
+      98.71995544433594,
+      77.92820739746094
+    ],
+    "checkpoint_error_pixels": 7.171172376036762e-06
+  },
+  {
+    "source_step": 35,
+    "source_pldm_action": [
+      -0.7210796813415432,
+      2.0784715762204637
+    ],
+    "output_action_start": 62,
+    "output_action_end_exclusive": 64,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      96.19795655367668,
+      84.37432232448033
+    ],
+    "desired_swm_checkpoint": [
+      96.19795655367668,
+      84.37432232448033
+    ],
+    "actual_swm_checkpoint": [
+      96.19795227050781,
+      84.37432861328125
+    ],
+    "checkpoint_error_pixels": 7.608846988831086e-06
+  },
+  {
+    "source_step": 36,
+    "source_pldm_action": [
+      -0.7210798185858447,
+      2.078471528606588
+    ],
+    "output_action_start": 64,
+    "output_action_end_exclusive": 66,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      94.10577709354155,
+      91.2229422614688
+    ],
+    "desired_swm_checkpoint": [
+      94.10577709354155,
+      91.2229422614688
+    ],
+    "actual_swm_checkpoint": [
+      94.10577392578125,
+      91.22294616699219
+    ],
+    "checkpoint_error_pixels": 5.028699455979816e-06
+  },
+  {
+    "source_step": 37,
+    "source_pldm_action": [
+      -0.7210796973963043,
+      2.07847157065062
+    ],
+    "output_action_start": 66,
+    "output_action_end_exclusive": 68,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      92.01359763340643,
+      98.07156219845727
+    ],
+    "desired_swm_checkpoint": [
+      92.01359763340643,
+      98.07156219845727
+    ],
+    "actual_swm_checkpoint": [
+      92.01359558105469,
+      98.07156372070312
+    ],
+    "checkpoint_error_pixels": 2.5552651775123246e-06
+  },
+  {
+    "source_step": 38,
+    "source_pldm_action": [
+      -0.7210798988431409,
+      2.0784715007630883
+    ],
+    "output_action_start": 68,
+    "output_action_end_exclusive": 70,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      89.4915936118678,
+      104.51768213544574
+    ],
+    "desired_swm_checkpoint": [
+      89.4915936118678,
+      104.51768213544574
+    ],
+    "actual_swm_checkpoint": [
+      89.49159240722656,
+      104.51768493652344
+    ],
+    "checkpoint_error_pixels": 3.049130496191183e-06
+  },
+  {
+    "source_step": 39,
+    "source_pldm_action": [
+      -0.7210797316670707,
+      2.078471558761136
+    ],
+    "output_action_start": 70,
+    "output_action_end_exclusive": 72,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      86.10994046752216,
+      110.9638020724342
+    ],
+    "desired_swm_checkpoint": [
+      86.10994046752216,
+      110.9638020724342
+    ],
+    "actual_swm_checkpoint": [
+      86.10993957519531,
+      110.96380615234375
+    ],
+    "checkpoint_error_pixels": 4.1763511708499705e-06
+  },
+  {
+    "source_step": 40,
+    "source_pldm_action": [
+      -0.7210801062196248,
+      2.0784714288183745
+    ],
+    "output_action_start": 72,
+    "output_action_end_exclusive": 74,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      85.42445957198034,
+      119.05651291851358
+    ],
+    "desired_swm_checkpoint": [
+      85.42445957198034,
+      119.05651291851358
+    ],
+    "actual_swm_checkpoint": [
+      85.42445373535156,
+      119.0565185546875
+    ],
+    "checkpoint_error_pixels": 8.113734771219934e-06
+  },
+  {
+    "source_step": 41,
+    "source_pldm_action": [
+      -0.7210798558037057,
+      2.0784715156946723
+    ],
+    "output_action_start": 74,
+    "output_action_end_exclusive": 76,
+    "n_swm_substeps": 2,
+    "warped_swm_checkpoint_before_collision_projection": [
+      82.35540610865543,
+      127.59354194641114
+    ],
+    "desired_swm_checkpoint": [
+      82.35540610865543,
+      127.59354194641114
+    ],
+    "actual_swm_checkpoint": [
+      82.35540771484375,
+      127.59353637695312
+    ],
+    "checkpoint_error_pixels": 5.7964388600658865e-06
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "schema_version": "fixed_budget_design_v1",
+  "source": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/reacher_torque_ablations_v1/all_four",
+  "source_manifest_sha256": "c765e6e4412820d90ade6f956a0dbc6c403adb40d6ad224dc15988818e21b35d",
+  "cells": {
+    "expert_only": {
+      "allocation": {
+        "expert": 8
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "total_actions": 320
+    },
+    "expert_noisy": {
+      "allocation": {
+        "expert": 4,
+        "noisy": 4
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        13
+      ],
+      "total_actions": 320
+    },
+    "expert_partial": {
+      "allocation": {
+        "expert": 4,
+        "partial": 4
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        30,
+        31,
+        32,
+        33
+      ],
+      "total_actions": 320
+    },
+    "expert_random": {
+      "allocation": {
+        "expert": 4,
+        "random": 4
+      },
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        20,
+        21,
+        22,
+        23
+      ],
+      "total_actions": 320
+    },
+    "random_partial": {
+      "allocation": {
+        "random": 4,
+        "partial": 4
+      },
+      "source_indices": [
+        20,
+        21,
+        22,
+        23,
+        30,
+        31,
+        32,
+        33
+      ],
+      "total_actions": 320
+    },
+    "all_four": {
+      "allocation": {
+        "expert": 2,
+        "noisy": 2,
+        "random": 2,
+        "partial": 2
+      },
+      "source_indices": [
+        0,
+        1,
+        10,
+        11,
+        20,
+        21,
+        30,
+        31
+      ],
+      "total_actions": 320
+    }
+  },
+  "sandbox_source_index": 8,
+  "audit_source_index": 9
+}

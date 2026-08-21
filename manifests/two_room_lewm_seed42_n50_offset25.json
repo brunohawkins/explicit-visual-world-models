@@ -1,0 +1,4250 @@
+{
+  "schema_version": "v2",
+  "benchmark": "two_room_swm",
+  "created_at": "2026-07-24T12:10:49.454706+00:00",
+  "protocol": "lewm_matched_task_qualified_n50_v1",
+  "selection_seed": 42,
+  "case_seed_start": 42,
+  "num_eval": 50,
+  "goal_offset_steps": 25,
+  "eval_budget": 50,
+  "source_hdf5": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+  "sampling": {
+    "reference": "le-wm/eval.py valid-start rule",
+    "valid_start_rule": "step_idx <= episode_length - goal_offset_steps - 1",
+    "task_filter": "strict_opposite_room_interiors",
+    "wall_center": 112.0,
+    "wall_thickness": 10.0,
+    "agent_radius": 7.0,
+    "left_room_max_x": 100.0,
+    "right_room_min_x": 124.0,
+    "replace": false,
+    "selected_rows_sorted": true
+  },
+  "environment": {
+    "id": "swm/TwoRoom-v1",
+    "native_resolution": 224,
+    "options": {
+      "render_mode": "rgb_array",
+      "max_episode_steps": 100
+    }
+  },
+  "success": {
+    "name": "distance_to_future_position",
+    "threshold": 16.0,
+    "comparator": "<"
+  },
+  "action_contract": {
+    "low": [
+      -1.0,
+      -1.0
+    ],
+    "high": [
+      1.0,
+      1.0
+    ],
+    "speed_pixels_per_step": 5.0
+  },
+  "cases": [
+    {
+      "case_id": "lewm_tworoom_eval_000",
+      "seed": 42,
+      "benchmark": "two_room_swm",
+      "dataset_row": 59014,
+      "goal_dataset_row": 59039,
+      "episode_idx": 645,
+      "step_idx": 66,
+      "goal_step_idx": 91,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 59014
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 59039
+      },
+      "start": {
+        "state": [
+          99.5,
+          78.39461517333984
+        ],
+        "observation": [
+          99.5,
+          78.39461517333984,
+          166.532470703125,
+          101.87610626220703,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          141.43531799316406,
+          76.93708038330078
+        ],
+        "observation": [
+          141.43531799316406,
+          76.93708038330078,
+          166.532470703125,
+          101.87610626220703,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 0,
+        "dataset_row": 59014,
+        "episode": 645,
+        "start_step": 66,
+        "goal_step": 91,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_001",
+      "seed": 43,
+      "benchmark": "two_room_swm",
+      "dataset_row": 61937,
+      "goal_dataset_row": 61962,
+      "episode_idx": 679,
+      "step_idx": 31,
+      "goal_step_idx": 56,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 61937
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 61962
+      },
+      "start": {
+        "state": [
+          127.27900695800781,
+          62.28601837158203
+        ],
+        "observation": [
+          127.27900695800781,
+          62.28601837158203,
+          38.25630569458008,
+          61.208187103271484,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          76.91351318359375,
+          50.57234573364258
+        ],
+        "observation": [
+          76.91351318359375,
+          50.57234573364258,
+          38.25630569458008,
+          61.208187103271484,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 1,
+        "dataset_row": 61937,
+        "episode": 679,
+        "start_step": 31,
+        "goal_step": 56,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_002",
+      "seed": 44,
+      "benchmark": "two_room_swm",
+      "dataset_row": 77255,
+      "goal_dataset_row": 77280,
+      "episode_idx": 848,
+      "step_idx": 71,
+      "goal_step_idx": 96,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 77255
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 77280
+      },
+      "start": {
+        "state": [
+          99.46210479736328,
+          60.25086212158203
+        ],
+        "observation": [
+          99.46210479736328,
+          60.25086212158203,
+          149.5211639404297,
+          69.05131530761719,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          138.37313842773438,
+          72.45240783691406
+        ],
+        "observation": [
+          138.37313842773438,
+          72.45240783691406,
+          149.5211639404297,
+          69.05131530761719,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 2,
+        "dataset_row": 77255,
+        "episode": 848,
+        "start_step": 71,
+        "goal_step": 96,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_003",
+      "seed": 45,
+      "benchmark": "two_room_swm",
+      "dataset_row": 80431,
+      "goal_dataset_row": 80456,
+      "episode_idx": 882,
+      "step_idx": 56,
+      "goal_step_idx": 81,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 80431
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 80456
+      },
+      "start": {
+        "state": [
+          99.5,
+          77.3266372680664
+        ],
+        "observation": [
+          99.5,
+          77.3266372680664,
+          147.23385620117188,
+          170.40756225585938,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          124.5,
+          65.93907928466797
+        ],
+        "observation": [
+          124.5,
+          65.93907928466797,
+          147.23385620117188,
+          170.40756225585938,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 3,
+        "dataset_row": 80431,
+        "episode": 882,
+        "start_step": 56,
+        "goal_step": 81,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_004",
+      "seed": 46,
+      "benchmark": "two_room_swm",
+      "dataset_row": 82691,
+      "goal_dataset_row": 82716,
+      "episode_idx": 907,
+      "step_idx": 15,
+      "goal_step_idx": 40,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 82691
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 82716
+      },
+      "start": {
+        "state": [
+          135.02362060546875,
+          45.8603515625
+        ],
+        "observation": [
+          135.02362060546875,
+          45.8603515625,
+          73.256103515625,
+          142.0677947998047,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          91.3824691772461,
+          87.18197631835938
+        ],
+        "observation": [
+          91.3824691772461,
+          87.18197631835938,
+          73.256103515625,
+          142.0677947998047,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 4,
+        "dataset_row": 82691,
+        "episode": 907,
+        "start_step": 15,
+        "goal_step": 40,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_005",
+      "seed": 47,
+      "benchmark": "two_room_swm",
+      "dataset_row": 84289,
+      "goal_dataset_row": 84314,
+      "episode_idx": 924,
+      "step_idx": 35,
+      "goal_step_idx": 60,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 84289
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 84314
+      },
+      "start": {
+        "state": [
+          124.9620361328125,
+          49.39601516723633
+        ],
+        "observation": [
+          124.9620361328125,
+          49.39601516723633,
+          22.169017791748047,
+          175.62591552734375,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          64.12284851074219,
+          56.17787170410156
+        ],
+        "observation": [
+          64.12284851074219,
+          56.17787170410156,
+          22.169017791748047,
+          175.62591552734375,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 5,
+        "dataset_row": 84289,
+        "episode": 924,
+        "start_step": 35,
+        "goal_step": 60,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_006",
+      "seed": 48,
+      "benchmark": "two_room_swm",
+      "dataset_row": 117205,
+      "goal_dataset_row": 117230,
+      "episode_idx": 1277,
+      "step_idx": 2,
+      "goal_step_idx": 27,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 117205
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 117230
+      },
+      "start": {
+        "state": [
+          72.6058120727539,
+          91.37775421142578
+        ],
+        "observation": [
+          72.6058120727539,
+          91.37775421142578,
+          200.8799285888672,
+          33.63264846801758,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          145.60618591308594,
+          48.75574493408203
+        ],
+        "observation": [
+          145.60618591308594,
+          48.75574493408203,
+          200.8799285888672,
+          33.63264846801758,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 6,
+        "dataset_row": 117205,
+        "episode": 1277,
+        "start_step": 2,
+        "goal_step": 27,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_007",
+      "seed": 49,
+      "benchmark": "two_room_swm",
+      "dataset_row": 151201,
+      "goal_dataset_row": 151226,
+      "episode_idx": 1648,
+      "step_idx": 62,
+      "goal_step_idx": 87,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 151201
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 151226
+      },
+      "start": {
+        "state": [
+          124.5,
+          85.76318359375
+        ],
+        "observation": [
+          124.5,
+          85.76318359375,
+          70.31289672851562,
+          20.88650894165039,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          88.1872787475586,
+          54.961734771728516
+        ],
+        "observation": [
+          88.1872787475586,
+          54.961734771728516,
+          70.31289672851562,
+          20.88650894165039,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 7,
+        "dataset_row": 151201,
+        "episode": 1648,
+        "start_step": 62,
+        "goal_step": 87,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_008",
+      "seed": 50,
+      "benchmark": "two_room_swm",
+      "dataset_row": 167568,
+      "goal_dataset_row": 167593,
+      "episode_idx": 1825,
+      "step_idx": 2,
+      "goal_step_idx": 27,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 167568
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 167593
+      },
+      "start": {
+        "state": [
+          135.72593688964844,
+          73.05936431884766
+        ],
+        "observation": [
+          135.72593688964844,
+          73.05936431884766,
+          17.632863998413086,
+          150.3317108154297,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          85.0135726928711,
+          89.48538208007812
+        ],
+        "observation": [
+          85.0135726928711,
+          89.48538208007812,
+          17.632863998413086,
+          150.3317108154297,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 8,
+        "dataset_row": 167568,
+        "episode": 1825,
+        "start_step": 2,
+        "goal_step": 27,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_009",
+      "seed": 51,
+      "benchmark": "two_room_swm",
+      "dataset_row": 183926,
+      "goal_dataset_row": 183951,
+      "episode_idx": 2001,
+      "step_idx": 25,
+      "goal_step_idx": 50,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 183926
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 183951
+      },
+      "start": {
+        "state": [
+          128.06890869140625,
+          50.363922119140625
+        ],
+        "observation": [
+          128.06890869140625,
+          50.363922119140625,
+          21.9749813079834,
+          205.265625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          82.06329345703125,
+          107.05601501464844
+        ],
+        "observation": [
+          82.06329345703125,
+          107.05601501464844,
+          21.9749813079834,
+          205.265625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 9,
+        "dataset_row": 183926,
+        "episode": 2001,
+        "start_step": 25,
+        "goal_step": 50,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_010",
+      "seed": 52,
+      "benchmark": "two_room_swm",
+      "dataset_row": 207069,
+      "goal_dataset_row": 207094,
+      "episode_idx": 2255,
+      "step_idx": 32,
+      "goal_step_idx": 57,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 207069
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 207094
+      },
+      "start": {
+        "state": [
+          134.3735809326172,
+          54.5343017578125
+        ],
+        "observation": [
+          134.3735809326172,
+          54.5343017578125,
+          22.177968978881836,
+          110.2099838256836,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          81.89579010009766,
+          50.64722442626953
+        ],
+        "observation": [
+          81.89579010009766,
+          50.64722442626953,
+          22.177968978881836,
+          110.2099838256836,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 10,
+        "dataset_row": 207069,
+        "episode": 2255,
+        "start_step": 32,
+        "goal_step": 57,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_011",
+      "seed": 53,
+      "benchmark": "two_room_swm",
+      "dataset_row": 255861,
+      "goal_dataset_row": 255886,
+      "episode_idx": 2782,
+      "step_idx": 57,
+      "goal_step_idx": 82,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 255861
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 255886
+      },
+      "start": {
+        "state": [
+          94.5,
+          61.36317443847656
+        ],
+        "observation": [
+          94.5,
+          61.36317443847656,
+          183.53103637695312,
+          132.51158142089844,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          146.76531982421875,
+          66.48292541503906
+        ],
+        "observation": [
+          146.76531982421875,
+          66.48292541503906,
+          183.53103637695312,
+          132.51158142089844,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 11,
+        "dataset_row": 255861,
+        "episode": 2782,
+        "start_step": 57,
+        "goal_step": 82,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_012",
+      "seed": 54,
+      "benchmark": "two_room_swm",
+      "dataset_row": 327156,
+      "goal_dataset_row": 327181,
+      "episode_idx": 3562,
+      "step_idx": 43,
+      "goal_step_idx": 68,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 327156
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 327181
+      },
+      "start": {
+        "state": [
+          99.5,
+          73.85891723632812
+        ],
+        "observation": [
+          99.5,
+          73.85891723632812,
+          146.13275146484375,
+          170.4822540283203,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          134.30015563964844,
+          76.42668151855469
+        ],
+        "observation": [
+          134.30015563964844,
+          76.42668151855469,
+          146.13275146484375,
+          170.4822540283203,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 12,
+        "dataset_row": 327156,
+        "episode": 3562,
+        "start_step": 43,
+        "goal_step": 68,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_013",
+      "seed": 55,
+      "benchmark": "two_room_swm",
+      "dataset_row": 341707,
+      "goal_dataset_row": 341732,
+      "episode_idx": 3719,
+      "step_idx": 48,
+      "goal_step_idx": 73,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 341707
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 341732
+      },
+      "start": {
+        "state": [
+          130.57699584960938,
+          72.22298431396484
+        ],
+        "observation": [
+          130.57699584960938,
+          72.22298431396484,
+          14.97372055053711,
+          189.35440063476562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          99.5,
+          82.09464263916016
+        ],
+        "observation": [
+          99.5,
+          82.09464263916016,
+          14.97372055053711,
+          189.35440063476562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 13,
+        "dataset_row": 341707,
+        "episode": 3719,
+        "start_step": 48,
+        "goal_step": 73,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_014",
+      "seed": 56,
+      "benchmark": "two_room_swm",
+      "dataset_row": 372131,
+      "goal_dataset_row": 372156,
+      "episode_idx": 4047,
+      "step_idx": 56,
+      "goal_step_idx": 81,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 372131
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 372156
+      },
+      "start": {
+        "state": [
+          124.5,
+          33.13233184814453
+        ],
+        "observation": [
+          124.5,
+          33.13233184814453,
+          92.66667175292969,
+          200.0229034423828,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          86.09369659423828,
+          71.12584686279297
+        ],
+        "observation": [
+          86.09369659423828,
+          71.12584686279297,
+          92.66667175292969,
+          200.0229034423828,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 14,
+        "dataset_row": 372131,
+        "episode": 4047,
+        "start_step": 56,
+        "goal_step": 81,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_015",
+      "seed": 57,
+      "benchmark": "two_room_swm",
+      "dataset_row": 400446,
+      "goal_dataset_row": 400471,
+      "episode_idx": 4355,
+      "step_idx": 54,
+      "goal_step_idx": 79,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 400446
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 400471
+      },
+      "start": {
+        "state": [
+          124.5,
+          69.5423355102539
+        ],
+        "observation": [
+          124.5,
+          69.5423355102539,
+          54.118988037109375,
+          162.3563690185547,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          94.4232177734375,
+          83.9227294921875
+        ],
+        "observation": [
+          94.4232177734375,
+          83.9227294921875,
+          54.118988037109375,
+          162.3563690185547,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 15,
+        "dataset_row": 400446,
+        "episode": 4355,
+        "start_step": 54,
+        "goal_step": 79,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_016",
+      "seed": 58,
+      "benchmark": "two_room_swm",
+      "dataset_row": 404973,
+      "goal_dataset_row": 404998,
+      "episode_idx": 4406,
+      "step_idx": 7,
+      "goal_step_idx": 32,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 404973
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 404998
+      },
+      "start": {
+        "state": [
+          99.5,
+          71.06121826171875
+        ],
+        "observation": [
+          99.5,
+          71.06121826171875,
+          198.54244995117188,
+          194.65469360351562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          129.6865234375,
+          53.26878356933594
+        ],
+        "observation": [
+          129.6865234375,
+          53.26878356933594,
+          198.54244995117188,
+          194.65469360351562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 16,
+        "dataset_row": 404973,
+        "episode": 4406,
+        "start_step": 7,
+        "goal_step": 32,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_017",
+      "seed": 59,
+      "benchmark": "two_room_swm",
+      "dataset_row": 409003,
+      "goal_dataset_row": 409028,
+      "episode_idx": 4450,
+      "step_idx": 31,
+      "goal_step_idx": 56,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 409003
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 409028
+      },
+      "start": {
+        "state": [
+          93.07969665527344,
+          69.8588638305664
+        ],
+        "observation": [
+          93.07969665527344,
+          69.8588638305664,
+          189.34295654296875,
+          195.9100799560547,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          142.18141174316406,
+          103.92880249023438
+        ],
+        "observation": [
+          142.18141174316406,
+          103.92880249023438,
+          189.34295654296875,
+          195.9100799560547,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 17,
+        "dataset_row": 409003,
+        "episode": 4450,
+        "start_step": 31,
+        "goal_step": 56,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_018",
+      "seed": 60,
+      "benchmark": "two_room_swm",
+      "dataset_row": 411478,
+      "goal_dataset_row": 411503,
+      "episode_idx": 4476,
+      "step_idx": 28,
+      "goal_step_idx": 53,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 411478
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 411503
+      },
+      "start": {
+        "state": [
+          98.49028778076172,
+          66.30498504638672
+        ],
+        "observation": [
+          98.49028778076172,
+          66.30498504638672,
+          170.1643829345703,
+          169.3031005859375,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          146.27713012695312,
+          68.04074096679688
+        ],
+        "observation": [
+          146.27713012695312,
+          68.04074096679688,
+          170.1643829345703,
+          169.3031005859375,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 18,
+        "dataset_row": 411478,
+        "episode": 4476,
+        "start_step": 28,
+        "goal_step": 53,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_019",
+      "seed": 61,
+      "benchmark": "two_room_swm",
+      "dataset_row": 416151,
+      "goal_dataset_row": 416176,
+      "episode_idx": 4527,
+      "step_idx": 38,
+      "goal_step_idx": 63,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 416151
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 416176
+      },
+      "start": {
+        "state": [
+          125.39488220214844,
+          55.40058135986328
+        ],
+        "observation": [
+          125.39488220214844,
+          55.40058135986328,
+          42.451026916503906,
+          124.7566146850586,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          80.1098861694336,
+          76.46235656738281
+        ],
+        "observation": [
+          80.1098861694336,
+          76.46235656738281,
+          42.451026916503906,
+          124.7566146850586,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 19,
+        "dataset_row": 416151,
+        "episode": 4527,
+        "start_step": 38,
+        "goal_step": 63,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_020",
+      "seed": 62,
+      "benchmark": "two_room_swm",
+      "dataset_row": 416357,
+      "goal_dataset_row": 416382,
+      "episode_idx": 4529,
+      "step_idx": 42,
+      "goal_step_idx": 67,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 416357
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 416382
+      },
+      "start": {
+        "state": [
+          93.00250244140625,
+          54.11732482910156
+        ],
+        "observation": [
+          93.00250244140625,
+          54.11732482910156,
+          152.60911560058594,
+          164.65469360351562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          124.98019409179688,
+          57.687156677246094
+        ],
+        "observation": [
+          124.98019409179688,
+          57.687156677246094,
+          152.60911560058594,
+          164.65469360351562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 20,
+        "dataset_row": 416357,
+        "episode": 4529,
+        "start_step": 42,
+        "goal_step": 67,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_021",
+      "seed": 63,
+      "benchmark": "two_room_swm",
+      "dataset_row": 465710,
+      "goal_dataset_row": 465735,
+      "episode_idx": 5065,
+      "step_idx": 61,
+      "goal_step_idx": 86,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 465710
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 465735
+      },
+      "start": {
+        "state": [
+          130.97862243652344,
+          55.825416564941406
+        ],
+        "observation": [
+          130.97862243652344,
+          55.825416564941406,
+          31.797348022460938,
+          151.8105926513672,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          81.41712951660156,
+          55.99507522583008
+        ],
+        "observation": [
+          81.41712951660156,
+          55.99507522583008,
+          31.797348022460938,
+          151.8105926513672,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 21,
+        "dataset_row": 465710,
+        "episode": 5065,
+        "start_step": 61,
+        "goal_step": 86,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_022",
+      "seed": 64,
+      "benchmark": "two_room_swm",
+      "dataset_row": 478639,
+      "goal_dataset_row": 478664,
+      "episode_idx": 5204,
+      "step_idx": 44,
+      "goal_step_idx": 69,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 478639
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 478664
+      },
+      "start": {
+        "state": [
+          98.46599578857422,
+          52.251708984375
+        ],
+        "observation": [
+          98.46599578857422,
+          52.251708984375,
+          133.14942932128906,
+          170.421875,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          129.5,
+          93.24401092529297
+        ],
+        "observation": [
+          129.5,
+          93.24401092529297,
+          133.14942932128906,
+          170.421875,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 22,
+        "dataset_row": 478639,
+        "episode": 5204,
+        "start_step": 44,
+        "goal_step": 69,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_023",
+      "seed": 65,
+      "benchmark": "two_room_swm",
+      "dataset_row": 492019,
+      "goal_dataset_row": 492044,
+      "episode_idx": 5348,
+      "step_idx": 7,
+      "goal_step_idx": 32,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 492019
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 492044
+      },
+      "start": {
+        "state": [
+          91.58267211914062,
+          83.96361541748047
+        ],
+        "observation": [
+          91.58267211914062,
+          83.96361541748047,
+          148.34341430664062,
+          124.04541778564453,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          124.5,
+          78.6842269897461
+        ],
+        "observation": [
+          124.5,
+          78.6842269897461,
+          148.34341430664062,
+          124.04541778564453,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 23,
+        "dataset_row": 492019,
+        "episode": 5348,
+        "start_step": 7,
+        "goal_step": 32,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_024",
+      "seed": 66,
+      "benchmark": "two_room_swm",
+      "dataset_row": 508932,
+      "goal_dataset_row": 508957,
+      "episode_idx": 5531,
+      "step_idx": 58,
+      "goal_step_idx": 83,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 508932
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 508957
+      },
+      "start": {
+        "state": [
+          124.5,
+          73.44722747802734
+        ],
+        "observation": [
+          124.5,
+          73.44722747802734,
+          62.920135498046875,
+          122.77642822265625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          83.36247253417969,
+          83.50912475585938
+        ],
+        "observation": [
+          83.36247253417969,
+          83.50912475585938,
+          62.920135498046875,
+          122.77642822265625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 24,
+        "dataset_row": 508932,
+        "episode": 5531,
+        "start_step": 58,
+        "goal_step": 83,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_025",
+      "seed": 67,
+      "benchmark": "two_room_swm",
+      "dataset_row": 516503,
+      "goal_dataset_row": 516528,
+      "episode_idx": 5615,
+      "step_idx": 40,
+      "goal_step_idx": 65,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 516503
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 516528
+      },
+      "start": {
+        "state": [
+          124.5,
+          65.71258544921875
+        ],
+        "observation": [
+          124.5,
+          65.71258544921875,
+          78.56102752685547,
+          154.42689514160156,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          87.51245880126953,
+          95.46649169921875
+        ],
+        "observation": [
+          87.51245880126953,
+          95.46649169921875,
+          78.56102752685547,
+          154.42689514160156,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 25,
+        "dataset_row": 516503,
+        "episode": 5615,
+        "start_step": 40,
+        "goal_step": 65,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_026",
+      "seed": 68,
+      "benchmark": "two_room_swm",
+      "dataset_row": 588418,
+      "goal_dataset_row": 588443,
+      "episode_idx": 6395,
+      "step_idx": 51,
+      "goal_step_idx": 76,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 588418
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 588443
+      },
+      "start": {
+        "state": [
+          138.44683837890625,
+          57.73362350463867
+        ],
+        "observation": [
+          138.44683837890625,
+          57.73362350463867,
+          26.736574172973633,
+          63.867919921875,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          90.5807876586914,
+          55.01388931274414
+        ],
+        "observation": [
+          90.5807876586914,
+          55.01388931274414,
+          26.736574172973633,
+          63.867919921875,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 26,
+        "dataset_row": 588418,
+        "episode": 6395,
+        "start_step": 51,
+        "goal_step": 76,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_027",
+      "seed": 69,
+      "benchmark": "two_room_swm",
+      "dataset_row": 599563,
+      "goal_dataset_row": 599588,
+      "episode_idx": 6516,
+      "step_idx": 24,
+      "goal_step_idx": 49,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 599563
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 599588
+      },
+      "start": {
+        "state": [
+          126.39147186279297,
+          60.099754333496094
+        ],
+        "observation": [
+          126.39147186279297,
+          60.099754333496094,
+          83.39070892333984,
+          163.9853515625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          99.87434387207031,
+          84.46146392822266
+        ],
+        "observation": [
+          99.87434387207031,
+          84.46146392822266,
+          83.39070892333984,
+          163.9853515625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 27,
+        "dataset_row": 599563,
+        "episode": 6516,
+        "start_step": 24,
+        "goal_step": 49,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_028",
+      "seed": 70,
+      "benchmark": "two_room_swm",
+      "dataset_row": 609319,
+      "goal_dataset_row": 609344,
+      "episode_idx": 6623,
+      "step_idx": 52,
+      "goal_step_idx": 77,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 609319
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 609344
+      },
+      "start": {
+        "state": [
+          99.5,
+          67.94527435302734
+        ],
+        "observation": [
+          99.5,
+          67.94527435302734,
+          148.29818725585938,
+          196.63229370117188,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          145.06422424316406,
+          45.28529357910156
+        ],
+        "observation": [
+          145.06422424316406,
+          45.28529357910156,
+          148.29818725585938,
+          196.63229370117188,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 28,
+        "dataset_row": 609319,
+        "episode": 6623,
+        "start_step": 52,
+        "goal_step": 77,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_029",
+      "seed": 71,
+      "benchmark": "two_room_swm",
+      "dataset_row": 630313,
+      "goal_dataset_row": 630338,
+      "episode_idx": 6855,
+      "step_idx": 39,
+      "goal_step_idx": 64,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 630313
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 630338
+      },
+      "start": {
+        "state": [
+          124.5,
+          79.4087142944336
+        ],
+        "observation": [
+          124.5,
+          79.4087142944336,
+          44.43635940551758,
+          92.0,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          95.43973541259766,
+          35.94484329223633
+        ],
+        "observation": [
+          95.43973541259766,
+          35.94484329223633,
+          44.43635940551758,
+          92.0,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 29,
+        "dataset_row": 630313,
+        "episode": 6855,
+        "start_step": 39,
+        "goal_step": 64,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_030",
+      "seed": 72,
+      "benchmark": "two_room_swm",
+      "dataset_row": 645414,
+      "goal_dataset_row": 645439,
+      "episode_idx": 7021,
+      "step_idx": 22,
+      "goal_step_idx": 47,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 645414
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 645439
+      },
+      "start": {
+        "state": [
+          94.50253295898438,
+          61.830684661865234
+        ],
+        "observation": [
+          94.50253295898438,
+          61.830684661865234,
+          196.58612060546875,
+          184.88430786132812,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          129.4462432861328,
+          81.94633483886719
+        ],
+        "observation": [
+          129.4462432861328,
+          81.94633483886719,
+          196.58612060546875,
+          184.88430786132812,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 30,
+        "dataset_row": 645414,
+        "episode": 7021,
+        "start_step": 22,
+        "goal_step": 47,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_031",
+      "seed": 73,
+      "benchmark": "two_room_swm",
+      "dataset_row": 648232,
+      "goal_dataset_row": 648257,
+      "episode_idx": 7050,
+      "step_idx": 65,
+      "goal_step_idx": 90,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 648232
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 648257
+      },
+      "start": {
+        "state": [
+          98.64817810058594,
+          50.08763885498047
+        ],
+        "observation": [
+          98.64817810058594,
+          50.08763885498047,
+          164.28358459472656,
+          162.6514892578125,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          161.26263427734375,
+          72.15758514404297
+        ],
+        "observation": [
+          161.26263427734375,
+          72.15758514404297,
+          164.28358459472656,
+          162.6514892578125,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 31,
+        "dataset_row": 648232,
+        "episode": 7050,
+        "start_step": 65,
+        "goal_step": 90,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_032",
+      "seed": 74,
+      "benchmark": "two_room_swm",
+      "dataset_row": 663022,
+      "goal_dataset_row": 663047,
+      "episode_idx": 7211,
+      "step_idx": 16,
+      "goal_step_idx": 41,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 663022
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 663047
+      },
+      "start": {
+        "state": [
+          124.5,
+          95.08049011230469
+        ],
+        "observation": [
+          124.5,
+          95.08049011230469,
+          55.52888870239258,
+          76.08088684082031,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          96.7979736328125,
+          55.84862518310547
+        ],
+        "observation": [
+          96.7979736328125,
+          55.84862518310547,
+          55.52888870239258,
+          76.08088684082031,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 32,
+        "dataset_row": 663022,
+        "episode": 7211,
+        "start_step": 16,
+        "goal_step": 41,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_033",
+      "seed": 75,
+      "benchmark": "two_room_swm",
+      "dataset_row": 679645,
+      "goal_dataset_row": 679670,
+      "episode_idx": 7390,
+      "step_idx": 28,
+      "goal_step_idx": 53,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 679645
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 679670
+      },
+      "start": {
+        "state": [
+          88.19083404541016,
+          62.701271057128906
+        ],
+        "observation": [
+          88.19083404541016,
+          62.701271057128906,
+          160.60647583007812,
+          194.93350219726562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          143.67416381835938,
+          101.54295349121094
+        ],
+        "observation": [
+          143.67416381835938,
+          101.54295349121094,
+          160.60647583007812,
+          194.93350219726562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 33,
+        "dataset_row": 679645,
+        "episode": 7390,
+        "start_step": 28,
+        "goal_step": 53,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_034",
+      "seed": 76,
+      "benchmark": "two_room_swm",
+      "dataset_row": 699483,
+      "goal_dataset_row": 699508,
+      "episode_idx": 7608,
+      "step_idx": 61,
+      "goal_step_idx": 86,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 699483
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 699508
+      },
+      "start": {
+        "state": [
+          128.6728057861328,
+          71.76331329345703
+        ],
+        "observation": [
+          128.6728057861328,
+          71.76331329345703,
+          89.67552185058594,
+          186.74404907226562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          84.5,
+          89.86580657958984
+        ],
+        "observation": [
+          84.5,
+          89.86580657958984,
+          89.67552185058594,
+          186.74404907226562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 34,
+        "dataset_row": 699483,
+        "episode": 7608,
+        "start_step": 61,
+        "goal_step": 86,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_035",
+      "seed": 77,
+      "benchmark": "two_room_swm",
+      "dataset_row": 701971,
+      "goal_dataset_row": 701996,
+      "episode_idx": 7635,
+      "step_idx": 34,
+      "goal_step_idx": 59,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 701971
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 701996
+      },
+      "start": {
+        "state": [
+          93.28904724121094,
+          55.71133041381836
+        ],
+        "observation": [
+          93.28904724121094,
+          55.71133041381836,
+          125.80320739746094,
+          158.45059204101562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          140.06491088867188,
+          85.25711822509766
+        ],
+        "observation": [
+          140.06491088867188,
+          85.25711822509766,
+          125.80320739746094,
+          158.45059204101562,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 35,
+        "dataset_row": 701971,
+        "episode": 7635,
+        "start_step": 34,
+        "goal_step": 59,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_036",
+      "seed": 78,
+      "benchmark": "two_room_swm",
+      "dataset_row": 714969,
+      "goal_dataset_row": 714994,
+      "episode_idx": 7774,
+      "step_idx": 38,
+      "goal_step_idx": 63,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 714969
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 714994
+      },
+      "start": {
+        "state": [
+          97.28400421142578,
+          49.71122741699219
+        ],
+        "observation": [
+          97.28400421142578,
+          49.71122741699219,
+          177.3369598388672,
+          94.59040832519531,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          153.99826049804688,
+          69.58699798583984
+        ],
+        "observation": [
+          153.99826049804688,
+          69.58699798583984,
+          177.3369598388672,
+          94.59040832519531,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 36,
+        "dataset_row": 714969,
+        "episode": 7774,
+        "start_step": 38,
+        "goal_step": 63,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_037",
+      "seed": 79,
+      "benchmark": "two_room_swm",
+      "dataset_row": 719611,
+      "goal_dataset_row": 719636,
+      "episode_idx": 7823,
+      "step_idx": 26,
+      "goal_step_idx": 51,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 719611
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 719636
+      },
+      "start": {
+        "state": [
+          125.74219512939453,
+          92.49858093261719
+        ],
+        "observation": [
+          125.74219512939453,
+          92.49858093261719,
+          14.058422088623047,
+          196.7268829345703,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          88.992919921875,
+          48.60050964355469
+        ],
+        "observation": [
+          88.992919921875,
+          48.60050964355469,
+          14.058422088623047,
+          196.7268829345703,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 37,
+        "dataset_row": 719611,
+        "episode": 7823,
+        "start_step": 26,
+        "goal_step": 51,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_038",
+      "seed": 80,
+      "benchmark": "two_room_swm",
+      "dataset_row": 722193,
+      "goal_dataset_row": 722218,
+      "episode_idx": 7852,
+      "step_idx": 73,
+      "goal_step_idx": 98,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 722193
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 722218
+      },
+      "start": {
+        "state": [
+          98.09065246582031,
+          27.037353515625
+        ],
+        "observation": [
+          98.09065246582031,
+          27.037353515625,
+          197.42080688476562,
+          43.99130630493164,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          138.0621795654297,
+          48.54847717285156
+        ],
+        "observation": [
+          138.0621795654297,
+          48.54847717285156,
+          197.42080688476562,
+          43.99130630493164,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 38,
+        "dataset_row": 722193,
+        "episode": 7852,
+        "start_step": 73,
+        "goal_step": 98,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_039",
+      "seed": 81,
+      "benchmark": "two_room_swm",
+      "dataset_row": 726590,
+      "goal_dataset_row": 726615,
+      "episode_idx": 7900,
+      "step_idx": 19,
+      "goal_step_idx": 44,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 726590
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 726615
+      },
+      "start": {
+        "state": [
+          94.91934967041016,
+          64.61888122558594
+        ],
+        "observation": [
+          94.91934967041016,
+          64.61888122558594,
+          199.75634765625,
+          78.2920150756836,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          139.5,
+          73.65435028076172
+        ],
+        "observation": [
+          139.5,
+          73.65435028076172,
+          199.75634765625,
+          78.2920150756836,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 39,
+        "dataset_row": 726590,
+        "episode": 7900,
+        "start_step": 19,
+        "goal_step": 44,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_040",
+      "seed": 82,
+      "benchmark": "two_room_swm",
+      "dataset_row": 761538,
+      "goal_dataset_row": 761563,
+      "episode_idx": 8279,
+      "step_idx": 21,
+      "goal_step_idx": 46,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 761538
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 761563
+      },
+      "start": {
+        "state": [
+          99.5,
+          57.17833709716797
+        ],
+        "observation": [
+          99.5,
+          57.17833709716797,
+          131.63705444335938,
+          201.6143798828125,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          144.12423706054688,
+          71.87274932861328
+        ],
+        "observation": [
+          144.12423706054688,
+          71.87274932861328,
+          131.63705444335938,
+          201.6143798828125,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 40,
+        "dataset_row": 761538,
+        "episode": 8279,
+        "start_step": 21,
+        "goal_step": 46,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_041",
+      "seed": 83,
+      "benchmark": "two_room_swm",
+      "dataset_row": 765798,
+      "goal_dataset_row": 765823,
+      "episode_idx": 8326,
+      "step_idx": 69,
+      "goal_step_idx": 94,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 765798
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 765823
+      },
+      "start": {
+        "state": [
+          74.496826171875,
+          71.86033630371094
+        ],
+        "observation": [
+          74.496826171875,
+          71.86033630371094,
+          197.91473388671875,
+          144.1392822265625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          133.30540466308594,
+          60.86289978027344
+        ],
+        "observation": [
+          133.30540466308594,
+          60.86289978027344,
+          197.91473388671875,
+          144.1392822265625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 41,
+        "dataset_row": 765798,
+        "episode": 8326,
+        "start_step": 69,
+        "goal_step": 94,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_042",
+      "seed": 84,
+      "benchmark": "two_room_swm",
+      "dataset_row": 776118,
+      "goal_dataset_row": 776143,
+      "episode_idx": 8439,
+      "step_idx": 14,
+      "goal_step_idx": 39,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 776118
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 776143
+      },
+      "start": {
+        "state": [
+          131.03501892089844,
+          80.35543823242188
+        ],
+        "observation": [
+          131.03501892089844,
+          80.35543823242188,
+          33.79475021362305,
+          52.19126510620117,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          96.62712860107422,
+          64.30638122558594
+        ],
+        "observation": [
+          96.62712860107422,
+          64.30638122558594,
+          33.79475021362305,
+          52.19126510620117,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 42,
+        "dataset_row": 776118,
+        "episode": 8439,
+        "start_step": 14,
+        "goal_step": 39,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_043",
+      "seed": 85,
+      "benchmark": "two_room_swm",
+      "dataset_row": 791677,
+      "goal_dataset_row": 791702,
+      "episode_idx": 8610,
+      "step_idx": 40,
+      "goal_step_idx": 65,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 791677
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 791702
+      },
+      "start": {
+        "state": [
+          124.55060577392578,
+          54.74272918701172
+        ],
+        "observation": [
+          124.55060577392578,
+          54.74272918701172,
+          35.04413986206055,
+          195.453125,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          64.37662506103516,
+          69.66937255859375
+        ],
+        "observation": [
+          64.37662506103516,
+          69.66937255859375,
+          35.04413986206055,
+          195.453125,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 43,
+        "dataset_row": 791677,
+        "episode": 8610,
+        "start_step": 40,
+        "goal_step": 65,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_044",
+      "seed": 86,
+      "benchmark": "two_room_swm",
+      "dataset_row": 818931,
+      "goal_dataset_row": 818956,
+      "episode_idx": 8906,
+      "step_idx": 58,
+      "goal_step_idx": 83,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 818931
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 818956
+      },
+      "start": {
+        "state": [
+          139.26678466796875,
+          58.412776947021484
+        ],
+        "observation": [
+          139.26678466796875,
+          58.412776947021484,
+          35.48305130004883,
+          58.233543395996094,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          58.267208099365234,
+          54.188594818115234
+        ],
+        "observation": [
+          58.267208099365234,
+          54.188594818115234,
+          35.48305130004883,
+          58.233543395996094,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 44,
+        "dataset_row": 818931,
+        "episode": 8906,
+        "start_step": 58,
+        "goal_step": 83,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_045",
+      "seed": 87,
+      "benchmark": "two_room_swm",
+      "dataset_row": 824134,
+      "goal_dataset_row": 824159,
+      "episode_idx": 8963,
+      "step_idx": 8,
+      "goal_step_idx": 33,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 824134
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 824159
+      },
+      "start": {
+        "state": [
+          69.345947265625,
+          38.05759048461914
+        ],
+        "observation": [
+          69.345947265625,
+          38.05759048461914,
+          180.30064392089844,
+          63.34719467163086,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          129.5,
+          69.43374633789062
+        ],
+        "observation": [
+          129.5,
+          69.43374633789062,
+          180.30064392089844,
+          63.34719467163086,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 45,
+        "dataset_row": 824134,
+        "episode": 8963,
+        "start_step": 8,
+        "goal_step": 33,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_046",
+      "seed": 88,
+      "benchmark": "two_room_swm",
+      "dataset_row": 852237,
+      "goal_dataset_row": 852262,
+      "episode_idx": 9263,
+      "step_idx": 11,
+      "goal_step_idx": 36,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 852237
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 852262
+      },
+      "start": {
+        "state": [
+          137.0303192138672,
+          109.23458099365234
+        ],
+        "observation": [
+          137.0303192138672,
+          109.23458099365234,
+          18.61407470703125,
+          177.86227416992188,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          93.93511199951172,
+          70.55873107910156
+        ],
+        "observation": [
+          93.93511199951172,
+          70.55873107910156,
+          18.61407470703125,
+          177.86227416992188,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 46,
+        "dataset_row": 852237,
+        "episode": 9263,
+        "start_step": 11,
+        "goal_step": 36,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_047",
+      "seed": 89,
+      "benchmark": "two_room_swm",
+      "dataset_row": 893772,
+      "goal_dataset_row": 893797,
+      "episode_idx": 9709,
+      "step_idx": 11,
+      "goal_step_idx": 36,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 893772
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 893797
+      },
+      "start": {
+        "state": [
+          97.78900146484375,
+          57.94441223144531
+        ],
+        "observation": [
+          97.78900146484375,
+          57.94441223144531,
+          158.41677856445312,
+          190.4899444580078,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          139.4102783203125,
+          79.94367980957031
+        ],
+        "observation": [
+          139.4102783203125,
+          79.94367980957031,
+          158.41677856445312,
+          190.4899444580078,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 47,
+        "dataset_row": 893772,
+        "episode": 9709,
+        "start_step": 11,
+        "goal_step": 36,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_048",
+      "seed": 90,
+      "benchmark": "two_room_swm",
+      "dataset_row": 898112,
+      "goal_dataset_row": 898137,
+      "episode_idx": 9755,
+      "step_idx": 22,
+      "goal_step_idx": 47,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 898112
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 898137
+      },
+      "start": {
+        "state": [
+          124.5,
+          71.42610931396484
+        ],
+        "observation": [
+          124.5,
+          71.42610931396484,
+          24.04851531982422,
+          144.22515869140625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          99.5,
+          83.23467254638672
+        ],
+        "observation": [
+          99.5,
+          83.23467254638672,
+          24.04851531982422,
+          144.22515869140625,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 48,
+        "dataset_row": 898112,
+        "episode": 9755,
+        "start_step": 22,
+        "goal_step": 47,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "right",
+          "goal_room": "left",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    },
+    {
+      "case_id": "lewm_tworoom_eval_049",
+      "seed": 91,
+      "benchmark": "two_room_swm",
+      "dataset_row": 920657,
+      "goal_dataset_row": 920682,
+      "episode_idx": 9998,
+      "step_idx": 37,
+      "goal_step_idx": 62,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 920657
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "key": "pixels",
+        "row": 920682
+      },
+      "start": {
+        "state": [
+          98.02167510986328,
+          69.19155883789062
+        ],
+        "observation": [
+          98.02167510986328,
+          69.19155883789062,
+          207.51715087890625,
+          145.08985900878906,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "goal": {
+        "state": [
+          152.34088134765625,
+          98.26537322998047
+        ],
+        "observation": [
+          152.34088134765625,
+          98.26537322998047,
+          207.51715087890625,
+          145.08985900878906,
+          112.0,
+          49.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "metadata": {
+        "source": "lewm_local_tworoom_h5",
+        "h5_path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/tworoom.h5",
+        "lewm_eval_seed": 42,
+        "lewm_eval_index": 49,
+        "dataset_row": 920657,
+        "episode": 9998,
+        "start_step": 37,
+        "goal_step": 62,
+        "goal_offset_steps": 25,
+        "eval_budget": 50,
+        "door_center": 49.0,
+        "success_radius": 16.0,
+        "task_qualification": {
+          "name": "strict_opposite_room_interiors",
+          "start_room": "left",
+          "goal_room": "right",
+          "wall_center": 112.0,
+          "wall_thickness": 10.0,
+          "agent_radius": 7.0,
+          "left_room_max_x": 100.0,
+          "right_room_min_x": 124.0
+        }
+      }
+    }
+  ]
+}

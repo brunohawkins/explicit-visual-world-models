@@ -1,0 +1,19 @@
+{
+  "schema_version": "fixed_budget_audit_v1",
+  "benchmark": "two_room_lewm",
+  "source_manifest": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/manifest.json",
+  "source_manifest_sha256": "bd06ad9fa511418583afbdbbbd73ebf4492a4c95f9016cbbb55f36fd8e6dd6c2",
+  "source_indices": [
+    9
+  ],
+  "trajectories": [
+    {
+      "trajectory_index": 0,
+      "type": "expert",
+      "source_trajectory_index": 9,
+      "source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/trajectory_0009",
+      "n_frames": 44,
+      "n_actions": 43
+    }
+  ]
+}

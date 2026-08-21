@@ -1,0 +1,145 @@
+{
+  "trajectory_type": "partial",
+  "type": "partial",
+  "seed": 8965996,
+  "is_success": false,
+  "done": false,
+  "truncated": false,
+  "n_frames": 30,
+  "n_actions": 29,
+  "total_reward": 0.0,
+  "final_distance": 34.294588104541965,
+  "start_dot_position": [
+    39.55451965332031,
+    39.27007293701172
+  ],
+  "final_dot_position": [
+    32.3488883972168,
+    13.936823844909668
+  ],
+  "target_dot_position": [
+    11.125,
+    40.875
+  ],
+  "start_side": "right",
+  "goal_side": "left",
+  "crosses_wall": true,
+  "uses_door": true,
+  "min_distance_to_door": 3.4062725100041322,
+  "action_norm_min": 2.1999999999999997,
+  "action_norm_max": 2.2,
+  "action_norm_mean": 2.2,
+  "trajectory_index": 7,
+  "source_trajectory_index": 33,
+  "ablation": "all_four",
+  "benchmark": "two_room_lewm",
+  "source_dataset": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_curated_ablations/all_four",
+  "source_frame_count": 16,
+  "source_action_count": 15,
+  "source_frame_file_sha256": [
+    "a2e4122b01611f71b3b6404cfbc6dde157c6b5a0598ba8e2c76c8241625d61ec",
+    "9aa97531c41e68ab43007ef9e22b979e8d2acadef912b2e3635e2258f11ba02c",
+    "3cbd1e699241c6c39ce5c4ec855717af536fa5b5f54567881baba944bef800e8",
+    "8dbfcdfc644813fcb6193fc24345d11f078dfadd47577edc78767b7e68cd2cd8",
+    "079bcc93c67c53c49bd3f2579c5a51a9702b7d6f85e82c6c4f43ac4a027e4229",
+    "e08bd062651134f9647e1c6bb23610803b82bccae8735bfdd371d4129a152662",
+    "d361f8613c4ce198c2eae2ff4370ce4cd84d89c8604d0c07209031f183e1041f",
+    "1ffc97223a4248eabd5f10abdde411968b3faea51203cf8f2c7f76f283985cb8",
+    "80949b680a3b29d4913ffd6cd6bb70271735dca7bf5475f3cde56717fa438a46",
+    "a8387d09ddfc10615189691e79553ad604c8ec87f511fd4a9b8e7c5c2e25bb2c",
+    "38223c61ef450de366c6662f0c3310d48e4581cb4669b5b2fb5aeec138949c71",
+    "d309b91808e9c3a90bcb1b5c86581aaa0bd09f0fcfde5266553e857f2e3e2beb",
+    "2423b4e19831ad3485d1b9708a9902b72a6e3938bcd17681e9ff1af6832f1912",
+    "a0eb8443f6588093d771c17fa9d5bd5058e996eb812e0250d0b164fbc7ea093a",
+    "9af2f3e8f6d9575e463a764aa402feb4591ee885f4c0d53bd675c3ed219b8c93",
+    "888a4b41904ca25eafaa9d81b1d294ce439a1891b01e9136585762c61bd26d9e"
+  ],
+  "source_actions_sha256": "b5555929889be81a5ff9d17488dab74e0ba1a9d258996e3e5aaec99e54179cc3",
+  "mirror_contract": "same_pldm_realised_path_swm_native_replay",
+  "frame_size": [
+    224,
+    224
+  ],
+  "action_space_low": [
+    -1.0,
+    -1.0
+  ],
+  "action_space_high": [
+    1.0,
+    1.0
+  ],
+  "swm_env_id": "swm/TwoRoom-v1",
+  "swm_version": "0.1.1",
+  "swm_start_position": [
+    137.13974276455966,
+    143.24963485717774
+  ],
+  "swm_target_position": [
+    38.5,
+    148.41750000000002
+  ],
+  "swm_final_position": [
+    111.48038482666016,
+    61.67657470703125
+  ],
+  "swm_final_distance": 113.35839047078869,
+  "swm_success_radius": 16.0,
+  "max_source_checkpoint_error_pixels": 3.5661142294528236,
+  "output_actions_sha256": "009622fcbec7cd42ef0e08c17c6900b4d3f59b2277184f26416bb99cefd823cd",
+  "output_pixels_sha256": "3c03f56a77cd7e34bf18366387d4ff1c42fb494a2ecb19942a48f3ba89caa29d",
+  "replay_validation": {
+    "replay_pixel_max_abs_delta": 0,
+    "replay_final_position": [
+      111.48038482666016,
+      61.67657470703125
+    ]
+  },
+  "coordinate_warp": {
+    "pldm_x_landmarks": [
+      4.0,
+      32.5,
+      60.0
+    ],
+    "swm_x_landmarks": [
+      14.0,
+      112.0,
+      210.0
+    ],
+    "pldm_y_landmarks": [
+      4.0,
+      10.0,
+      60.0
+    ],
+    "swm_y_landmarks": [
+      14.0,
+      49.0,
+      210.0
+    ],
+    "collision_projection": {
+      "agent_min": 21.0,
+      "agent_max": 203.0,
+      "wall_center": 112.0,
+      "wall_clamp_left": 99.5,
+      "wall_clamp_right": 124.5,
+      "door_passable_min": 33.25,
+      "door_passable_max": 64.75
+    }
+  },
+  "source_manifest_entry": {
+    "trajectory_index": 33,
+    "type": "partial",
+    "n_frames": 16,
+    "n_actions": 15,
+    "source": "two_room_curated_v0/trajectory_0033",
+    "seed": 8965996,
+    "trajectory_type": "partial",
+    "is_success": false,
+    "final_distance": 34.294588104541965,
+    "start_side": "right",
+    "goal_side": "left",
+    "crosses_wall": true,
+    "uses_door": true
+  },
+  "fixed_budget_source_trajectory_index": 33,
+  "fixed_budget_source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/trajectory_0033"
+}

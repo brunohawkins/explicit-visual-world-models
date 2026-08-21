@@ -1,0 +1,244 @@
+{
+  "schema_version": "p1_metrics_v2",
+  "benchmark": "two_room_lewm",
+  "repeat_id": "1",
+  "composition": "expert_only",
+  "scientific_status": "valid_gate_pass",
+  "started_at_utc": "2026-07-25T07:10:32.471708+00:00",
+  "finished_at_utc": "2026-07-25T07:28:55.027024+00:00",
+  "timings": {
+    "codegen_seconds": 1064.3604083799291,
+    "audit_eval_seconds": 4.689344860846177,
+    "training_fidelity_seconds": 27.567314252024516,
+    "total_wall_seconds": 1102.555297096027
+  },
+  "provenance": {
+    "git": {
+      "commit": "de5dd59f1fbde3b4b899864a8beef42627fa67f5",
+      "dirty": false,
+      "diff_sha256": null
+    },
+    "model": {
+      "identifier": "gemini-3.6-flash",
+      "backend": "gemini_api",
+      "temperature": 0.0,
+      "access_date_utc": "2026-07-25T07:10:32.471708+00:00"
+    },
+    "prompt": {
+      "assembled_sha256": "f23c5bc50d18d88ea3eb03bdc3786a237bdac0a61bdd30470a32dffa67ebfa49",
+      "prompts_dir": "/home/u6el/brunoh04.u6el/MLMI_research_project/vda_world_snapshots/2026_07_22_minimal_direct_comparison/prompts/action_conditioned",
+      "addendum_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/vda_world_snapshots/2026_07_22_minimal_direct_comparison/prompts/action_conditioned/legacy_tool_lite_addendum.md",
+      "addendum_sha256": "bc1391ae50ac9a0db3560843f04042dfae6245b46695996236eaa284ee737e68"
+    },
+    "datasets": {
+      "treatment": {
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/final_fixed_budget_v1/two_room_lewm/expert_only",
+        "tree_sha256": "209cd8ca3a43e69b45b706cb62e675ff9a32638dd4fef739eb793581eddd3adc"
+      },
+      "sandbox": {
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/final_fixed_budget_v1/two_room_lewm/_sandbox",
+        "tree_sha256": "ba9b6c24ada6f62649c9d7dcd480893d5a921dffda30874b667d1a47343d3268"
+      },
+      "audit": {
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/final_fixed_budget_v1/two_room_lewm/_audit",
+        "tree_sha256": "57325a61252a7f3b49b00219d87f04e09f3e1b8f334bfde3b2ad521923246fdd",
+        "trajectory": 0
+      }
+    },
+    "slurm": {
+      "job_id": "5776744",
+      "array_job_id": "5770257",
+      "array_task_id": "0",
+      "partition": "workq",
+      "cpus_per_task": "4",
+      "job_gpus": null
+    },
+    "host": "nid011243",
+    "simulator_sha256": "b3c3dadf4baa355a72c0ae27bf7db3fb6b14b0e90cc59c5ff146bc18c84a897f",
+    "runtime_contract_sha256": "aeed531a49474548d1fe9150bfd14c9b760b6e154582b6e71e04c1e795809648"
+  },
+  "benchmark_spec": {
+    "dataset_dir": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/final_fixed_budget_v1/two_room_lewm/expert_only",
+    "sandbox_dataset_dir": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/final_fixed_budget_v1/two_room_lewm/_sandbox",
+    "audit_dataset_dir": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/final_fixed_budget_v1/two_room_lewm/_audit",
+    "frame_size": [
+      224,
+      224
+    ],
+    "n_frames": 51,
+    "sandbox_fit_trajectory": 0,
+    "sandbox_fit_frame_a": 0,
+    "sandbox_fit_frame_b": 25,
+    "audit_trajectory": 0
+  },
+  "codegen": {
+    "skipped_codegen": false,
+    "tool_call_count": 125,
+    "input_tokens": 1789023,
+    "output_tokens": 13511,
+    "cached_tokens": 1529171,
+    "gate_passed": true,
+    "gate_summary": "final fidelity gate: PASS | crash=ok ratio=ok realizability=ok goal_invariance=ok target_indep=ok cem_suite=ok runtime_safety=ok state_consistency=adv-ok fit_quality=ok deploy_goal=n/a | n_failed=0 | worst_ratio=0.043 mean_ratio=0.009\n  t0=0.000  t1=0.000  t2=0.001  t3=0.043  t4=0.002  t5=0.008  t6=0.001  t7=0.014\n  stats: mean=0.009 median=0.002 p75=0.009 worst=0.043 best=0.000 n=8 frac<1.0=100.0% frac<0.5=100.0%\n  candidate criteria: C1=PASS C2=PASS C3=PASS C4=PASS\n  state-consistency (advisory): t3: x=OK; y=OK\n  fit-quality (required): worst_rmse=0.035 mean_rmse=0.035 threshold=0.300",
+    "gate": {
+      "checks": {
+        "crash": "ok",
+        "ratio": "ok",
+        "realizability": "ok",
+        "goal_invariance": "ok",
+        "target_indep": "ok",
+        "cem_suite": "ok",
+        "runtime_safety": "ok",
+        "state_consistency": "adv-ok",
+        "fit_quality": "ok",
+        "deploy_goal": "n",
+        "n_failed": "0",
+        "worst_ratio": "0.043",
+        "mean_ratio": "0.009"
+      },
+      "raw": "final fidelity gate: PASS | crash=ok ratio=ok realizability=ok goal_invariance=ok target_indep=ok cem_suite=ok runtime_safety=ok state_consistency=adv-ok fit_quality=ok deploy_goal=n/a | n_failed=0 | worst_ratio=0.043 mean_ratio=0.009\n  t0=0.000  t1=0.000  t2=0.001  t3=0.043  t4=0.002  t5=0.008  t6=0.001  t7=0.014\n  stats: mean=0.009 median=0.002 p75=0.009 worst=0.043 best=0.000 n=8 frac<1.0=100.0% frac<0.5=100.0%\n  candidate criteria: C1=PASS C2=PASS C3=PASS C4=PASS\n  state-consistency (advisory): t3: x=OK; y=OK\n  fit-quality (required): worst_rmse=0.035 mean_rmse=0.035 threshold=0.300"
+    },
+    "api_retry_count": 0,
+    "api_error_count": 0
+  },
+  "held_out": {
+    "image_distance": 5539.78271484375,
+    "action_distance": 4.703851794704005,
+    "cem_history": [
+      {
+        "iteration": 0,
+        "mean_cost": 168.74760168735833,
+        "std_cost": 14.038934901830654,
+        "best_cost": 137.33819423003064,
+        "elite_mean_cost": 144.23742004360423
+      },
+      {
+        "iteration": 1,
+        "mean_cost": 146.05304674003884,
+        "std_cost": 12.93316532398639,
+        "best_cost": 104.65904913576435,
+        "elite_mean_cost": 123.81198972739597
+      },
+      {
+        "iteration": 2,
+        "mean_cost": 123.6015011587795,
+        "std_cost": 13.58561647948352,
+        "best_cost": 81.81423233869648,
+        "elite_mean_cost": 98.71993879389751
+      },
+      {
+        "iteration": 3,
+        "mean_cost": 102.1419505964094,
+        "std_cost": 10.637893231955697,
+        "best_cost": 75.25290912014941,
+        "elite_mean_cost": 84.4174235405922
+      },
+      {
+        "iteration": 4,
+        "mean_cost": 86.60312982195967,
+        "std_cost": 9.701870769485462,
+        "best_cost": 63.364453376333486,
+        "elite_mean_cost": 69.7674880214713
+      },
+      {
+        "iteration": 5,
+        "mean_cost": 72.04740044657095,
+        "std_cost": 7.456246776904454,
+        "best_cost": 53.674117264189334,
+        "elite_mean_cost": 60.978129975393685
+      },
+      {
+        "iteration": 6,
+        "mean_cost": 64.23763389997234,
+        "std_cost": 7.520124566632179,
+        "best_cost": 44.65794763074686,
+        "elite_mean_cost": 51.230541061233694
+      },
+      {
+        "iteration": 7,
+        "mean_cost": 55.388352305601714,
+        "std_cost": 6.965406048733957,
+        "best_cost": 41.30024875586756,
+        "elite_mean_cost": 44.73663830783494
+      },
+      {
+        "iteration": 8,
+        "mean_cost": 50.54095456611462,
+        "std_cost": 7.633038410415637,
+        "best_cost": 39.4282389802734,
+        "elite_mean_cost": 41.90019879044004
+      },
+      {
+        "iteration": 9,
+        "mean_cost": 47.263248626208366,
+        "std_cost": 6.98874291728564,
+        "best_cost": 38.11356146792784,
+        "elite_mean_cost": 39.81121017357477
+      }
+    ]
+  },
+  "training_fidelity": {
+    "per_traj": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.001,
+      "3": 0.043,
+      "4": 0.002,
+      "5": 0.008,
+      "6": 0.001,
+      "7": 0.014
+    },
+    "train_mean": 0.008624999999999999,
+    "train_worst": 0.043,
+    "train_best": 0.0,
+    "train_median": 0.0015,
+    "train_p75": 0.0095,
+    "train_n_trajectories": 8,
+    "train_n_valid": 8,
+    "n_failed": 0,
+    "train_frac_below_1.0": 1.0,
+    "train_frac_below_0.5": 1.0,
+    "train_stats": {
+      "mean": 0.008625,
+      "median": 0.0015,
+      "p75": 0.0095,
+      "worst": 0.043,
+      "best": 0.0,
+      "n_trajectories": 8,
+      "n_valid": 8,
+      "n_failed": 0,
+      "frac_below_1.0": 1.0,
+      "frac_below_0.5": 1.0
+    },
+    "candidate_criteria": {
+      "C1": {
+        "passed": true,
+        "description": "worst<=0.5 (current/enforced)"
+      },
+      "C2": {
+        "passed": true,
+        "description": "worst<1.0 AND mean<=0.5"
+      },
+      "C3": {
+        "passed": true,
+        "description": "median<=0.5 AND frac_below_1.0>=0.8"
+      },
+      "C4": {
+        "passed": true,
+        "description": "p75<=0.5"
+      }
+    },
+    "held_out_ratio": null
+  },
+  "runtime_contract": {
+    "contract_version": 2,
+    "simulator_class": "GeneratedSimulator",
+    "frame_size": [
+      224,
+      224
+    ],
+    "fps": 10,
+    "fit_world_api_enabled": false,
+    "rollout_world_api_enabled": false,
+    "local_2d_toolbox_version": "4"
+  }
+}

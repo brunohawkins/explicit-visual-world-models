@@ -1,0 +1,19 @@
+{
+  "schema_version": "fixed_budget_sandbox_v1",
+  "benchmark": "reacher",
+  "source_manifest": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/reacher_torque_ablations_v1/all_four/manifest.json",
+  "source_manifest_sha256": "c765e6e4412820d90ade6f956a0dbc6c403adb40d6ad224dc15988818e21b35d",
+  "source_indices": [
+    8
+  ],
+  "trajectories": [
+    {
+      "trajectory_index": 0,
+      "type": "expert",
+      "source_trajectory_index": 8,
+      "source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/reacher_torque_ablations_v1/all_four/trajectory_0008",
+      "n_frames": 41,
+      "n_actions": 40
+    }
+  ]
+}

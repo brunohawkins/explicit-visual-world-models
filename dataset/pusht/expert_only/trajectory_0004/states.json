@@ -1,0 +1,990 @@
+[
+  {
+    "pos_agent_native": [
+      403.0,
+      192.0
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      395.3125305175781,
+      187.860595703125
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      390.53436279296875,
+      183.3772430419922
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      391.4625549316406,
+      181.28468322753906
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      395.7861328125,
+      182.60350036621094
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      401.3887939453125,
+      188.685302734375
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      406.4045104980469,
+      200.00018310546875
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      409.6445617675781,
+      216.50311279296875
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      411.3668518066406,
+      235.74688720703125
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      411.925048828125,
+      255.11729431152344
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      411.4243469238281,
+      273.9399719238281
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      408.71746826171875,
+      292.36688232421875
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      402.8325500488281,
+      309.39373779296875
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      395.1026306152344,
+      323.8477783203125
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      386.9500427246094,
+      335.314208984375
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      378.5188903808594,
+      344.334716796875
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      370.71185302734375,
+      351.5597229003906
+    ],
+    "block_pose_native": [
+      290.33987853895303,
+      269.1488927167281,
+      0.5759586531581289
+    ],
+    "block_pose_fit_score": 0.9264413518886679,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      363.7120056152344,
+      356.4978942871094
+    ],
+    "block_pose_native": [
+      290.33987853895303,
+      269.1488927167281,
+      0.5759586531581289
+    ],
+    "block_pose_fit_score": 0.9264413518886679,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      356.91265869140625,
+      359.2817687988281
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      350.939697265625,
+      360.6940612792969
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      344.9765625,
+      361.380615234375
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      339.476806640625,
+      361.7080383300781
+    ],
+    "block_pose_native": [
+      293.0272756718322,
+      271.8489343872653,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9282868525896414,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      333.75408935546875,
+      361.27142333984375
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      326.8929138183594,
+      359.5210876464844
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      319.3291015625,
+      356.11688232421875
+    ],
+    "block_pose_native": [
+      293.00007419649796,
+      272.01850561824733,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9304174950298211,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      312.398193359375,
+      351.7675476074219
+    ],
+    "block_pose_native": [
+      293.0272756718322,
+      271.8489343872653,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9282868525896414,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      306.9175109863281,
+      347.9372253417969
+    ],
+    "block_pose_native": [
+      292.77517176982303,
+      272.6666754620184,
+      0.593411945678072
+    ],
+    "block_pose_fit_score": 0.9119373776908023,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      300.8345642089844,
+      345.2079772949219
+    ],
+    "block_pose_native": [
+      288.54011111610464,
+      270.78608623773346,
+      0.5497787143782138
+    ],
+    "block_pose_fit_score": 0.9012345679012346,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      295.26617431640625,
+      343.3052978515625
+    ],
+    "block_pose_native": [
+      289.11576260081506,
+      268.2772073112753,
+      0.5323254218582703
+    ],
+    "block_pose_fit_score": 0.9166666666666666,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      291.1007080078125,
+      341.861083984375
+    ],
+    "block_pose_native": [
+      289.08655849118765,
+      268.1402346621333,
+      0.5323254218582703
+    ],
+    "block_pose_fit_score": 0.9123505976095617,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      287.9728698730469,
+      340.6480407714844
+    ],
+    "block_pose_native": [
+      293.0494978940544,
+      271.8489343872653,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9282868525896414,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      285.41839599609375,
+      339.25140380859375
+    ],
+    "block_pose_native": [
+      293.0494978940544,
+      271.8489343872653,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9282868525896414,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      283.152587890625,
+      337.5879211425781
+    ],
+    "block_pose_native": [
+      290.6011153342795,
+      271.80420864886867,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.926530612244898,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      281.02667236328125,
+      336.0536193847656
+    ],
+    "block_pose_native": [
+      290.4381066708985,
+      272.58114727241934,
+      0.5846852994181004
+    ],
+    "block_pose_fit_score": 0.9014084507042254,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      279.26300048828125,
+      334.16070556640625
+    ],
+    "block_pose_native": [
+      288.51942157524496,
+      268.93452391109105,
+      0.6108652381980151
+    ],
+    "block_pose_fit_score": 0.9230769230769231,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      277.25970458984375,
+      332.0715026855469
+    ],
+    "block_pose_native": [
+      289.73288387635415,
+      270.2976574126787,
+      0.6632251157578453
+    ],
+    "block_pose_fit_score": 0.9133192389006343,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      275.1180725097656,
+      329.99774169921875
+    ],
+    "block_pose_native": [
+      285.2394589544736,
+      267.68103142888623,
+      0.6457718232379017
+    ],
+    "block_pose_fit_score": 0.9297520661157025,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      273.0196228027344,
+      328.5472106933594
+    ],
+    "block_pose_native": [
+      286.1452387773888,
+      265.3395047790129,
+      0.6719517620178168
+    ],
+    "block_pose_fit_score": 0.9262295081967213,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      270.96612548828125,
+      327.4620361328125
+    ],
+    "block_pose_native": [
+      277.93419355804167,
+      260.876428916874,
+      0.6283185307179586
+    ],
+    "block_pose_fit_score": 0.9282700421940928,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      268.3480224609375,
+      326.4510192871094
+    ],
+    "block_pose_native": [
+      277.8167192555453,
+      261.08788266136736,
+      0.6283185307179586
+    ],
+    "block_pose_fit_score": 0.9256900212314225,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      263.92059326171875,
+      324.8611145019531
+    ],
+    "block_pose_native": [
+      272.53269591152815,
+      257.7874526932234,
+      0.6108652381980151
+    ],
+    "block_pose_fit_score": 0.9290322580645162,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      258.1312255859375,
+      322.9271545410156
+    ],
+    "block_pose_native": [
+      278.3233356952183,
+      263.120757108661,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.8382687927107062,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      252.88246154785156,
+      321.224853515625
+    ],
+    "block_pose_native": [
+      271.47325993718084,
+      253.36765828287025,
+      0.7068583470577035
+    ],
+    "block_pose_fit_score": 0.8982300884955752,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      248.9084930419922,
+      319.8351135253906
+    ],
+    "block_pose_native": [
+      266.13999868280837,
+      252.85912714908534,
+      0.7417649320975901
+    ],
+    "block_pose_fit_score": 0.8755555555555555,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      246.17559814453125,
+      318.9342346191406
+    ],
+    "block_pose_native": [
+      266.71666405457256,
+      251.49373090102293,
+      0.7243116395776465
+    ],
+    "block_pose_fit_score": 0.8973214285714286,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      244.2857666015625,
+      318.1591796875
+    ],
+    "block_pose_native": [
+      266.95169932280527,
+      251.01175329149726,
+      0.7243116395776465
+    ],
+    "block_pose_fit_score": 0.8869179600886918,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      242.85093688964844,
+      317.30548095703125
+    ],
+    "block_pose_native": [
+      260.6388133167512,
+      248.82127086835808,
+      0.7330382858376185
+    ],
+    "block_pose_fit_score": 0.9055793991416309,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      241.64305114746094,
+      316.6791076660156
+    ],
+    "block_pose_native": [
+      260.74552210530817,
+      248.59158956140942,
+      0.7330382858376185
+    ],
+    "block_pose_fit_score": 0.9032258064516129,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      240.54469299316406,
+      316.0379943847656
+    ],
+    "block_pose_native": [
+      259.61503559313246,
+      248.51952098179106,
+      0.7853981633974483
+    ],
+    "block_pose_fit_score": 0.9164882226980728,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      239.79405212402344,
+      315.2483215332031
+    ],
+    "block_pose_native": [
+      260.72983039906933,
+      247.76596547979707,
+      0.8028514559173914
+    ],
+    "block_pose_fit_score": 0.9110169491525424,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      241.45791625976562,
+      318.4959716796875
+    ],
+    "block_pose_native": [
+      260.7574052134365,
+      245.02614026649036,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9117647058823529,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      252.0714874267578,
+      327.6499938964844
+    ],
+    "block_pose_native": [
+      259.24850576324553,
+      244.23640336716443,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.8609271523178808,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      269.994384765625,
+      336.62646484375
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      290.7138671875,
+      341.9532165527344
+    ],
+    "block_pose_native": [
+      261.77585270202104,
+      245.86518643594752,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9294605809128631,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      310.18841552734375,
+      342.5226135253906
+    ],
+    "block_pose_native": [
+      261.56345095529616,
+      245.716960655582,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.934156378600823,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      326.21820068359375,
+      339.4808044433594
+    ],
+    "block_pose_native": [
+      259.74460806682794,
+      246.16896008083702,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9428571428571428,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      337.929931640625,
+      332.6559143066406
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      345.8375549316406,
+      320.8258361816406
+    ],
+    "block_pose_native": [
+      261.7497682769847,
+      245.9032779772705,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.934156378600823,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      348.3698425292969,
+      305.1119079589844
+    ],
+    "block_pose_native": [
+      258.61825607431024,
+      243.21065248026198,
+      0.7853981633974483
+    ],
+    "block_pose_fit_score": 0.9285714285714286,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      345.8292236328125,
+      286.042724609375
+    ],
+    "block_pose_native": [
+      259.74460806682794,
+      246.16896008083702,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9428571428571428,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      339.5068054199219,
+      266.3676452636719
+    ],
+    "block_pose_native": [
+      259.74460806682794,
+      246.16896008083702,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9428571428571428,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      330.86236572265625,
+      249.97467041015625
+    ],
+    "block_pose_native": [
+      262.1256919838072,
+      247.26894994728337,
+      0.8115781021773634
+    ],
+    "block_pose_fit_score": 0.9266247379454927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      320.7081298828125,
+      238.1449432373047
+    ],
+    "block_pose_native": [
+      259.74460806682794,
+      246.16896008083702,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9428571428571428,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      311.4097595214844,
+      230.48963928222656
+    ],
+    "block_pose_native": [
+      259.74460806682794,
+      246.16896008083702,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9428571428571428,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      303.8499755859375,
+      225.59896850585938
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      297.821044921875,
+      222.780517578125
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      293.08319091796875,
+      221.63465881347656
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      289.1957702636719,
+      221.843017578125
+    ],
+    "block_pose_native": [
+      260.49812220556714,
+      246.47996972987974,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9471544715447154,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      286.058837890625,
+      222.6349639892578
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      282.8768310546875,
+      224.16612243652344
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      280.241943359375,
+      225.4912872314453
+    ],
+    "block_pose_native": [
+      259.9836687939751,
+      246.09190418818253,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9406952965235174,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      278.6311340332031,
+      226.2515411376953
+    ],
+    "block_pose_native": [
+      259.9836687939751,
+      246.09190418818253,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9406952965235174,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      276.9030456542969,
+      227.2310791015625
+    ],
+    "block_pose_native": [
+      260.62150241953515,
+      246.35101192245094,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.949290060851927,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      273.75439453125,
+      229.53916931152344
+    ],
+    "block_pose_native": [
+      261.42852487832954,
+      245.51149191498024,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9458917835671342,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      269.8766174316406,
+      232.7968292236328
+    ],
+    "block_pose_native": [
+      260.9099703490799,
+      246.1187563083409,
+      0.7679448708775047
+    ],
+    "block_pose_fit_score": 0.9494949494949495,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  },
+  {
+    "pos_agent_native": [
+      266.46185302734375,
+      236.1648406982422
+    ],
+    "block_pose_native": [
+      259.693681592846,
+      245.91764603652314,
+      0.7504915783575616
+    ],
+    "block_pose_fit_score": 0.9148936170212766,
+    "state_source": "lerobot_pusher_state_plus_96px_template_fitted_block_pose"
+  }
+]

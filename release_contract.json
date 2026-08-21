@@ -1,0 +1,83 @@
+{
+  "schema_version": "final_experiment_release_v1",
+  "note": "Thesis campaign pins. Paths below are relative to this repository.",
+  "created_at_utc": "2026-07-24T12:28:41.155087+00:00",
+  "git": {
+    "campaign_commit": "de5dd59f1fbde3b4b899864a8beef42627fa67f5",
+    "evaluator_snapshot": "2026_07_26_final_p2_evaluator",
+    "evaluator_commit": "5eb9fb0"
+  },
+  "generator": {
+    "model": "gemini-3.6-flash",
+    "backend": "gemini_api",
+    "temperature": 0.0
+  },
+  "matrix": {
+    "expert_only_repeats": 5,
+    "other_composition_repeats": 3,
+    "composition_cells": [
+      "expert_only",
+      "expert_noisy",
+      "expert_partial",
+      "expert_random",
+      "random_partial",
+      "all_four"
+    ],
+    "total_unique_p1_attempts": 80
+  },
+  "p2_profile": {
+    "id": "lewm_matched_task_qualified_n50_v1",
+    "task_success_protocol": "original",
+    "num_eval": 50,
+    "goal_offset_steps": 25,
+    "budget": 50,
+    "horizon": 25,
+    "apply_steps": 25,
+    "cem_population": 300,
+    "cem_iters": 30,
+    "cem_topk": 30
+  },
+  "datasets": {
+    "two_room": {
+      "path": "dataset/two_room",
+      "tree_sha256": "a4c3ad94d9a25ed90f19f00814ede4997f79ef2909319e05db5207f952bbf509"
+    },
+    "pusht": {
+      "path": "dataset/pusht",
+      "tree_sha256": "a5c8620bfe9611b999c068d911d1f1dfbc48f48beae08a792227eb556f8e4c96"
+    },
+    "reacher": {
+      "path": "dataset/reacher",
+      "tree_sha256": "6b7983bb2822e3de9e7d942b93c96dfa2803bd213a9a352197699c703fe57d53"
+    },
+    "cube": {
+      "path": "dataset/cube",
+      "tree_sha256": "24f852577a33a2797ce1db8fe9bd4a55405d958e8ef2d1226b6e08b90524ce7c"
+    }
+  },
+  "manifests": {
+    "two_room": {
+      "path": "manifests/two_room_lewm_seed42_n50_offset25.json",
+      "sha256": "195f1991a12f2fafddd4e14b4c59e74d1026721255fdbb5e282420f733ccdcb3"
+    },
+    "pusht": {
+      "path": "manifests/pusht_lewm_seed42_n50_offset25.json",
+      "sha256": "c37c84d5ae164a1b339f366c9bbdb18a44f4336da3a2417ba1924b747b05bebb"
+    },
+    "reacher": {
+      "path": "manifests/reacher_lewm_seed42_n50_offset25.json",
+      "sha256": "e36c85c1c9e2c7c8b700716147525688a3216ad9e99353aa51e0788137a9c3e1"
+    },
+    "cube": {
+      "path": "manifests/cube_lewm_seed42_n50_offset25.json",
+      "sha256": "66a6970987eef928a2b9a93b3a5b39d9f7cd98fd70c84207a051b42a2802c5d6"
+    }
+  },
+  "prompts": {
+    "path": "prompts/action_conditioned"
+  },
+  "example_simulator": {
+    "path": "examples/two_room_expert_only_r1/simulator_gen.py",
+    "source": "final_release_stage_A two_room_lewm expert_only repeat_1"
+  }
+}

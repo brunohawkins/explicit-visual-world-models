@@ -1,0 +1,24 @@
+{
+  "trajectory_type": "expert_top_reward",
+  "type": "expert",
+  "source_dataset": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/pusht_clean",
+  "source_trajectory_index": 3,
+  "is_success": true,
+  "n_frames": 64,
+  "n_actions": 63,
+  "trajectory_index": 3,
+  "source_episode_index": 185,
+  "frame_size": [
+    224,
+    224
+  ],
+  "action_coordinate_size": 224,
+  "native_action_size": 512.0,
+  "reconstruction": "lerobot_pusher_state_plus_per_frame_template_fitted_block_pose",
+  "source_trajectory": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/archive/pusht_curated_v0/trajectory_0003",
+  "block_pose_fit_score_min": 0.8673684210526316,
+  "block_pose_fit_score_mean": 0.9030898701673424,
+  "green_pixels_removed": 38232,
+  "fixed_budget_source_trajectory_index": 3,
+  "fixed_budget_source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/pusht_no_green_target_224/all_four/trajectory_0003"
+}

@@ -1,0 +1,149 @@
+{
+  "trajectory_type": "expert_top_reward",
+  "type": "expert",
+  "seed": 1921364125,
+  "is_success": true,
+  "done": true,
+  "truncated": false,
+  "n_frames": 35,
+  "n_actions": 34,
+  "total_reward": 0.0,
+  "final_distance": 0.0,
+  "start_dot_position": [
+    46.22331619262695,
+    7.102407455444336
+  ],
+  "final_dot_position": [
+    13.125,
+    28.875
+  ],
+  "target_dot_position": [
+    13.125,
+    28.875
+  ],
+  "start_side": "right",
+  "goal_side": "left",
+  "crosses_wall": true,
+  "uses_door": true,
+  "min_distance_to_door": 1.288922404279175,
+  "action_norm_min": 1.3998907793853663,
+  "action_norm_max": 2.2,
+  "action_norm_mean": 2.157888988388704,
+  "trajectory_index": 6,
+  "source_trajectory_index": 6,
+  "ablation": "all_four",
+  "benchmark": "two_room_lewm",
+  "source_dataset": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_curated_ablations/all_four",
+  "source_frame_count": 20,
+  "source_action_count": 19,
+  "source_frame_file_sha256": [
+    "6ec3fbd5fe3588a253d7ef9bfdc8b60dcd4e6b431c9673acbed189bfda3ae188",
+    "3f57d3e6cc36d35a7fa072128704540d1b954c2e560ebcb740eca7831b75f697",
+    "53ff9ef25d5e038e7e4e13509f4176c4944aa83e0717a275999a1cdb1a020fd1",
+    "e4a64c86e9b05821d50c87d092dd641630ed3fd02c7452aef940371e26b6b1f0",
+    "d2c7e360825c8836e24cd803ac9f63eee147a4f950d37d34cc7c6e1d77c246d9",
+    "3314c37a6aaf8de63985d8c2000bdcdeb38e97d8cdd45a38c16965c6fa45a6bd",
+    "e828d3bb6b9f89ce5ee2a1f02f3c5ef35fd8280ec633d438c629e9979ee1fe98",
+    "9efe52f331c344b367d1072456d4cb2d60e2f24fba6db663e74738f75da40f4e",
+    "ce4c16723c991d4dfbcde2c7581fd3835c3655325a539ec59b1caa24d5cba554",
+    "0ab8bec5529ac965133f8051dc552ed4423dbfe5607f222eca0bc46c6b68cda7",
+    "fb3d0763f58c3194a206e9581af74d9a5c7d2306e43c79466912682538746e22",
+    "bdac76eb541661663a8180dc62aaf713f5bdea35561183b5909a89d0002c962e",
+    "4e424a9dd6b806914e4aeafd598704fb3b2fa8c397562dd527d473b6f7819d79",
+    "dd30d9ed994549e907872e064c43126576d175e080a3f49662c259d5c9fe66b1",
+    "b2b648f7db3985e47a4936ce5793e5f22dc5b983d2e9a17888bf5b8de1792f28",
+    "9ef35acda833fe5134c542837fe9d20cbf0f99c306b9864dc6cba93e0fef6fbd",
+    "be90be173ae6dd235d930be9be40abfb511fffa41e75f85a841b77dcd8d42725",
+    "d7430b06ac2f28b343e1a74b4dac77219a7f4fb7da18a5c6f4828be664f61147",
+    "3d54f941fca77d0dad43e9344a27586a7667bc7515704133a8a26cd94016011a",
+    "5e06147c9a85c821a8791567d3f89d41f5a77650938e7740e80f6ea3c02f172c"
+  ],
+  "source_actions_sha256": "256bed793d3a63f73f54aff43608e382d62763fe7f06ef835863294c4f0d5c0b",
+  "mirror_contract": "same_pldm_realised_path_swm_native_replay",
+  "frame_size": [
+    224,
+    224
+  ],
+  "action_space_low": [
+    -1.0,
+    -1.0
+  ],
+  "action_space_high": [
+    1.0,
+    1.0
+  ],
+  "swm_env_id": "swm/TwoRoom-v1",
+  "swm_version": "0.1.1",
+  "swm_start_position": [
+    160.90490861372513,
+    32.09737682342529
+  ],
+  "swm_target_position": [
+    45.37719298245614,
+    109.7775
+  ],
+  "swm_final_position": [
+    45.377193450927734,
+    109.77749633789062
+  ],
+  "swm_final_distance": 3.691952158021648e-06,
+  "swm_success_radius": 16.0,
+  "max_source_checkpoint_error_pixels": 1.3185356564501234e-05,
+  "output_actions_sha256": "41ef56c5741ef2f8836bfd568107178de9de56b509178b314ecf25d7b9cba198",
+  "output_pixels_sha256": "ab2fe34610fba0a4fc78d4ef9b69012ac85a435e54d5e3f0169bc375229ef0f7",
+  "replay_validation": {
+    "replay_pixel_max_abs_delta": 0,
+    "replay_final_position": [
+      45.377193450927734,
+      109.77749633789062
+    ]
+  },
+  "coordinate_warp": {
+    "pldm_x_landmarks": [
+      4.0,
+      32.5,
+      60.0
+    ],
+    "swm_x_landmarks": [
+      14.0,
+      112.0,
+      210.0
+    ],
+    "pldm_y_landmarks": [
+      4.0,
+      10.0,
+      60.0
+    ],
+    "swm_y_landmarks": [
+      14.0,
+      49.0,
+      210.0
+    ],
+    "collision_projection": {
+      "agent_min": 21.0,
+      "agent_max": 203.0,
+      "wall_center": 112.0,
+      "wall_clamp_left": 99.5,
+      "wall_clamp_right": 124.5,
+      "door_passable_min": 33.25,
+      "door_passable_max": 64.75
+    }
+  },
+  "source_manifest_entry": {
+    "trajectory_index": 6,
+    "type": "expert",
+    "n_frames": 20,
+    "n_actions": 19,
+    "source": "two_room_curated_v0/trajectory_0006",
+    "seed": 1921364125,
+    "trajectory_type": "expert_top_reward",
+    "is_success": true,
+    "final_distance": 0.0,
+    "start_side": "right",
+    "goal_side": "left",
+    "crosses_wall": true,
+    "uses_door": true
+  },
+  "fixed_budget_source_trajectory_index": 6,
+  "fixed_budget_source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/trajectory_0006"
+}

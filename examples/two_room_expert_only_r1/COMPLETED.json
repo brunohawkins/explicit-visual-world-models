@@ -1,0 +1,18 @@
+{
+  "schema_version": "run_status_v1",
+  "benchmark": "two_room_lewm",
+  "repeat_id": "1",
+  "composition": "expert_only",
+  "started_at_utc": "2026-07-25T07:10:32.471708+00:00",
+  "slurm_job_id": "5776744",
+  "slurm_array_job_id": "5770257",
+  "slurm_array_task_id": "0",
+  "hostname": "nid011243",
+  "status": "completed",
+  "scientific_status": "valid_gate_pass",
+  "gate_passed": true,
+  "finished_at_utc": "2026-07-25T07:28:55.027024+00:00",
+  "wall_seconds": 1102.555297096027,
+  "metrics_sha256": "f550e4d55b9f71faee4d0adb8b27f7faf67ba0b0b3b2883bc73cde1503bf9650",
+  "simulator_sha256": "b3c3dadf4baa355a72c0ae27bf7db3fb6b14b0e90cc59c5ff146bc18c84a897f"
+}

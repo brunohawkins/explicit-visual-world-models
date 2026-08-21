@@ -1,0 +1,142 @@
+{
+  "trajectory_type": "expert_top_reward",
+  "type": "expert",
+  "seed": 146016407,
+  "is_success": true,
+  "done": true,
+  "truncated": false,
+  "n_frames": 24,
+  "n_actions": 23,
+  "total_reward": 0.0,
+  "final_distance": 1.0618388522666808,
+  "start_dot_position": [
+    16.021011352539062,
+    24.00844383239746
+  ],
+  "final_dot_position": [
+    37.44806671142578,
+    11.855299949645996
+  ],
+  "target_dot_position": [
+    38.5,
+    12.0
+  ],
+  "start_side": "left",
+  "goal_side": "right",
+  "crosses_wall": true,
+  "uses_door": true,
+  "min_distance_to_door": 1.4500496488988603,
+  "action_norm_min": 2.2,
+  "action_norm_max": 2.2,
+  "action_norm_mean": 2.1999999999999997,
+  "trajectory_index": 2,
+  "source_trajectory_index": 2,
+  "ablation": "all_four",
+  "benchmark": "two_room_lewm",
+  "source_dataset": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_curated_ablations/all_four",
+  "source_frame_count": 13,
+  "source_action_count": 12,
+  "source_frame_file_sha256": [
+    "7ac77220c4e0617b977befac6372633cee8dc425aad41f7d36aa453007a522d1",
+    "b01a6402dca0d5de13862476e05d28533c78f781db07bea8ec227a3e246824e0",
+    "e830950539255f2d26ad643f938a7d93699ab72aee19e7aa93918e4e954749c4",
+    "9a47967f212788ad0cf80329d9cff48751803441e66047525a274cc072116f02",
+    "795662e231d6e0886d4213cbfdeed7d44fa5ba730537232b72326a46326cf589",
+    "850cbb783eea8f445085f2c4b755127e08010dcbe0b39b2d05280d6d81ebaf40",
+    "abc5de9bf414eb43cc6f1ba9f6840d42a885ed399f7056abeb43280c8c749dbe",
+    "04880abf882e54004d948aa37acbe15e5ca2ad445cb1a1b04c29ed688e620152",
+    "108a3e535a14bbea7fa4c275deff037acdaa1d81fd592d4ddc35a23cf0887105",
+    "adee16c9384558aa96767cf84d4ad94717bbefbd6f06d61ed6746893e11d60b0",
+    "c64fa0ff956cb0a6da36a717dc6f4b98dca724b3b994a87f06eed5d2db707ca9",
+    "4aedc45294e024c573eef9ba36f68c29813e06c78cdf38862a186a7111278038",
+    "a8ceb81498a6ba370e49a6e1bb6f18380ba42237e647642416f275c13c5e1832"
+  ],
+  "source_actions_sha256": "6b97733f013dab77d0d367f9dd133b46887bf85b41779f1b38eed2eaa0d5c931",
+  "mirror_contract": "same_pldm_realised_path_swm_native_replay",
+  "frame_size": [
+    224,
+    224
+  ],
+  "action_space_low": [
+    -1.0,
+    -1.0
+  ],
+  "action_space_high": [
+    1.0,
+    1.0
+  ],
+  "swm_env_id": "swm/TwoRoom-v1",
+  "swm_version": "0.1.1",
+  "swm_start_position": [
+    55.33540745785362,
+    94.10718914031983
+  ],
+  "swm_target_position": [
+    133.38181818181818,
+    55.44
+  ],
+  "swm_final_position": [
+    129.6331024169922,
+    54.97406768798828
+  ],
+  "swm_final_distance": 3.777560430334831,
+  "swm_success_radius": 16.0,
+  "max_source_checkpoint_error_pixels": 8.255527944594236e-06,
+  "output_actions_sha256": "85a636a124248531fe314a3092549838b7af587fcbf423d37cb9b7b40a591796",
+  "output_pixels_sha256": "8b415dcea4a18ef1efb064f161d554d55df89d0dd79cb25fac6775e95e95e965",
+  "replay_validation": {
+    "replay_pixel_max_abs_delta": 0,
+    "replay_final_position": [
+      129.6331024169922,
+      54.97406768798828
+    ]
+  },
+  "coordinate_warp": {
+    "pldm_x_landmarks": [
+      4.0,
+      32.5,
+      60.0
+    ],
+    "swm_x_landmarks": [
+      14.0,
+      112.0,
+      210.0
+    ],
+    "pldm_y_landmarks": [
+      4.0,
+      10.0,
+      60.0
+    ],
+    "swm_y_landmarks": [
+      14.0,
+      49.0,
+      210.0
+    ],
+    "collision_projection": {
+      "agent_min": 21.0,
+      "agent_max": 203.0,
+      "wall_center": 112.0,
+      "wall_clamp_left": 99.5,
+      "wall_clamp_right": 124.5,
+      "door_passable_min": 33.25,
+      "door_passable_max": 64.75
+    }
+  },
+  "source_manifest_entry": {
+    "trajectory_index": 2,
+    "type": "expert",
+    "n_frames": 13,
+    "n_actions": 12,
+    "source": "two_room_curated_v0/trajectory_0002",
+    "seed": 146016407,
+    "trajectory_type": "expert_top_reward",
+    "is_success": true,
+    "final_distance": 1.0618388522666808,
+    "start_side": "left",
+    "goal_side": "right",
+    "crosses_wall": true,
+    "uses_door": true
+  },
+  "fixed_budget_source_trajectory_index": 2,
+  "fixed_budget_source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/trajectory_0002"
+}

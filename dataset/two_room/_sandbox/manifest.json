@@ -1,0 +1,19 @@
+{
+  "schema_version": "fixed_budget_sandbox_v1",
+  "benchmark": "two_room_lewm",
+  "source_manifest": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/manifest.json",
+  "source_manifest_sha256": "bd06ad9fa511418583afbdbbbd73ebf4492a4c95f9016cbbb55f36fd8e6dd6c2",
+  "source_indices": [
+    8
+  ],
+  "trajectories": [
+    {
+      "trajectory_index": 0,
+      "type": "expert",
+      "source_trajectory_index": 8,
+      "source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/two_room_pldm_mirrored_swm_ablations_v1/all_four/trajectory_0008",
+      "n_frames": 63,
+      "n_actions": 62
+    }
+  ]
+}

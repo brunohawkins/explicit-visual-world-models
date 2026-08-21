@@ -1,0 +1,53 @@
+[project]
+name = "vdaworld"
+version = "0.1.0"
+description = "VLM-generated explicit world models for closed-loop planning (dissertation release)"
+readme = "README.md"
+authors = [
+    { name = "Felix O'Mahony", email = "felixomahony@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=1.70.0",
+    "imageio[ffmpeg]>=2.37.3",
+    "matplotlib>=3.10.8",
+    "mujoco>=3.6.0",
+    "mypy>=1.20.0",
+    "numpy>=2.4.4",
+    "opencv-python>=4.13.0.92",
+    "pillow>=12.2.0",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.13.1",
+    "pygame>=2.6.1",
+    "pymunk<7",
+    "pyransac3d>=0.6.0",
+    "pyyaml>=6.0.3",
+    "rtree>=1.4.1",
+    "rich>=13.0.0",
+    "ruff>=0.15.8",
+    "scikit-image>=0.26.0",
+    "scipy>=1.17.1",
+    "tqdm>=4.67.3",
+    "trimesh>=4.11.5",
+    "openai>=2.32.0",
+    "fastapi>=0.136.0",
+    "uvicorn>=0.46.0",
+    "filelock>=3.16.0",
+    "gym-pusht>=0.1.6",
+    "shapely>=2.1.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "types-pyyaml>=6.0.12.20250915",
+]
+[tool.pytest.ini_options]
+markers = [
+    "eval: explicit evaluation test requiring LLM calls",
+    "integration: integration test spawning subprocesses or external services"
+]

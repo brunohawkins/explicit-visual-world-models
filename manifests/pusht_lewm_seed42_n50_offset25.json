@@ -1,0 +1,3726 @@
+{
+  "schema_version": "v2",
+  "protocol": "lewm_aligned_n50_v1",
+  "benchmark": "pusht",
+  "selection_seed": 42,
+  "case_seed_start": 42,
+  "num_eval": 50,
+  "goal_offset_steps": 25,
+  "eval_budget": 50,
+  "dataset_name": "pusht_expert_train",
+  "source_hdf5": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+  "sampling": {
+    "reference": "le-wm/eval.py",
+    "valid_start_rule": "step_idx <= episode_length - goal_offset_steps - 1",
+    "choice_population": "len(valid_indices) - 1",
+    "replace": false,
+    "selected_rows_sorted": true
+  },
+  "environment": {
+    "id": "swm/PushT-v1",
+    "implementation": "stable_worldmodel",
+    "implementation_version": "0.1.1",
+    "native_resolution": 224,
+    "options": {
+      "relative": true,
+      "resolution": 224,
+      "render_mode": "rgb_array",
+      "max_episode_steps": 100
+    }
+  },
+  "success": {
+    "name": "future_full_state_pose_match",
+    "position_state_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "position_metric": "l2",
+    "position_threshold": 20.0,
+    "position_comparator": "<",
+    "angle_state_index": 4,
+    "angle_metric": "min(abs(delta), 2*pi-abs(delta))",
+    "angle_threshold": 0.3490658503988659,
+    "angle_threshold_expression": "pi/9",
+    "angle_comparator": "<",
+    "velocity_used_for_success": false,
+    "evaluated_after_step_only": true,
+    "episode_success": "logical_or_of_terminated_over_eval_budget"
+  },
+  "action_contract": {
+    "space": {
+      "type": "Box",
+      "shape": [
+        2
+      ],
+      "dtype": "float32",
+      "low": [
+        -1.0,
+        -1.0
+      ],
+      "high": [
+        1.0,
+        1.0
+      ]
+    },
+    "semantics": "relative_agent_position_target",
+    "absolute_target_expression": "agent_position + action * action_scale",
+    "action_scale": 100.0,
+    "control_hz": 10,
+    "physics_dt": 0.01,
+    "physics_steps_per_action": 10
+  },
+  "cases": [
+    {
+      "case_id": "lewm_pusht_seed42_row150187",
+      "seed": 42,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 150187,
+      "goal_dataset_row": 150212,
+      "episode_idx": 1235,
+      "step_idx": 36,
+      "goal_step_idx": 61,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          108.04241943359375,
+          186.85531616210938,
+          166.1310577392578,
+          256.4827575683594,
+          2.1096861362457275,
+          -146.07875061035156,
+          73.73786926269531
+        ],
+        "pos_agent": [
+          108.04241943359375,
+          186.85531616210938
+        ],
+        "block_pose": [
+          166.1310577392578,
+          256.4827575683594,
+          2.1096861362457275
+        ],
+        "vel_agent": [
+          -146.07875061035156,
+          73.73786926269531
+        ]
+      },
+      "goal": {
+        "state": [
+          71.85704803466797,
+          298.3992919921875,
+          166.0395050048828,
+          262.4495544433594,
+          0.7209110260009766,
+          20.328222274780273,
+          -32.52417755126953
+        ],
+        "pos_agent": [
+          71.85704803466797,
+          298.3992919921875
+        ],
+        "block_pose": [
+          166.0395050048828,
+          262.4495544433594,
+          0.7209110260009766
+        ],
+        "vel_agent": [
+          20.328222274780273,
+          -32.52417755126953
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 150187
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 150212
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row159883",
+      "seed": 43,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 159883,
+      "goal_dataset_row": 159908,
+      "episode_idx": 1316,
+      "step_idx": 129,
+      "goal_step_idx": 154,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          257.659912109375,
+          301.6724853515625,
+          274.1375732421875,
+          238.6640625,
+          0.7320652604103088,
+          -21.84361457824707,
+          -11.348885536193848
+        ],
+        "pos_agent": [
+          257.659912109375,
+          301.6724853515625
+        ],
+        "block_pose": [
+          274.1375732421875,
+          238.6640625,
+          0.7320652604103088
+        ],
+        "vel_agent": [
+          -21.84361457824707,
+          -11.348885536193848
+        ]
+      },
+      "goal": {
+        "state": [
+          285.2200622558594,
+          222.9486541748047,
+          270.3623352050781,
+          235.17990112304688,
+          0.760113537311554,
+          -44.82658004760742,
+          35.73838424682617
+        ],
+        "pos_agent": [
+          285.2200622558594,
+          222.9486541748047
+        ],
+        "block_pose": [
+          270.3623352050781,
+          235.17990112304688,
+          0.760113537311554
+        ],
+        "vel_agent": [
+          -44.82658004760742,
+          35.73838424682617
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 159883
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 159908
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row201656",
+      "seed": 44,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 201656,
+      "goal_dataset_row": 201681,
+      "episode_idx": 1639,
+      "step_idx": 40,
+      "goal_step_idx": 65,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          244.6656494140625,
+          146.64134216308594,
+          204.2192840576172,
+          196.54580688476562,
+          5.623660564422607,
+          29.053386688232422,
+          9.0134916305542
+        ],
+        "pos_agent": [
+          244.6656494140625,
+          146.64134216308594
+        ],
+        "block_pose": [
+          204.2192840576172,
+          196.54580688476562,
+          5.623660564422607
+        ],
+        "vel_agent": [
+          29.053386688232422,
+          9.0134916305542
+        ]
+      },
+      "goal": {
+        "state": [
+          301.00689697265625,
+          299.3363037109375,
+          258.96099853515625,
+          278.74420166015625,
+          0.7752557396888733,
+          -42.39395523071289,
+          13.487868309020996
+        ],
+        "pos_agent": [
+          301.00689697265625,
+          299.3363037109375
+        ],
+        "block_pose": [
+          258.96099853515625,
+          278.74420166015625,
+          0.7752557396888733
+        ],
+        "vel_agent": [
+          -42.39395523071289,
+          13.487868309020996
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 201656
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 201681
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row209210",
+      "seed": 45,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 209210,
+      "goal_dataset_row": 209235,
+      "episode_idx": 1694,
+      "step_idx": 59,
+      "goal_step_idx": 84,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          304.4450378417969,
+          254.97720336914062,
+          259.52703857421875,
+          254.05007934570312,
+          0.35743340849876404,
+          10.536761283874512,
+          80.33374786376953
+        ],
+        "pos_agent": [
+          304.4450378417969,
+          254.97720336914062
+        ],
+        "block_pose": [
+          259.52703857421875,
+          254.05007934570312,
+          0.35743340849876404
+        ],
+        "vel_agent": [
+          10.536761283874512,
+          80.33374786376953
+        ]
+      },
+      "goal": {
+        "state": [
+          245.2315673828125,
+          376.4650573730469,
+          259.519287109375,
+          287.3516845703125,
+          0.7527616024017334,
+          -42.292205810546875,
+          -89.04576110839844
+        ],
+        "pos_agent": [
+          245.2315673828125,
+          376.4650573730469
+        ],
+        "block_pose": [
+          259.519287109375,
+          287.3516845703125,
+          0.7527616024017334
+        ],
+        "vel_agent": [
+          -42.292205810546875,
+          -89.04576110839844
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 209210
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 209235
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row216281",
+      "seed": 46,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 216281,
+      "goal_dataset_row": 216306,
+      "episode_idx": 1761,
+      "step_idx": 19,
+      "goal_step_idx": 44,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          91.34271240234375,
+          495.0386657714844,
+          178.46218872070312,
+          483.4837646484375,
+          2.7908403873443604,
+          74.36936950683594,
+          35.345115661621094
+        ],
+        "pos_agent": [
+          91.34271240234375,
+          495.0386657714844
+        ],
+        "block_pose": [
+          178.46218872070312,
+          483.4837646484375,
+          2.7908403873443604
+        ],
+        "vel_agent": [
+          74.36936950683594,
+          35.345115661621094
+        ]
+      },
+      "goal": {
+        "state": [
+          236.66592407226562,
+          440.05950927734375,
+          275.4713439941406,
+          372.8830261230469,
+          1.821560263633728,
+          63.613216400146484,
+          -31.766983032226562
+        ],
+        "pos_agent": [
+          236.66592407226562,
+          440.05950927734375
+        ],
+        "block_pose": [
+          275.4713439941406,
+          372.8830261230469,
+          1.821560263633728
+        ],
+        "vel_agent": [
+          63.613216400146484,
+          -31.766983032226562
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 216281
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 216306
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row221571",
+      "seed": 47,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 221571,
+      "goal_dataset_row": 221596,
+      "episode_idx": 1820,
+      "step_idx": 13,
+      "goal_step_idx": 38,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          335.08843994140625,
+          163.2581787109375,
+          318.51611328125,
+          233.9113006591797,
+          5.6811652183532715,
+          196.7664337158203,
+          -19.121410369873047
+        ],
+        "pos_agent": [
+          335.08843994140625,
+          163.2581787109375
+        ],
+        "block_pose": [
+          318.51611328125,
+          233.9113006591797,
+          5.6811652183532715
+        ],
+        "vel_agent": [
+          196.7664337158203,
+          -19.121410369873047
+        ]
+      },
+      "goal": {
+        "state": [
+          330.5377502441406,
+          331.5155334472656,
+          312.9918518066406,
+          234.71485900878906,
+          0.12902313470840454,
+          -65.19668579101562,
+          -7.442131519317627
+        ],
+        "pos_agent": [
+          330.5377502441406,
+          331.5155334472656
+        ],
+        "block_pose": [
+          312.9918518066406,
+          234.71485900878906,
+          0.12902313470840454
+        ],
+        "vel_agent": [
+          -65.19668579101562,
+          -7.442131519317627
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 221571
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 221596
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row305393",
+      "seed": 48,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 305393,
+      "goal_dataset_row": 305418,
+      "episode_idx": 2635,
+      "step_idx": 114,
+      "goal_step_idx": 139,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          159.2850799560547,
+          361.49871826171875,
+          256.2256774902344,
+          267.57611083984375,
+          0.7840276956558228,
+          18.209129333496094,
+          -13.826969146728516
+        ],
+        "pos_agent": [
+          159.2850799560547,
+          361.49871826171875
+        ],
+        "block_pose": [
+          256.2256774902344,
+          267.57611083984375,
+          0.7840276956558228
+        ],
+        "vel_agent": [
+          18.209129333496094,
+          -13.826969146728516
+        ]
+      },
+      "goal": {
+        "state": [
+          247.86166381835938,
+          321.5267028808594,
+          264.3235778808594,
+          259.67828369140625,
+          0.7869439125061035,
+          -35.184200286865234,
+          -43.09171676635742
+        ],
+        "pos_agent": [
+          247.86166381835938,
+          321.5267028808594
+        ],
+        "block_pose": [
+          264.3235778808594,
+          259.67828369140625,
+          0.7869439125061035
+        ],
+        "vel_agent": [
+          -35.184200286865234,
+          -43.09171676635742
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 305393
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 305418
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row388512",
+      "seed": 49,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 388512,
+      "goal_dataset_row": 388537,
+      "episode_idx": 3184,
+      "step_idx": 115,
+      "goal_step_idx": 140,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          216.8935089111328,
+          176.90911865234375,
+          286.8272399902344,
+          235.26052856445312,
+          0.867358922958374,
+          -22.041717529296875,
+          -112.5787353515625
+        ],
+        "pos_agent": [
+          216.8935089111328,
+          176.90911865234375
+        ],
+        "block_pose": [
+          286.8272399902344,
+          235.26052856445312,
+          0.867358922958374
+        ],
+        "vel_agent": [
+          -22.041717529296875,
+          -112.5787353515625
+        ]
+      },
+      "goal": {
+        "state": [
+          281.6821594238281,
+          241.59060668945312,
+          268.9579772949219,
+          250.0712890625,
+          0.8583431243896484,
+          11.085722923278809,
+          7.211000442504883
+        ],
+        "pos_agent": [
+          281.6821594238281,
+          241.59060668945312
+        ],
+        "block_pose": [
+          268.9579772949219,
+          250.0712890625,
+          0.8583431243896484
+        ],
+        "vel_agent": [
+          11.085722923278809,
+          7.211000442504883
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 388512
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 388537
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row429216",
+      "seed": 50,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 429216,
+      "goal_dataset_row": 429241,
+      "episode_idx": 3517,
+      "step_idx": 2,
+      "goal_step_idx": 27,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          213.59063720703125,
+          248.87806701660156,
+          283.5550842285156,
+          314.27532958984375,
+          5.376175403594971,
+          -6.284916400909424,
+          20.58318328857422
+        ],
+        "pos_agent": [
+          213.59063720703125,
+          248.87806701660156
+        ],
+        "block_pose": [
+          283.5550842285156,
+          314.27532958984375,
+          5.376175403594971
+        ],
+        "vel_agent": [
+          -6.284916400909424,
+          20.58318328857422
+        ]
+      },
+      "goal": {
+        "state": [
+          366.2761535644531,
+          363.9415283203125,
+          282.11395263671875,
+          315.8742370605469,
+          5.540773868560791,
+          -101.29653930664062,
+          64.57640838623047
+        ],
+        "pos_agent": [
+          366.2761535644531,
+          363.9415283203125
+        ],
+        "block_pose": [
+          282.11395263671875,
+          315.8742370605469,
+          5.540773868560791
+        ],
+        "vel_agent": [
+          -101.29653930664062,
+          64.57640838623047
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 429216
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 429241
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row472611",
+      "seed": 51,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 472611,
+      "goal_dataset_row": 472636,
+      "episode_idx": 3838,
+      "step_idx": 133,
+      "goal_step_idx": 158,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          255.2924041748047,
+          220.45477294921875,
+          244.0225830078125,
+          230.41925048828125,
+          0.7328130006790161,
+          -21.119409561157227,
+          41.35053253173828
+        ],
+        "pos_agent": [
+          255.2924041748047,
+          220.45477294921875
+        ],
+        "block_pose": [
+          244.0225830078125,
+          230.41925048828125,
+          0.7328130006790161
+        ],
+        "vel_agent": [
+          -21.119409561157227,
+          41.35053253173828
+        ]
+      },
+      "goal": {
+        "state": [
+          167.9382781982422,
+          243.54708862304688,
+          239.14785766601562,
+          236.25729370117188,
+          0.7395453453063965,
+          45.4061393737793,
+          46.95174026489258
+        ],
+        "pos_agent": [
+          167.9382781982422,
+          243.54708862304688
+        ],
+        "block_pose": [
+          239.14785766601562,
+          236.25729370117188,
+          0.7395453453063965
+        ],
+        "vel_agent": [
+          45.4061393737793,
+          46.95174026489258
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 472611
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 472636
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row532318",
+      "seed": 52,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 532318,
+      "goal_dataset_row": 532343,
+      "episode_idx": 4299,
+      "step_idx": 20,
+      "goal_step_idx": 45,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          354.36822509765625,
+          319.7909851074219,
+          241.0677947998047,
+          303.4704895019531,
+          5.116552829742432,
+          -32.81471252441406,
+          77.24028015136719
+        ],
+        "pos_agent": [
+          354.36822509765625,
+          319.7909851074219
+        ],
+        "block_pose": [
+          241.0677947998047,
+          303.4704895019531,
+          5.116552829742432
+        ],
+        "vel_agent": [
+          -32.81471252441406,
+          77.24028015136719
+        ]
+      },
+      "goal": {
+        "state": [
+          180.4528045654297,
+          396.6524658203125,
+          226.94215393066406,
+          309.1011047363281,
+          0.7937557101249695,
+          -28.703712463378906,
+          -21.159448623657227
+        ],
+        "pos_agent": [
+          180.4528045654297,
+          396.6524658203125
+        ],
+        "block_pose": [
+          226.94215393066406,
+          309.1011047363281,
+          0.7937557101249695
+        ],
+        "vel_agent": [
+          -28.703712463378906,
+          -21.159448623657227
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 532318
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 532343
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row645504",
+      "seed": 53,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 645504,
+      "goal_dataset_row": 645529,
+      "episode_idx": 5123,
+      "step_idx": 126,
+      "goal_step_idx": 151,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          121.43568420410156,
+          436.09375,
+          181.79188537597656,
+          345.75115966796875,
+          0.8868422508239746,
+          9.04610824584961,
+          26.162843704223633
+        ],
+        "pos_agent": [
+          121.43568420410156,
+          436.09375
+        ],
+        "block_pose": [
+          181.79188537597656,
+          345.75115966796875,
+          0.8868422508239746
+        ],
+        "vel_agent": [
+          9.04610824584961,
+          26.162843704223633
+        ]
+      },
+      "goal": {
+        "state": [
+          124.70938110351562,
+          378.58740234375,
+          236.9401397705078,
+          303.771728515625,
+          0.9371271729469299,
+          22.010913848876953,
+          -37.26008987426758
+        ],
+        "pos_agent": [
+          124.70938110351562,
+          378.58740234375
+        ],
+        "block_pose": [
+          236.9401397705078,
+          303.771728515625,
+          0.9371271729469299
+        ],
+        "vel_agent": [
+          22.010913848876953,
+          -37.26008987426758
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 645504
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 645529
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row829098",
+      "seed": 54,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 829098,
+      "goal_dataset_row": 829123,
+      "episode_idx": 6651,
+      "step_idx": 49,
+      "goal_step_idx": 74,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          310.275390625,
+          248.81539916992188,
+          281.4430236816406,
+          243.10513305664062,
+          0.7270765900611877,
+          -46.50786590576172,
+          59.3104248046875
+        ],
+        "pos_agent": [
+          310.275390625,
+          248.81539916992188
+        ],
+        "block_pose": [
+          281.4430236816406,
+          243.10513305664062,
+          0.7270765900611877
+        ],
+        "vel_agent": [
+          -46.50786590576172,
+          59.3104248046875
+        ]
+      },
+      "goal": {
+        "state": [
+          324.0207824707031,
+          368.5461120605469,
+          256.64251708984375,
+          280.17230224609375,
+          1.0272281169891357,
+          -63.42249298095703,
+          116.22257232666016
+        ],
+        "pos_agent": [
+          324.0207824707031,
+          368.5461120605469
+        ],
+        "block_pose": [
+          256.64251708984375,
+          280.17230224609375,
+          1.0272281169891357
+        ],
+        "vel_agent": [
+          -63.42249298095703,
+          116.22257232666016
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 829098
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 829123
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row867812",
+      "seed": 55,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 867812,
+      "goal_dataset_row": 867837,
+      "episode_idx": 6983,
+      "step_idx": 65,
+      "goal_step_idx": 90,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          273.2192687988281,
+          438.0561218261719,
+          321.54229736328125,
+          342.5751647949219,
+          0.7511323690414429,
+          -17.02880096435547,
+          -8.2432222366333
+        ],
+        "pos_agent": [
+          273.2192687988281,
+          438.0561218261719
+        ],
+        "block_pose": [
+          321.54229736328125,
+          342.5751647949219,
+          0.7511323690414429
+        ],
+        "vel_agent": [
+          -17.02880096435547,
+          -8.2432222366333
+        ]
+      },
+      "goal": {
+        "state": [
+          240.53805541992188,
+          335.0279846191406,
+          270.23992919921875,
+          276.25054931640625,
+          1.0216426849365234,
+          6.8134260177612305,
+          80.42486572265625
+        ],
+        "pos_agent": [
+          240.53805541992188,
+          335.0279846191406
+        ],
+        "block_pose": [
+          270.23992919921875,
+          276.25054931640625,
+          1.0216426849365234
+        ],
+        "vel_agent": [
+          6.8134260177612305,
+          80.42486572265625
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 867812
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 867837
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row941648",
+      "seed": 56,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 941648,
+      "goal_dataset_row": 941673,
+      "episode_idx": 7572,
+      "step_idx": 116,
+      "goal_step_idx": 141,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          377.96844482421875,
+          267.2109375,
+          393.5691833496094,
+          174.9780731201172,
+          3.4178860187530518,
+          191.377685546875,
+          36.11458969116211
+        ],
+        "pos_agent": [
+          377.96844482421875,
+          267.2109375
+        ],
+        "block_pose": [
+          393.5691833496094,
+          174.9780731201172,
+          3.4178860187530518
+        ],
+        "vel_agent": [
+          191.377685546875,
+          36.11458969116211
+        ]
+      },
+      "goal": {
+        "state": [
+          368.84918212890625,
+          192.85409545898438,
+          406.28436279296875,
+          129.83309936523438,
+          3.0633301734924316,
+          -108.17247772216797,
+          98.65863037109375
+        ],
+        "pos_agent": [
+          368.84918212890625,
+          192.85409545898438
+        ],
+        "block_pose": [
+          406.28436279296875,
+          129.83309936523438,
+          3.0633301734924316
+        ],
+        "vel_agent": [
+          -108.17247772216797,
+          98.65863037109375
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 941648
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 941673
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1015425",
+      "seed": 57,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1015425,
+      "goal_dataset_row": 1015450,
+      "episode_idx": 8235,
+      "step_idx": 10,
+      "goal_step_idx": 35,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          235.53826904296875,
+          180.8511962890625,
+          347.6438903808594,
+          207.27684020996094,
+          3.912522315979004,
+          35.10246658325195,
+          -142.45098876953125
+        ],
+        "pos_agent": [
+          235.53826904296875,
+          180.8511962890625
+        ],
+        "block_pose": [
+          347.6438903808594,
+          207.27684020996094,
+          3.912522315979004
+        ],
+        "vel_agent": [
+          35.10246658325195,
+          -142.45098876953125
+        ]
+      },
+      "goal": {
+        "state": [
+          399.7369079589844,
+          149.53213500976562,
+          308.1201477050781,
+          248.69065856933594,
+          3.903008222579956,
+          -72.69076538085938,
+          63.25486373901367
+        ],
+        "pos_agent": [
+          399.7369079589844,
+          149.53213500976562
+        ],
+        "block_pose": [
+          308.1201477050781,
+          248.69065856933594,
+          3.903008222579956
+        ],
+        "vel_agent": [
+          -72.69076538085938,
+          63.25486373901367
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1015425
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1015450
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1028336",
+      "seed": 58,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1028336,
+      "goal_dataset_row": 1028361,
+      "episode_idx": 8313,
+      "step_idx": 130,
+      "goal_step_idx": 155,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          326.5175476074219,
+          142.0259246826172,
+          305.393310546875,
+          198.37855529785156,
+          0.6947622895240784,
+          -8.798916816711426,
+          124.8368911743164
+        ],
+        "pos_agent": [
+          326.5175476074219,
+          142.0259246826172
+        ],
+        "block_pose": [
+          305.393310546875,
+          198.37855529785156,
+          0.6947622895240784
+        ],
+        "vel_agent": [
+          -8.798916816711426,
+          124.8368911743164
+        ]
+      },
+      "goal": {
+        "state": [
+          315.5774230957031,
+          357.1432189941406,
+          249.66175842285156,
+          262.80718994140625,
+          0.6590889096260071,
+          -100.5675277709961,
+          58.94121551513672
+        ],
+        "pos_agent": [
+          315.5774230957031,
+          357.1432189941406
+        ],
+        "block_pose": [
+          249.66175842285156,
+          262.80718994140625,
+          0.6590889096260071
+        ],
+        "vel_agent": [
+          -100.5675277709961,
+          58.94121551513672
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1028336
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1028361
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1038327",
+      "seed": 59,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1038327,
+      "goal_dataset_row": 1038352,
+      "episode_idx": 8373,
+      "step_idx": 101,
+      "goal_step_idx": 126,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          185.77159118652344,
+          227.91641235351562,
+          293.5342712402344,
+          268.7239074707031,
+          1.2884559631347656,
+          150.7045135498047,
+          36.099246978759766
+        ],
+        "pos_agent": [
+          185.77159118652344,
+          227.91641235351562
+        ],
+        "block_pose": [
+          293.5342712402344,
+          268.7239074707031,
+          1.2884559631347656
+        ],
+        "vel_agent": [
+          150.7045135498047,
+          36.099246978759766
+        ]
+      },
+      "goal": {
+        "state": [
+          298.5660705566406,
+          92.02392578125,
+          297.0301513671875,
+          278.6114501953125,
+          1.1581953763961792,
+          176.37155151367188,
+          4.813711643218994
+        ],
+        "pos_agent": [
+          298.5660705566406,
+          92.02392578125
+        ],
+        "block_pose": [
+          297.0301513671875,
+          278.6114501953125,
+          1.1581953763961792
+        ],
+        "vel_agent": [
+          176.37155151367188,
+          4.813711643218994
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1038327
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1038352
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1043460",
+      "seed": 60,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1043460,
+      "goal_dataset_row": 1043485,
+      "episode_idx": 8408,
+      "step_idx": 89,
+      "goal_step_idx": 114,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          276.3629455566406,
+          292.86688232421875,
+          280.7032470703125,
+          238.9951934814453,
+          0.6674283146858215,
+          -9.159628868103027,
+          -7.77047061920166
+        ],
+        "pos_agent": [
+          276.3629455566406,
+          292.86688232421875
+        ],
+        "block_pose": [
+          280.7032470703125,
+          238.9951934814453,
+          0.6674283146858215
+        ],
+        "vel_agent": [
+          -9.159628868103027,
+          -7.77047061920166
+        ]
+      },
+      "goal": {
+        "state": [
+          366.2901916503906,
+          316.0482177734375,
+          271.11920166015625,
+          231.1023712158203,
+          0.6723247766494751,
+          66.10283660888672,
+          -122.24894714355469
+        ],
+        "pos_agent": [
+          366.2901916503906,
+          316.0482177734375
+        ],
+        "block_pose": [
+          271.11920166015625,
+          231.1023712158203,
+          0.6723247766494751
+        ],
+        "vel_agent": [
+          66.10283660888672,
+          -122.24894714355469
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1043460
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1043485
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1054182",
+      "seed": 61,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1054182,
+      "goal_dataset_row": 1054207,
+      "episode_idx": 8486,
+      "step_idx": 37,
+      "goal_step_idx": 62,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          263.0641174316406,
+          136.1082763671875,
+          327.59423828125,
+          175.79710388183594,
+          0.699657678604126,
+          14.224271774291992,
+          4.000239372253418
+        ],
+        "pos_agent": [
+          263.0641174316406,
+          136.1082763671875
+        ],
+        "block_pose": [
+          327.59423828125,
+          175.79710388183594,
+          0.699657678604126
+        ],
+        "vel_agent": [
+          14.224271774291992,
+          4.000239372253418
+        ]
+      },
+      "goal": {
+        "state": [
+          293.321533203125,
+          204.30978393554688,
+          289.0999755859375,
+          219.9252166748047,
+          0.6439565420150757,
+          -59.72868347167969,
+          54.791221618652344
+        ],
+        "pos_agent": [
+          293.321533203125,
+          204.30978393554688
+        ],
+        "block_pose": [
+          289.0999755859375,
+          219.9252166748047,
+          0.6439565420150757
+        ],
+        "vel_agent": [
+          -59.72868347167969,
+          54.791221618652344
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1054182
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1054207
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1054375",
+      "seed": 62,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1054375,
+      "goal_dataset_row": 1054400,
+      "episode_idx": 8488,
+      "step_idx": 20,
+      "goal_step_idx": 45,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          172.68568420410156,
+          147.4150848388672,
+          249.6160888671875,
+          141.14633178710938,
+          0.17403075098991394,
+          36.58348083496094,
+          11.532776832580566
+        ],
+        "pos_agent": [
+          172.68568420410156,
+          147.4150848388672
+        ],
+        "block_pose": [
+          249.6160888671875,
+          141.14633178710938,
+          0.17403075098991394
+        ],
+        "vel_agent": [
+          36.58348083496094,
+          11.532776832580566
+        ]
+      },
+      "goal": {
+        "state": [
+          333.2469482421875,
+          86.84678649902344,
+          328.8016052246094,
+          176.3572540283203,
+          0.7018409371376038,
+          76.26897430419922,
+          60.56900405883789
+        ],
+        "pos_agent": [
+          333.2469482421875,
+          86.84678649902344
+        ],
+        "block_pose": [
+          328.8016052246094,
+          176.3572540283203,
+          0.7018409371376038
+        ],
+        "vel_agent": [
+          76.26897430419922,
+          60.56900405883789
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1054375
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1054400
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1175223",
+      "seed": 63,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1175223,
+      "goal_dataset_row": 1175248,
+      "episode_idx": 9591,
+      "step_idx": 26,
+      "goal_step_idx": 51,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          440.90509033203125,
+          320.9554443359375,
+          362.64251708984375,
+          206.6055450439453,
+          6.118947982788086,
+          -85.66470336914062,
+          12.656017303466797
+        ],
+        "pos_agent": [
+          440.90509033203125,
+          320.9554443359375
+        ],
+        "block_pose": [
+          362.64251708984375,
+          206.6055450439453,
+          6.118947982788086
+        ],
+        "vel_agent": [
+          -85.66470336914062,
+          12.656017303466797
+        ]
+      },
+      "goal": {
+        "state": [
+          302.8287353515625,
+          338.58990478515625,
+          363.4671325683594,
+          202.02423095703125,
+          0.4612962305545807,
+          -24.088397979736328,
+          22.62514877319336
+        ],
+        "pos_agent": [
+          302.8287353515625,
+          338.58990478515625
+        ],
+        "block_pose": [
+          363.4671325683594,
+          202.02423095703125,
+          0.4612962305545807
+        ],
+        "vel_agent": [
+          -24.088397979736328,
+          22.62514877319336
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1175223
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1175248
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1206116",
+      "seed": 64,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1206116,
+      "goal_dataset_row": 1206141,
+      "episode_idx": 9864,
+      "step_idx": 50,
+      "goal_step_idx": 75,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          209.8826904296875,
+          306.89056396484375,
+          308.982666015625,
+          251.72279357910156,
+          0.7968553900718689,
+          42.69293975830078,
+          40.41984939575195
+        ],
+        "pos_agent": [
+          209.8826904296875,
+          306.89056396484375
+        ],
+        "block_pose": [
+          308.982666015625,
+          251.72279357910156,
+          0.7968553900718689
+        ],
+        "vel_agent": [
+          42.69293975830078,
+          40.41984939575195
+        ]
+      },
+      "goal": {
+        "state": [
+          284.5147399902344,
+          295.1446228027344,
+          294.8192443847656,
+          238.9469451904297,
+          0.7519487142562866,
+          4.539613246917725,
+          -13.303044319152832
+        ],
+        "pos_agent": [
+          284.5147399902344,
+          295.1446228027344
+        ],
+        "block_pose": [
+          294.8192443847656,
+          238.9469451904297,
+          0.7519487142562866
+        ],
+        "vel_agent": [
+          4.539613246917725,
+          -13.303044319152832
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1206116
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1206141
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1237214",
+      "seed": 65,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1237214,
+      "goal_dataset_row": 1237239,
+      "episode_idx": 10117,
+      "step_idx": 135,
+      "goal_step_idx": 160,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          261.7797546386719,
+          331.0364990234375,
+          280.626220703125,
+          280.4251708984375,
+          0.9436125755310059,
+          -5.769962310791016,
+          -15.077681541442871
+        ],
+        "pos_agent": [
+          261.7797546386719,
+          331.0364990234375
+        ],
+        "block_pose": [
+          280.626220703125,
+          280.4251708984375,
+          0.9436125755310059
+        ],
+        "vel_agent": [
+          -5.769962310791016,
+          -15.077681541442871
+        ]
+      },
+      "goal": {
+        "state": [
+          300.3631591796875,
+          326.6064147949219,
+          264.1917419433594,
+          258.8628845214844,
+          0.8410653471946716,
+          -41.49016571044922,
+          -29.393030166625977
+        ],
+        "pos_agent": [
+          300.3631591796875,
+          326.6064147949219
+        ],
+        "block_pose": [
+          264.1917419433594,
+          258.8628845214844,
+          0.8410653471946716
+        ],
+        "vel_agent": [
+          -41.49016571044922,
+          -29.393030166625977
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1237214
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1237239
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1279178",
+      "seed": 66,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1279178,
+      "goal_dataset_row": 1279203,
+      "episode_idx": 10378,
+      "step_idx": 28,
+      "goal_step_idx": 53,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          406.8598327636719,
+          223.14686584472656,
+          371.768310546875,
+          246.6221923828125,
+          2.1944003105163574,
+          -61.282142639160156,
+          -44.788936614990234
+        ],
+        "pos_agent": [
+          406.8598327636719,
+          223.14686584472656
+        ],
+        "block_pose": [
+          371.768310546875,
+          246.6221923828125,
+          2.1944003105163574
+        ],
+        "vel_agent": [
+          -61.282142639160156,
+          -44.788936614990234
+        ]
+      },
+      "goal": {
+        "state": [
+          302.24798583984375,
+          152.68896484375,
+          301.41546630859375,
+          193.82888793945312,
+          1.2196918725967407,
+          -0.6074315905570984,
+          21.091394424438477
+        ],
+        "pos_agent": [
+          302.24798583984375,
+          152.68896484375
+        ],
+        "block_pose": [
+          301.41546630859375,
+          193.82888793945312,
+          1.2196918725967407
+        ],
+        "vel_agent": [
+          -0.6074315905570984,
+          21.091394424438477
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1279178
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1279203
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1299073",
+      "seed": 67,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1299073,
+      "goal_dataset_row": 1299098,
+      "episode_idx": 10489,
+      "step_idx": 33,
+      "goal_step_idx": 58,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          182.6968231201172,
+          338.8682861328125,
+          142.0850830078125,
+          258.26263427734375,
+          6.148648262023926,
+          -59.296791076660156,
+          66.857421875
+        ],
+        "pos_agent": [
+          182.6968231201172,
+          338.8682861328125
+        ],
+        "block_pose": [
+          142.0850830078125,
+          258.26263427734375,
+          6.148648262023926
+        ],
+        "vel_agent": [
+          -59.296791076660156,
+          66.857421875
+        ]
+      },
+      "goal": {
+        "state": [
+          97.97023010253906,
+          286.90814208984375,
+          141.46380615234375,
+          251.12142944335938,
+          0.23440463840961456,
+          7.792936325073242,
+          -11.25871753692627
+        ],
+        "pos_agent": [
+          97.97023010253906,
+          286.90814208984375
+        ],
+        "block_pose": [
+          141.46380615234375,
+          251.12142944335938,
+          0.23440463840961456
+        ],
+        "vel_agent": [
+          7.792936325073242,
+          -11.25871753692627
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1299073
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1299098
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1475334",
+      "seed": 68,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1475334,
+      "goal_dataset_row": 1475359,
+      "episode_idx": 11775,
+      "step_idx": 25,
+      "goal_step_idx": 50,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          221.0001983642578,
+          70.7549819946289,
+          195.5122833251953,
+          174.1068115234375,
+          5.298568248748779,
+          -211.30564880371094,
+          27.81964683532715
+        ],
+        "pos_agent": [
+          221.0001983642578,
+          70.7549819946289
+        ],
+        "block_pose": [
+          195.5122833251953,
+          174.1068115234375,
+          5.298568248748779
+        ],
+        "vel_agent": [
+          -211.30564880371094,
+          27.81964683532715
+        ]
+      },
+      "goal": {
+        "state": [
+          281.39251708984375,
+          194.21385192871094,
+          260.3243713378906,
+          214.9135284423828,
+          6.031012535095215,
+          50.361419677734375,
+          34.92195510864258
+        ],
+        "pos_agent": [
+          281.39251708984375,
+          194.21385192871094
+        ],
+        "block_pose": [
+          260.3243713378906,
+          214.9135284423828,
+          6.031012535095215
+        ],
+        "vel_agent": [
+          50.361419677734375,
+          34.92195510864258
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1475334
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1475359
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1504936",
+      "seed": 69,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1504936,
+      "goal_dataset_row": 1504961,
+      "episode_idx": 12047,
+      "step_idx": 95,
+      "goal_step_idx": 120,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          93.35578155517578,
+          308.1783142089844,
+          215.45591735839844,
+          314.13330078125,
+          1.2176234722137451,
+          22.747325897216797,
+          81.8213119506836
+        ],
+        "pos_agent": [
+          93.35578155517578,
+          308.1783142089844
+        ],
+        "block_pose": [
+          215.45591735839844,
+          314.13330078125,
+          1.2176234722137451
+        ],
+        "vel_agent": [
+          22.747325897216797,
+          81.8213119506836
+        ]
+      },
+      "goal": {
+        "state": [
+          138.2140350341797,
+          377.6315002441406,
+          240.74130249023438,
+          290.1870422363281,
+          0.8669395446777344,
+          24.779775619506836,
+          -24.019062042236328
+        ],
+        "pos_agent": [
+          138.2140350341797,
+          377.6315002441406
+        ],
+        "block_pose": [
+          240.74130249023438,
+          290.1870422363281,
+          0.8669395446777344
+        ],
+        "vel_agent": [
+          24.779775619506836,
+          -24.019062042236328
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1504936
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1504961
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1529287",
+      "seed": 70,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1529287,
+      "goal_dataset_row": 1529312,
+      "episode_idx": 12221,
+      "step_idx": 46,
+      "goal_step_idx": 71,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          314.7787780761719,
+          298.4166259765625,
+          290.041259765625,
+          187.4907684326172,
+          0.04694538936018944,
+          -30.208637237548828,
+          17.11985969543457
+        ],
+        "pos_agent": [
+          314.7787780761719,
+          298.4166259765625
+        ],
+        "block_pose": [
+          290.041259765625,
+          187.4907684326172,
+          0.04694538936018944
+        ],
+        "vel_agent": [
+          -30.208637237548828,
+          17.11985969543457
+        ]
+      },
+      "goal": {
+        "state": [
+          335.3375549316406,
+          323.3404846191406,
+          290.66943359375,
+          187.7677764892578,
+          0.5359625220298767,
+          199.90032958984375,
+          25.033218383789062
+        ],
+        "pos_agent": [
+          335.3375549316406,
+          323.3404846191406
+        ],
+        "block_pose": [
+          290.66943359375,
+          187.7677764892578,
+          0.5359625220298767
+        ],
+        "vel_agent": [
+          199.90032958984375,
+          25.033218383789062
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1529287
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1529312
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1582218",
+      "seed": 71,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1582218,
+      "goal_dataset_row": 1582243,
+      "episode_idx": 12591,
+      "step_idx": 155,
+      "goal_step_idx": 180,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          279.5458068847656,
+          219.04696655273438,
+          257.3497619628906,
+          149.361083984375,
+          0.12557080388069153,
+          0.3761938512325287,
+          9.459731101989746
+        ],
+        "pos_agent": [
+          279.5458068847656,
+          219.04696655273438
+        ],
+        "block_pose": [
+          257.3497619628906,
+          149.361083984375,
+          0.12557080388069153
+        ],
+        "vel_agent": [
+          0.3761938512325287,
+          9.459731101989746
+        ]
+      },
+      "goal": {
+        "state": [
+          328.1666564941406,
+          310.3267822265625,
+          257.3497619628906,
+          149.361083984375,
+          0.12557080388069153,
+          -12.592891693115234,
+          -7.2892022132873535
+        ],
+        "pos_agent": [
+          328.1666564941406,
+          310.3267822265625
+        ],
+        "block_pose": [
+          257.3497619628906,
+          149.361083984375,
+          0.12557080388069153
+        ],
+        "vel_agent": [
+          -12.592891693115234,
+          -7.2892022132873535
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1582218
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1582243
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1627801",
+      "seed": 72,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1627801,
+      "goal_dataset_row": 1627826,
+      "episode_idx": 12961,
+      "step_idx": 25,
+      "goal_step_idx": 50,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          436.71148681640625,
+          362.41473388671875,
+          357.5238952636719,
+          268.3919982910156,
+          5.95566987991333,
+          -43.89179229736328,
+          -52.332977294921875
+        ],
+        "pos_agent": [
+          436.71148681640625,
+          362.41473388671875
+        ],
+        "block_pose": [
+          357.5238952636719,
+          268.3919982910156,
+          5.95566987991333
+        ],
+        "vel_agent": [
+          -43.89179229736328,
+          -52.332977294921875
+        ]
+      },
+      "goal": {
+        "state": [
+          324.5791320800781,
+          338.228759765625,
+          321.0067138671875,
+          264.48834228515625,
+          0.3685061037540436,
+          -22.898677825927734,
+          -4.6497039794921875
+        ],
+        "pos_agent": [
+          324.5791320800781,
+          338.228759765625
+        ],
+        "block_pose": [
+          321.0067138671875,
+          264.48834228515625,
+          0.3685061037540436
+        ],
+        "vel_agent": [
+          -22.898677825927734,
+          -4.6497039794921875
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1627801
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1627826
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1635424",
+      "seed": 73,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1635424,
+      "goal_dataset_row": 1635449,
+      "episode_idx": 13029,
+      "step_idx": 32,
+      "goal_step_idx": 57,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          392.11981201171875,
+          103.9181137084961,
+          306.1234436035156,
+          167.09722900390625,
+          6.0619049072265625,
+          -65.43408203125,
+          -33.30560302734375
+        ],
+        "pos_agent": [
+          392.11981201171875,
+          103.9181137084961
+        ],
+        "block_pose": [
+          306.1234436035156,
+          167.09722900390625,
+          6.0619049072265625
+        ],
+        "vel_agent": [
+          -65.43408203125,
+          -33.30560302734375
+        ]
+      },
+      "goal": {
+        "state": [
+          360.2207946777344,
+          245.9840087890625,
+          327.1620178222656,
+          239.47079467773438,
+          0.6402189135551453,
+          -20.266460418701172,
+          45.48501968383789
+        ],
+        "pos_agent": [
+          360.2207946777344,
+          245.9840087890625
+        ],
+        "block_pose": [
+          327.1620178222656,
+          239.47079467773438,
+          0.6402189135551453
+        ],
+        "vel_agent": [
+          -20.266460418701172,
+          45.48501968383789
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1635424
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1635449
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1673952",
+      "seed": 74,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1673952,
+      "goal_dataset_row": 1673977,
+      "episode_idx": 13303,
+      "step_idx": 72,
+      "goal_step_idx": 97,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          140.90216064453125,
+          414.1898498535156,
+          216.3672637939453,
+          284.8717346191406,
+          0.3713645040988922,
+          117.3379135131836,
+          84.22705078125
+        ],
+        "pos_agent": [
+          140.90216064453125,
+          414.1898498535156
+        ],
+        "block_pose": [
+          216.3672637939453,
+          284.8717346191406,
+          0.3713645040988922
+        ],
+        "vel_agent": [
+          117.3379135131836,
+          84.22705078125
+        ]
+      },
+      "goal": {
+        "state": [
+          93.8207778930664,
+          339.6365051269531,
+          213.9080810546875,
+          283.5724182128906,
+          0.62374347448349,
+          -43.56013488769531,
+          -177.67091369628906
+        ],
+        "pos_agent": [
+          93.8207778930664,
+          339.6365051269531
+        ],
+        "block_pose": [
+          213.9080810546875,
+          283.5724182128906,
+          0.62374347448349
+        ],
+        "vel_agent": [
+          -43.56013488769531,
+          -177.67091369628906
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1673952
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1673977
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1715192",
+      "seed": 75,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1715192,
+      "goal_dataset_row": 1715217,
+      "episode_idx": 13586,
+      "step_idx": 35,
+      "goal_step_idx": 60,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          327.2679748535156,
+          314.12689208984375,
+          312.5908508300781,
+          207.654296875,
+          0.14422065019607544,
+          -80.70730590820312,
+          68.51936340332031
+        ],
+        "pos_agent": [
+          327.2679748535156,
+          314.12689208984375
+        ],
+        "block_pose": [
+          312.5908508300781,
+          207.654296875,
+          0.14422065019607544
+        ],
+        "vel_agent": [
+          -80.70730590820312,
+          68.51936340332031
+        ]
+      },
+      "goal": {
+        "state": [
+          289.9699401855469,
+          271.2441101074219,
+          310.0211181640625,
+          206.0734405517578,
+          0.7805326581001282,
+          -19.39324378967285,
+          -4.0196027755737305
+        ],
+        "pos_agent": [
+          289.9699401855469,
+          271.2441101074219
+        ],
+        "block_pose": [
+          310.0211181640625,
+          206.0734405517578,
+          0.7805326581001282
+        ],
+        "vel_agent": [
+          -19.39324378967285,
+          -4.0196027755737305
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1715192
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1715217
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1768147",
+      "seed": 76,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1768147,
+      "goal_dataset_row": 1768172,
+      "episode_idx": 14033,
+      "step_idx": 87,
+      "goal_step_idx": 112,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          165.8076934814453,
+          311.5469970703125,
+          196.59532165527344,
+          328.811767578125,
+          4.069752216339111,
+          59.119598388671875,
+          -118.0367660522461
+        ],
+        "pos_agent": [
+          165.8076934814453,
+          311.5469970703125
+        ],
+        "block_pose": [
+          196.59532165527344,
+          328.811767578125,
+          4.069752216339111
+        ],
+        "vel_agent": [
+          59.119598388671875,
+          -118.0367660522461
+        ]
+      },
+      "goal": {
+        "state": [
+          276.9056701660156,
+          298.8468322753906,
+          204.0500946044922,
+          340.79052734375,
+          4.550673484802246,
+          100.57124328613281,
+          191.23358154296875
+        ],
+        "pos_agent": [
+          276.9056701660156,
+          298.8468322753906
+        ],
+        "block_pose": [
+          204.0500946044922,
+          340.79052734375,
+          4.550673484802246
+        ],
+        "vel_agent": [
+          100.57124328613281,
+          191.23358154296875
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1768147
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1768172
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1775706",
+      "seed": 77,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1775706,
+      "goal_dataset_row": 1775731,
+      "episode_idx": 14108,
+      "step_idx": 35,
+      "goal_step_idx": 60,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          387.43377685546875,
+          363.1065368652344,
+          361.4775085449219,
+          368.7141418457031,
+          2.3380982875823975,
+          -7.6609954833984375,
+          -111.10957336425781
+        ],
+        "pos_agent": [
+          387.43377685546875,
+          363.1065368652344
+        ],
+        "block_pose": [
+          361.4775085449219,
+          368.7141418457031,
+          2.3380982875823975
+        ],
+        "vel_agent": [
+          -7.6609954833984375,
+          -111.10957336425781
+        ]
+      },
+      "goal": {
+        "state": [
+          327.0047607421875,
+          387.88323974609375,
+          270.64373779296875,
+          304.9974670410156,
+          1.2435709238052368,
+          -30.116308212280273,
+          22.723073959350586
+        ],
+        "pos_agent": [
+          327.0047607421875,
+          387.88323974609375
+        ],
+        "block_pose": [
+          270.64373779296875,
+          304.9974670410156,
+          1.2435709238052368
+        ],
+        "vel_agent": [
+          -30.116308212280273,
+          22.723073959350586
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1775706
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1775731
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1805133",
+      "seed": 78,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1805133,
+      "goal_dataset_row": 1805158,
+      "episode_idx": 14327,
+      "step_idx": 27,
+      "goal_step_idx": 52,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          102.37836456298828,
+          206.3183135986328,
+          178.5804443359375,
+          236.61476135253906,
+          0.8573381900787354,
+          43.07216262817383,
+          35.1795654296875
+        ],
+        "pos_agent": [
+          102.37836456298828,
+          206.3183135986328
+        ],
+        "block_pose": [
+          178.5804443359375,
+          236.61476135253906,
+          0.8573381900787354
+        ],
+        "vel_agent": [
+          43.07216262817383,
+          35.1795654296875
+        ]
+      },
+      "goal": {
+        "state": [
+          87.58159637451172,
+          277.95196533203125,
+          212.22427368164062,
+          251.11447143554688,
+          1.127772569656372,
+          -23.390501022338867,
+          106.07276916503906
+        ],
+        "pos_agent": [
+          87.58159637451172,
+          277.95196533203125
+        ],
+        "block_pose": [
+          212.22427368164062,
+          251.11447143554688,
+          1.127772569656372
+        ],
+        "vel_agent": [
+          -23.390501022338867,
+          106.07276916503906
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1805133
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1805158
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1816073",
+      "seed": 79,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1816073,
+      "goal_dataset_row": 1816098,
+      "episode_idx": 14432,
+      "step_idx": 47,
+      "goal_step_idx": 72,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          138.78466796875,
+          219.04806518554688,
+          194.50405883789062,
+          199.42794799804688,
+          0.6996407508850098,
+          16.954591751098633,
+          32.26985549926758
+        ],
+        "pos_agent": [
+          138.78466796875,
+          219.04806518554688
+        ],
+        "block_pose": [
+          194.50405883789062,
+          199.42794799804688,
+          0.6996407508850098
+        ],
+        "vel_agent": [
+          16.954591751098633,
+          32.26985549926758
+        ]
+      },
+      "goal": {
+        "state": [
+          186.8566131591797,
+          270.13720703125,
+          251.5936737060547,
+          236.7303009033203,
+          0.5763948559761047,
+          -93.28340148925781,
+          58.917022705078125
+        ],
+        "pos_agent": [
+          186.8566131591797,
+          270.13720703125
+        ],
+        "block_pose": [
+          251.5936737060547,
+          236.7303009033203,
+          0.5763948559761047
+        ],
+        "vel_agent": [
+          -93.28340148925781,
+          58.917022705078125
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1816073
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1816098
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1823056",
+      "seed": 80,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1823056,
+      "goal_dataset_row": 1823081,
+      "episode_idx": 14474,
+      "step_idx": 98,
+      "goal_step_idx": 123,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          157.2407989501953,
+          480.17230224609375,
+          199.87725830078125,
+          303.1663818359375,
+          0.6557319760322571,
+          -146.55711364746094,
+          17.795116424560547
+        ],
+        "pos_agent": [
+          157.2407989501953,
+          480.17230224609375
+        ],
+        "block_pose": [
+          199.87725830078125,
+          303.1663818359375,
+          0.6557319760322571
+        ],
+        "vel_agent": [
+          -146.55711364746094,
+          17.795116424560547
+        ]
+      },
+      "goal": {
+        "state": [
+          165.5929412841797,
+          338.9085388183594,
+          260.87744140625,
+          243.37261962890625,
+          0.7758486866950989,
+          13.021936416625977,
+          -0.5787835717201233
+        ],
+        "pos_agent": [
+          165.5929412841797,
+          338.9085388183594
+        ],
+        "block_pose": [
+          260.87744140625,
+          243.37261962890625,
+          0.7758486866950989
+        ],
+        "vel_agent": [
+          13.021936416625977,
+          -0.5787835717201233
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1823056
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1823081
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1832756",
+      "seed": 81,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1832756,
+      "goal_dataset_row": 1832781,
+      "episode_idx": 14526,
+      "step_idx": 126,
+      "goal_step_idx": 151,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          123.52909851074219,
+          375.9091796875,
+          138.1870880126953,
+          317.9464111328125,
+          2.495973825454712,
+          -70.6026382446289,
+          149.72732543945312
+        ],
+        "pos_agent": [
+          123.52909851074219,
+          375.9091796875
+        ],
+        "block_pose": [
+          138.1870880126953,
+          317.9464111328125,
+          2.495973825454712
+        ],
+        "vel_agent": [
+          -70.6026382446289,
+          149.72732543945312
+        ]
+      },
+      "goal": {
+        "state": [
+          164.0994415283203,
+          248.83331298828125,
+          102.8613510131836,
+          192.87864685058594,
+          3.4545252323150635,
+          56.17362594604492,
+          46.41893768310547
+        ],
+        "pos_agent": [
+          164.0994415283203,
+          248.83331298828125
+        ],
+        "block_pose": [
+          102.8613510131836,
+          192.87864685058594,
+          3.4545252323150635
+        ],
+        "vel_agent": [
+          56.17362594604492,
+          46.41893768310547
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1832756
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1832781
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1920150",
+      "seed": 82,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1920150,
+      "goal_dataset_row": 1920175,
+      "episode_idx": 15277,
+      "step_idx": 42,
+      "goal_step_idx": 67,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          290.79150390625,
+          422.89129638671875,
+          311.69525146484375,
+          326.69927978515625,
+          0.6933526992797852,
+          66.47114562988281,
+          -51.47426223754883
+        ],
+        "pos_agent": [
+          290.79150390625,
+          422.89129638671875
+        ],
+        "block_pose": [
+          311.69525146484375,
+          326.69927978515625,
+          0.6933526992797852
+        ],
+        "vel_agent": [
+          66.47114562988281,
+          -51.47426223754883
+        ]
+      },
+      "goal": {
+        "state": [
+          289.3453063964844,
+          357.62445068359375,
+          260.2063903808594,
+          269.0716857910156,
+          0.9548227787017822,
+          33.957984924316406,
+          -28.65695571899414
+        ],
+        "pos_agent": [
+          289.3453063964844,
+          357.62445068359375
+        ],
+        "block_pose": [
+          260.2063903808594,
+          269.0716857910156,
+          0.9548227787017822
+        ],
+        "vel_agent": [
+          33.957984924316406,
+          -28.65695571899414
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1920150
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1920175
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1933212",
+      "seed": 83,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1933212,
+      "goal_dataset_row": 1933237,
+      "episode_idx": 15435,
+      "step_idx": 19,
+      "goal_step_idx": 44,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          96.42758178710938,
+          222.4928741455078,
+          218.50477600097656,
+          286.3423156738281,
+          1.4223029613494873,
+          -78.33391571044922,
+          59.523345947265625
+        ],
+        "pos_agent": [
+          96.42758178710938,
+          222.4928741455078
+        ],
+        "block_pose": [
+          218.50477600097656,
+          286.3423156738281,
+          1.4223029613494873
+        ],
+        "vel_agent": [
+          -78.33391571044922,
+          59.523345947265625
+        ]
+      },
+      "goal": {
+        "state": [
+          112.29212188720703,
+          383.1460266113281,
+          221.90208435058594,
+          294.0450134277344,
+          0.9291006326675415,
+          -17.073265075683594,
+          -52.75825881958008
+        ],
+        "pos_agent": [
+          112.29212188720703,
+          383.1460266113281
+        ],
+        "block_pose": [
+          221.90208435058594,
+          294.0450134277344,
+          0.9291006326675415
+        ],
+        "vel_agent": [
+          -17.073265075683594,
+          -52.75825881958008
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1933212
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1933237
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row1962500",
+      "seed": 84,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 1962500,
+      "goal_dataset_row": 1962525,
+      "episode_idx": 15701,
+      "step_idx": 33,
+      "goal_step_idx": 58,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          144.4257049560547,
+          458.1826477050781,
+          218.0542449951172,
+          415.2843322753906,
+          2.679692506790161,
+          8.048375129699707,
+          -30.9360408782959
+        ],
+        "pos_agent": [
+          144.4257049560547,
+          458.1826477050781
+        ],
+        "block_pose": [
+          218.0542449951172,
+          415.2843322753906,
+          2.679692506790161
+        ],
+        "vel_agent": [
+          8.048375129699707,
+          -30.9360408782959
+        ]
+      },
+      "goal": {
+        "state": [
+          297.4065246582031,
+          354.5126037597656,
+          286.9570007324219,
+          280.64959716796875,
+          1.3731427192687988,
+          36.638214111328125,
+          -66.89945983886719
+        ],
+        "pos_agent": [
+          297.4065246582031,
+          354.5126037597656
+        ],
+        "block_pose": [
+          286.9570007324219,
+          280.64959716796875,
+          1.3731427192687988
+        ],
+        "vel_agent": [
+          36.638214111328125,
+          -66.89945983886719
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1962500
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 1962525
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2005033",
+      "seed": 85,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2005033,
+      "goal_dataset_row": 2005058,
+      "episode_idx": 16015,
+      "step_idx": 137,
+      "goal_step_idx": 162,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          220.10787963867188,
+          414.15179443359375,
+          279.3979187011719,
+          245.82693481445312,
+          0.6696727871894836,
+          523.161376953125,
+          83.26426696777344
+        ],
+        "pos_agent": [
+          220.10787963867188,
+          414.15179443359375
+        ],
+        "block_pose": [
+          279.3979187011719,
+          245.82693481445312,
+          0.6696727871894836
+        ],
+        "vel_agent": [
+          523.161376953125,
+          83.26426696777344
+        ]
+      },
+      "goal": {
+        "state": [
+          350.7098693847656,
+          311.9061584472656,
+          279.3979187011719,
+          245.82693481445312,
+          0.6696727871894836,
+          81.07421875,
+          -140.6264190673828
+        ],
+        "pos_agent": [
+          350.7098693847656,
+          311.9061584472656
+        ],
+        "block_pose": [
+          279.3979187011719,
+          245.82693481445312,
+          0.6696727871894836
+        ],
+        "vel_agent": [
+          81.07421875,
+          -140.6264190673828
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2005033
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2005058
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2005680",
+      "seed": 86,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2005680,
+      "goal_dataset_row": 2005705,
+      "episode_idx": 16019,
+      "step_idx": 72,
+      "goal_step_idx": 97,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          108.689453125,
+          353.51220703125,
+          256.99090576171875,
+          240.0027313232422,
+          0.44538062810897827,
+          25.814834594726562,
+          221.0449981689453
+        ],
+        "pos_agent": [
+          108.689453125,
+          353.51220703125
+        ],
+        "block_pose": [
+          256.99090576171875,
+          240.0027313232422,
+          0.44538062810897827
+        ],
+        "vel_agent": [
+          25.814834594726562,
+          221.0449981689453
+        ]
+      },
+      "goal": {
+        "state": [
+          212.7740020751953,
+          388.43841552734375,
+          256.73193359375,
+          239.8665313720703,
+          0.6682582497596741,
+          -30.204545974731445,
+          191.8038330078125
+        ],
+        "pos_agent": [
+          212.7740020751953,
+          388.43841552734375
+        ],
+        "block_pose": [
+          256.73193359375,
+          239.8665313720703,
+          0.6682582497596741
+        ],
+        "vel_agent": [
+          -30.204545974731445,
+          191.8038330078125
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2005680
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2005705
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2069969",
+      "seed": 87,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2069969,
+      "goal_dataset_row": 2069994,
+      "episode_idx": 16399,
+      "step_idx": 75,
+      "goal_step_idx": 100,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          189.37710571289062,
+          137.0914764404297,
+          243.90142822265625,
+          240.7149200439453,
+          0.7233255505561829,
+          -223.95809936523438,
+          -19.07756805419922
+        ],
+        "pos_agent": [
+          189.37710571289062,
+          137.0914764404297
+        ],
+        "block_pose": [
+          243.90142822265625,
+          240.7149200439453,
+          0.7233255505561829
+        ],
+        "vel_agent": [
+          -223.95809936523438,
+          -19.07756805419922
+        ]
+      },
+      "goal": {
+        "state": [
+          200.92425537109375,
+          261.1919860839844,
+          253.26512145996094,
+          247.80982971191406,
+          0.7317516207695007,
+          21.827041625976562,
+          9.438972473144531
+        ],
+        "pos_agent": [
+          200.92425537109375,
+          261.1919860839844
+        ],
+        "block_pose": [
+          253.26512145996094,
+          247.80982971191406,
+          0.7317516207695007
+        ],
+        "vel_agent": [
+          21.827041625976562,
+          9.438972473144531
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2069969
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2069994
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2083086",
+      "seed": 88,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2083086,
+      "goal_dataset_row": 2083111,
+      "episode_idx": 16532,
+      "step_idx": 35,
+      "goal_step_idx": 60,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          216.17967224121094,
+          217.094482421875,
+          210.20635986328125,
+          280.435302734375,
+          1.285457968711853,
+          64.21394348144531,
+          -72.89038848876953
+        ],
+        "pos_agent": [
+          216.17967224121094,
+          217.094482421875
+        ],
+        "block_pose": [
+          210.20635986328125,
+          280.435302734375,
+          1.285457968711853
+        ],
+        "vel_agent": [
+          64.21394348144531,
+          -72.89038848876953
+        ]
+      },
+      "goal": {
+        "state": [
+          116.8158187866211,
+          288.29583740234375,
+          210.940185546875,
+          282.59332275390625,
+          1.187031865119934,
+          0.6141444444656372,
+          46.30741882324219
+        ],
+        "pos_agent": [
+          116.8158187866211,
+          288.29583740234375
+        ],
+        "block_pose": [
+          210.940185546875,
+          282.59332275390625,
+          1.187031865119934
+        ],
+        "vel_agent": [
+          0.6141444444656372,
+          46.30741882324219
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2083086
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2083111
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2164264",
+      "seed": 89,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2164264,
+      "goal_dataset_row": 2164289,
+      "episode_idx": 17264,
+      "step_idx": 9,
+      "goal_step_idx": 34,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          245.9832305908203,
+          311.8536071777344,
+          198.03042602539062,
+          279.3929443359375,
+          3.4758410453796387,
+          154.31396484375,
+          -27.301023483276367
+        ],
+        "pos_agent": [
+          245.9832305908203,
+          311.8536071777344
+        ],
+        "block_pose": [
+          198.03042602539062,
+          279.3929443359375,
+          3.4758410453796387
+        ],
+        "vel_agent": [
+          154.31396484375,
+          -27.301023483276367
+        ]
+      },
+      "goal": {
+        "state": [
+          205.42567443847656,
+          156.5514373779297,
+          194.74127197265625,
+          293.7110900878906,
+          3.411771774291992,
+          -75.73242950439453,
+          -28.514453887939453
+        ],
+        "pos_agent": [
+          205.42567443847656,
+          156.5514373779297
+        ],
+        "block_pose": [
+          194.74127197265625,
+          293.7110900878906,
+          3.411771774291992
+        ],
+        "vel_agent": [
+          -75.73242950439453,
+          -28.514453887939453
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2164264
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2164289
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2263297",
+      "seed": 90,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2263297,
+      "goal_dataset_row": 2263322,
+      "episode_idx": 17939,
+      "step_idx": 40,
+      "goal_step_idx": 65,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          73.57009887695312,
+          162.14263916015625,
+          132.76780700683594,
+          167.1575927734375,
+          5.768603324890137,
+          -90.24408721923828,
+          -28.651338577270508
+        ],
+        "pos_agent": [
+          73.57009887695312,
+          162.14263916015625
+        ],
+        "block_pose": [
+          132.76780700683594,
+          167.1575927734375,
+          5.768603324890137
+        ],
+        "vel_agent": [
+          -90.24408721923828,
+          -28.651338577270508
+        ]
+      },
+      "goal": {
+        "state": [
+          208.40179443359375,
+          139.47386169433594,
+          277.5473937988281,
+          170.88975524902344,
+          0.5834081768989563,
+          59.24282455444336,
+          -0.7594544887542725
+        ],
+        "pos_agent": [
+          208.40179443359375,
+          139.47386169433594
+        ],
+        "block_pose": [
+          277.5473937988281,
+          170.88975524902344,
+          0.5834081768989563
+        ],
+        "vel_agent": [
+          59.24282455444336,
+          -0.7594544887542725
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2263297
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2263322
+      }
+    },
+    {
+      "case_id": "lewm_pusht_seed42_row2275346",
+      "seed": 91,
+      "benchmark": "pusht",
+      "dataset_name": "pusht_expert_train",
+      "dataset_row": 2275346,
+      "goal_dataset_row": 2275371,
+      "episode_idx": 18054,
+      "step_idx": 21,
+      "goal_step_idx": 46,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "start": {
+        "state": [
+          421.50152587890625,
+          268.03369140625,
+          417.90386962890625,
+          214.12771606445312,
+          2.2178499698638916,
+          74.13624572753906,
+          -94.35820770263672
+        ],
+        "pos_agent": [
+          421.50152587890625,
+          268.03369140625
+        ],
+        "block_pose": [
+          417.90386962890625,
+          214.12771606445312,
+          2.2178499698638916
+        ],
+        "vel_agent": [
+          74.13624572753906,
+          -94.35820770263672
+        ]
+      },
+      "goal": {
+        "state": [
+          347.53936767578125,
+          114.35255432128906,
+          349.0527038574219,
+          159.15956115722656,
+          1.202362060546875,
+          -48.57896423339844,
+          4.489476680755615
+        ],
+        "pos_agent": [
+          347.53936767578125,
+          114.35255432128906
+        ],
+        "block_pose": [
+          349.0527038574219,
+          159.15956115722656,
+          1.202362060546875
+        ],
+        "vel_agent": [
+          -48.57896423339844,
+          4.489476680755615
+        ]
+      },
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2275346
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/home/u6el/brunoh04.u6el/MLMI_research_project/le-wm/.stablewm/pusht_expert_train.h5",
+        "key": "pixels",
+        "row": 2275371
+      }
+    }
+  ]
+}

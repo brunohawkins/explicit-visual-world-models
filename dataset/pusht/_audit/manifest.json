@@ -1,0 +1,19 @@
+{
+  "schema_version": "fixed_budget_audit_v1",
+  "benchmark": "pusht",
+  "source_manifest": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/pusht_no_green_target_224/all_four/manifest.json",
+  "source_manifest_sha256": "434c5ba53300c7dd363398d19a07c226d6a7ffba8fec96414e7ab92fc87bb7b8",
+  "source_indices": [
+    9
+  ],
+  "trajectories": [
+    {
+      "trajectory_index": 0,
+      "type": "expert",
+      "source_trajectory_index": 9,
+      "source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/pusht_no_green_target_224/all_four/trajectory_0009",
+      "n_frames": 65,
+      "n_actions": 64
+    }
+  ]
+}

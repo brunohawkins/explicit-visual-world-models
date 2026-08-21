@@ -1,0 +1,5 @@
+model_name: gemini-3.1-pro-preview
+backend: gemini
+input_price: 3.00 # $ per 1M tokens
+output_price: 15.00
+cache_price: 0.3

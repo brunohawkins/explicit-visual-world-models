@@ -1,0 +1,47 @@
+{
+  "trajectory_type": "noisy",
+  "type": "noisy",
+  "seed": 1744002037,
+  "is_success": false,
+  "final_reward": 0.0,
+  "max_reward": 0.16112463469479993,
+  "mean_reward": 0.03499427700104987,
+  "n_frames": 121,
+  "n_actions": 120,
+  "final_info": {
+    "pos_agent": [
+      370.49138179868777,
+      407.7753769108573
+    ],
+    "vel_agent": [
+      177.2619268820058,
+      -2.0993844431501225
+    ],
+    "block_pose": [
+      342.8202463591438,
+      360.7732882094544,
+      -2.5525068864593377
+    ],
+    "goal_pose": [
+      256.0,
+      256.0,
+      0.7853981633974483
+    ],
+    "n_contacts": 0,
+    "is_success": false,
+    "coverage": 0.0
+  },
+  "trajectory_index": 7,
+  "source_trajectory_index": 10,
+  "frame_size": [
+    224,
+    224
+  ],
+  "action_coordinate_size": 224,
+  "native_action_size": 512.0,
+  "reconstruction": "exact_seed_action_replay_at_native_224",
+  "source_trajectory": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/archive/pusht_curated_v0/trajectory_0013",
+  "green_pixels_removed": 150979,
+  "fixed_budget_source_trajectory_index": 13,
+  "fixed_budget_source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/pusht_no_green_target_224/all_four/trajectory_0013"
+}

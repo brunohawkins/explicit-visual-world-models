@@ -1,0 +1,2543 @@
+[
+  {
+    "pos_agent_native": [
+      203.0,
+      305.0
+    ],
+    "vel_agent_native": [
+      0.0,
+      0.0
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      273.9192888468589,
+      258.187742839606
+    ],
+    "vel_agent_native": [
+      897.4236616238481,
+      -592.3695501300663
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      282.94876188760804,
+      236.45112393881163
+    ],
+    "vel_agent_native": [
+      -231.52965974218682,
+      -46.810188371623944
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      267.26061878418346,
+      173.34952582755386
+    ],
+    "vel_agent_native": [
+      -109.30854444515745,
+      -780.460766026832
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      212.42774616995467,
+      168.1252620221734
+    ],
+    "vel_agent_native": [
+      -651.7455341707162,
+      234.61391122725001
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      183.1823597942772,
+      178.24156918486196
+    ],
+    "vel_agent_native": [
+      -118.94888947485622,
+      37.61326410316359
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      264.1522777583905,
+      244.6574340813451
+    ],
+    "vel_agent_native": [
+      1070.4385654622345,
+      825.9437158742475
+    ],
+    "block_pose_native": [
+      362.17121889645523,
+      232.71983949616154,
+      0.8623295946108742
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      275.328356304246,
+      300.6358828106406
+    ],
+    "vel_agent_native": [
+      -271.0312669692284,
+      390.11218030145324
+    ],
+    "block_pose_native": [
+      365.4973285658124,
+      236.47119137493985,
+      0.6733053584350654
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      243.7088230496963,
+      229.96884248244803
+    ],
+    "vel_agent_native": [
+      -295.6862950218608,
+      -1044.5474017896229
+    ],
+    "block_pose_native": [
+      365.4973285658124,
+      236.47119137493985,
+      0.6733053584350654
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      291.806284522154,
+      132.39463374643594
+    ],
+    "vel_agent_native": [
+      722.5648294440717,
+      -832.2402806093806
+    ],
+    "block_pose_native": [
+      365.4973285658124,
+      236.47119137493985,
+      0.6733053584350654
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      288.6593172699881,
+      87.02173481312377
+    ],
+    "vel_agent_native": [
+      -318.23664322800374,
+      -253.4817557991482
+    ],
+    "block_pose_native": [
+      365.4973285658124,
+      236.47119137493985,
+      0.6733053584350654
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      297.69471673765094,
+      61.841312241395606
+    ],
+    "vel_agent_native": [
+      236.95641639399926,
+      -220.9668659392882
+    ],
+    "block_pose_native": [
+      365.4973285658124,
+      236.47119137493985,
+      0.6733053584350654
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      320.74003421730794,
+      179.43608671593117
+    ],
+    "vel_agent_native": [
+      200.31636215496653,
+      1573.204137397081
+    ],
+    "block_pose_native": [
+      365.4973285658124,
+      236.47119137493985,
+      0.6733053584350654
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      274.09291627811433,
+      262.4506688454956
+    ],
+    "vel_agent_native": [
+      -667.4645759300558,
+      444.30160566803266
+    ],
+    "block_pose_native": [
+      322.6285637959009,
+      273.2727739219718,
+      -0.0023796669163586373
+    ],
+    "block_velocity_native": [
+      0.5903983418855787,
+      248.1007839323329
+    ],
+    "block_angular_velocity": -4.011780948311129,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      268.68970246440733,
+      329.63102474940524
+    ],
+    "vel_agent_native": [
+      188.81042241279377,
+      678.9149424602226
+    ],
+    "block_pose_native": [
+      307.7006401521452,
+      316.170478923841,
+      -0.592279634258189
+    ],
+    "block_velocity_native": [
+      243.95770111629554,
+      362.56705093132916
+    ],
+    "block_angular_velocity": -5.8092948156280535,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      244.04065512116287,
+      363.2235871691438
+    ],
+    "vel_agent_native": [
+      -384.6641835477879,
+      163.48997153475187
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      285.5727747300518,
+      324.92152329999675
+    ],
+    "vel_agent_native": [
+      673.7704139153716,
+      -547.6752413046192
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      325.7226516999264,
+      242.7207611415457
+    ],
+    "vel_agent_native": [
+      248.44950462845568,
+      -829.1541672554957
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      328.6636558615826,
+      215.16794106546493
+    ],
+    "vel_agent_native": [
+      -58.515180551037446,
+      -29.17284188153485
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      236.4330418665311,
+      150.82703789673639
+    ],
+    "vel_agent_native": [
+      -1144.5537443391736,
+      -802.9390427734105
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      259.56441515844324,
+      151.8856434673445
+    ],
+    "vel_agent_native": [
+      733.7206994331796,
+      322.7795105523558
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      248.14812079473205,
+      196.2828528102623
+    ],
+    "vel_agent_native": [
+      -427.1765030943059,
+      437.43765762653516
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      201.7292374361587,
+      188.53886635833544
+    ],
+    "vel_agent_native": [
+      -422.7945981880274,
+      -266.544510267029
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      272.50679507704183,
+      235.64278096617014
+    ],
+    "vel_agent_native": [
+      1058.5389021072415,
+      698.7635923994595
+    ],
+    "block_pose_native": [
+      309.1008854498142,
+      329.5191872673338,
+      -0.7460465722186246
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      321.19459361808885,
+      331.58801800621166
+    ],
+    "vel_agent_native": [
+      208.23295418404527,
+      944.862405240989
+    ],
+    "block_pose_native": [
+      323.746525393334,
+      340.7319242219028,
+      -0.6657452704648598
+    ],
+    "block_velocity_native": [
+      536.0377965401793,
+      682.5445361067246
+    ],
+    "block_angular_velocity": 1.053224083306117,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      379.3466609975384,
+      277.14325637847816
+    ],
+    "vel_agent_native": [
+      655.630166628806,
+      -1053.0212708766283
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      299.3116948040178,
+      233.98586612910037
+    ],
+    "vel_agent_native": [
+      -1265.398415743391,
+      -140.37633260812254
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      271.29941106664523,
+      202.5588486355486
+    ],
+    "vel_agent_native": [
+      133.10410310485366,
+      -343.5933620067863
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      219.68051141324491,
+      144.43517453934052
+    ],
+    "vel_agent_native": [
+      -704.4804389919587,
+      -603.1145970219865
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      221.98608819881045,
+      206.55389633146964
+    ],
+    "vel_agent_native": [
+      300.6213869726742,
+      1018.448494525446
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      263.8786094093921,
+      321.3779841664608
+    ],
+    "vel_agent_native": [
+      414.2807841124308,
+      1060.5791990768091
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      214.9964029935367,
+      348.75813130970806
+    ],
+    "vel_agent_native": [
+      -778.191244820987,
+      -62.18352093819593
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      208.99186460429405,
+      372.6063302493837
+    ],
+    "vel_agent_native": [
+      223.86571726250543,
+      325.7389905725455
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      215.86602020753926,
+      394.03232640197416
+    ],
+    "vel_agent_native": [
+      0.7280071955774474,
+      145.61603980000888
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      181.4209853481776,
+      361.2943081321475
+    ],
+    "vel_agent_native": [
+      -436.153315747357,
+      -470.37986849877996
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      139.75251925950639,
+      318.7001828110717
+    ],
+    "vel_agent_native": [
+      -359.2231898595462,
+      -357.7486510078833
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      204.65984294836588,
+      263.5528175791037
+    ],
+    "vel_agent_native": [
+      959.7610914374336,
+      -559.9976910830859
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      213.10405329080243,
+      249.09834816368434
+    ],
+    "vel_agent_native": [
+      -262.9551565391091,
+      32.86592429922028
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      145.7066895351933,
+      176.73075106978206
+    ],
+    "vel_agent_native": [
+      -751.5363411196429,
+      -928.4144831693918
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      102.78634495959237,
+      227.00644328283948
+    ],
+    "vel_agent_native": [
+      -253.54312075665197,
+      993.9276043582227
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      196.38805840009763,
+      227.75955197221262
+    ],
+    "vel_agent_native": [
+      1282.144319186993,
+      -373.4443875888349
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      263.6212675041931,
+      257.85606912920116
+    ],
+    "vel_agent_native": [
+      356.75112605769266,
+      524.7393840734484
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      302.6773645464304,
+      321.4867205509213
+    ],
+    "vel_agent_native": [
+      356.7606524211501,
+      603.0026204268763
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      358.34489961330684,
+      315.18828732581386
+    ],
+    "vel_agent_native": [
+      566.9606905201409,
+      -312.0467740835325
+    ],
+    "block_pose_native": [
+      335.9028415148052,
+      354.7542941267961,
+      -0.6430148478208557
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      395.9281730272099,
+      317.00051574452556
+    ],
+    "vel_agent_native": [
+      257.12660056018547,
+      143.16824757393607
+    ],
+    "block_pose_native": [
+      346.6541910829832,
+      358.4291039083013,
+      -0.47767843263864307
+    ],
+    "block_velocity_native": [
+      31.662412293477,
+      109.32481908606391
+    ],
+    "block_angular_velocity": 1.9007600920862693,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      321.47910375645745,
+      282.2553439651742
+    ],
+    "vel_agent_native": [
+      -1041.1645597978797,
+      -494.8355308685283
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      250.445043970767,
+      293.03886556721693
+    ],
+    "vel_agent_native": [
+      -497.70058332469864,
+      327.12346976810824
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      271.1518777916178,
+      321.44577014387994
+    ],
+    "vel_agent_native": [
+      453.79854419817934,
+      233.4200764795496
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      291.75144051440736,
+      265.45908034997
+    ],
+    "vel_agent_native": [
+      85.81506883668939,
+      -798.4042928397222
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      226.09454047540117,
+      198.95796371849286
+    ],
+    "vel_agent_native": [
+      -863.8983367111299,
+      -533.8789777672325
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      234.70676838670423,
+      189.38627859728092
+    ],
+    "vel_agent_native": [
+      441.852693973018,
+      84.589523696187
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      184.91799988931285,
+      257.54185285750697
+    ],
+    "vel_agent_native": [
+      -800.286867986922,
+      829.8576513363039
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      164.24274120836364,
+      219.05213589492655
+    ],
+    "vel_agent_native": [
+      46.73390682399916,
+      -806.8107096359669
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      161.80026897664655,
+      190.26162757106042
+    ],
+    "vel_agent_native": [
+      -48.91465603702704,
+      -53.443990342790684
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      263.5235045939548,
+      232.54902730335078
+    ],
+    "vel_agent_native": [
+      1306.069081196848,
+      555.704027823229
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      285.47830064183375,
+      212.00528914486137
+    ],
+    "vel_agent_native": [
+      -225.4274719424924,
+      -474.0842526859453
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      331.10443831132756,
+      158.33047250123
+    ],
+    "vel_agent_native": [
+      664.2205987208059,
+      -496.5380831078464
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      369.52648958053754,
+      236.31887422923484
+    ],
+    "vel_agent_native": [
+      230.26500934067158,
+      1178.200445749555
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      353.73213694599355,
+      207.03845154784975
+    ],
+    "vel_agent_native": [
+      -288.58854345389807,
+      -824.4962716654281
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      317.68970576315763,
+      180.75777577231696
+    ],
+    "vel_agent_native": [
+      -344.88926364948156,
+      -14.8696838806887
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      325.578473573215,
+      188.47056874007032
+    ],
+    "vel_agent_native": [
+      232.7163928828237,
+      103.3283755780739
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      279.0817022276002,
+      139.25702413572697
+    ],
+    "vel_agent_native": [
+      -678.0462562277949,
+      -662.5696954866726
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      230.84651053591443,
+      104.51056569673094
+    ],
+    "vel_agent_native": [
+      -349.11478655786175,
+      -184.3896048978511
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      240.18581762773843,
+      140.524762559718
+    ],
+    "vel_agent_native": [
+      252.69989519044188,
+      526.7771418399193
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      227.25392107890286,
+      229.0649311407335
+    ],
+    "vel_agent_native": [
+      -261.0110592749128,
+      917.4263305007719
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      234.04818061268898,
+      312.4525302429582
+    ],
+    "vel_agent_native": [
+      186.54685907208636,
+      701.7022696537365
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      301.838846055462,
+      245.11968096633666
+    ],
+    "vel_agent_native": [
+      785.9544375662173,
+      -1122.4160934816557
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      386.172520680728,
+      176.9482146033958
+    ],
+    "vel_agent_native": [
+      764.3320327118452,
+      -430.16951962402624
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      440.7242926212434,
+      158.2166060942922
+    ],
+    "vel_agent_native": [
+      395.79864288342895,
+      -71.28228384005703
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      409.05957407694996,
+      254.37157293312703
+    ],
+    "vel_agent_native": [
+      -553.1970574727836,
+      1244.2259087827906
+    ],
+    "block_pose_native": [
+      347.7495240375011,
+      359.1465465267503,
+      -0.45840037329541566
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      413.57784142573644,
+      360.68621487702546
+    ],
+    "vel_agent_native": [
+      270.3294927308969,
+      865.9041272456681
+    ],
+    "block_pose_native": [
+      339.756813035238,
+      379.05809007383846,
+      -0.4204067115016792
+    ],
+    "block_velocity_native": [
+      -72.97327822808239,
+      32.62346701863159
+    ],
+    "block_angular_velocity": -0.8431242523137846,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      307.13436142309905,
+      410.4906745043494
+    ],
+    "vel_agent_native": [
+      -1451.1140477448073,
+      296.5882554797517
+    ],
+    "block_pose_native": [
+      260.6099496991582,
+      408.8838541592255,
+      -0.9271194295117423
+    ],
+    "block_velocity_native": [
+      -1222.9866117844922,
+      391.1566220352581
+    ],
+    "block_angular_velocity": -8.981569223451352,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      320.00342993740736,
+      347.6064282385691
+    ],
+    "vel_agent_native": [
+      721.9819197916449,
+      -910.0266317834613
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      370.16742928180054,
+      247.91174472981004
+    ],
+    "vel_agent_native": [
+      356.5931856342208,
+      -910.9058489974464
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      353.02142017101403,
+      169.80544707296346
+    ],
+    "vel_agent_native": [
+      -354.368644032659,
+      -637.3842970520884
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      295.6810811756681,
+      209.93383326526995
+    ],
+    "vel_agent_native": [
+      -589.0502850445595,
+      753.3839823994363
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      212.20375073138445,
+      255.30333345025585
+    ],
+    "vel_agent_native": [
+      -829.365671373612,
+      283.8231927685161
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      201.31503594143823,
+      202.0450286492821
+    ],
+    "vel_agent_native": [
+      181.7788220647791,
+      -783.29991916426
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      230.1457110522208,
+      145.9346691641964
+    ],
+    "vel_agent_native": [
+      294.78587965276216,
+      -408.2126564891196
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      212.71736464121093,
+      230.77663912014563
+    ],
+    "vel_agent_native": [
+      -334.1261561477923,
+      1230.8935251061298
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      222.72841459574164,
+      251.3923953617125
+    ],
+    "vel_agent_native": [
+      255.42490242568522,
+      -213.40568563603404
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      263.7312692881486,
+      204.37787310325126
+    ],
+    "vel_agent_native": [
+      420.4376499737481,
+      -512.7008197481636
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      221.29806905781234,
+      273.0859323520287
+    ],
+    "vel_agent_native": [
+      -698.9568493982514,
+      1066.993285793015
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      234.88760820755593,
+      261.4326086649658
+    ],
+    "vel_agent_native": [
+      441.28207677337565,
+      -558.590542631746
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      203.41990744084123,
+      246.6638058321497
+    ],
+    "vel_agent_native": [
+      -568.2293733755504,
+      28.34610639757439
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      225.03232464399198,
+      197.04467589640058
+    ],
+    "vel_agent_native": [
+      492.4336752984861,
+      -638.8103079023623
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      251.5007340175415,
+      193.08477032726734
+    ],
+    "vel_agent_native": [
+      145.19370144625753,
+      196.0333743017881
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      287.0321674300934,
+      241.0732293537833
+    ],
+    "vel_agent_native": [
+      393.67507629856476,
+      531.7189632848438
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      225.49680915525875,
+      282.30426007367447
+    ],
+    "vel_agent_native": [
+      -930.3665173529197,
+      316.8650214628964
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      199.5810952938922,
+      279.97005246832174
+    ],
+    "vel_agent_native": [
+      30.541901382021983,
+      -151.6299917760093
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      220.6994723945204,
+      343.84850062991484
+    ],
+    "vel_agent_native": [
+      255.46698773098578,
+      866.7529504970279
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      264.1734890711052,
+      292.83513384265603
+    ],
+    "vel_agent_native": [
+      451.6919002733683,
+      -979.5031933534364
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      241.10677527722302,
+      308.76971902424606
+    ],
+    "vel_agent_native": [
+      -465.93303547724867,
+      579.0551203642383
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      279.0500077243284,
+      267.029025005695
+    ],
+    "vel_agent_native": [
+      659.6701163701252,
+      -751.3113198051427
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      243.28627430497653,
+      219.358702582
+    ],
+    "vel_agent_native": [
+      -706.7400313126382,
+      -313.73677978376895
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      201.2919903777223,
+      152.86349473994593
+    ],
+    "vel_agent_native": [
+      -259.085256681486,
+      -720.5534439664067
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      276.08697849735125,
+      138.79928229705638
+    ],
+    "vel_agent_native": [
+      1046.2965683331618,
+      99.66869530216009
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      232.35883985038495,
+      159.1032679997793
+    ],
+    "vel_agent_native": [
+      -956.4954798305589,
+      218.52602302785115
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      278.8119780927302,
+      205.44862026790778
+    ],
+    "vel_agent_native": [
+      956.376419115074,
+      502.2601007786562
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      267.07166837912223,
+      209.3116154964153
+    ],
+    "vel_agent_native": [
+      -517.0690364904023,
+      -144.6449696801369
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      256.9437240365836,
+      143.16237231037834
+    ],
+    "vel_agent_native": [
+      71.07342563007974,
+      -781.3290158788045
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      259.58082783535946,
+      209.19652010169904
+    ],
+    "vel_agent_native": [
+      5.984725229726834,
+      1136.6634335633798
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      305.53602687492923,
+      198.1848742528272
+    ],
+    "vel_agent_native": [
+      579.2182048260145,
+      -577.315543686986
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      240.63193914436084,
+      249.92546706768914
+    ],
+    "vel_agent_native": [
+      -1044.4873290112664,
+      877.181304016324
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      278.87294487950686,
+      203.9130763340875
+    ],
+    "vel_agent_native": [
+      886.3633249225309,
+      -920.238259934035
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      336.5311024229212,
+      150.09789728849475
+    ],
+    "vel_agent_native": [
+      388.08694713535067,
+      -326.4048113895117
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      383.32712717963335,
+      232.11571989757041
+    ],
+    "vel_agent_native": [
+      442.62876174143867,
+      1163.6346093578827
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      376.22041641621524,
+      328.0107057140262
+    ],
+    "vel_agent_native": [
+      -260.480530754969,
+      765.1051510412883
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      274.50255421517824,
+      340.1101517252462
+    ],
+    "vel_agent_native": [
+      -1186.7867506096632,
+      -141.6975558024519
+    ],
+    "block_pose_native": [
+      230.9941104006311,
+      415.64250287346385,
+      -1.1674871420852821
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      241.90846205906527,
+      377.0857356669197
+    ],
+    "vel_agent_native": [
+      44.83500528671075,
+      522.49283340142
+    ],
+    "block_pose_native": [
+      235.61826399112783,
+      415.67484119925837,
+      -1.1085673209068605
+    ],
+    "block_velocity_native": [
+      166.88825536499442,
+      83.14840199462967
+    ],
+    "block_angular_velocity": 2.321029471988789,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      317.4534305822477,
+      314.8342957200376
+    ],
+    "vel_agent_native": [
+      938.6821677826599,
+      -989.0632265942966
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      384.7025885173448,
+      258.7436815694699
+    ],
+    "vel_agent_native": [
+      489.2937621166238,
+      -328.67928796242
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      354.92691217680385,
+      275.59731237064915
+    ],
+    "vel_agent_native": [
+      -565.317814659797,
+      339.91322467885516
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      285.1418749253036,
+      275.2538860545793
+    ],
+    "vel_agent_native": [
+      -665.2457292843247,
+      -135.3191352759589
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      271.4270076536452,
+      195.43217677849896
+    ],
+    "vel_agent_native": [
+      82.77851970255983,
+      -957.9358944029103
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      247.5173456350348,
+      214.84352553721405
+    ],
+    "vel_agent_native": [
+      -334.4522977427191,
+      614.7404401376671
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      191.43064971256868,
+      258.0895572343808
+    ],
+    "vel_agent_native": [
+      -580.8605409676396,
+      310.3738084094854
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      183.41809708785277,
+      268.36983393678656
+    ],
+    "vel_agent_native": [
+      122.42168745378304,
+      10.49680183081915
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      136.8422369014379,
+      327.24442607312335
+    ],
+    "vel_agent_native": [
+      -636.5489511538494,
+      740.963638573428
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      85.76581269954772,
+      326.67595812241547
+    ],
+    "vel_agent_native": [
+      -401.0576802974766,
+      -292.69723480725287
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  },
+  {
+    "pos_agent_native": [
+      117.48730417283839,
+      280.14890843445033
+    ],
+    "vel_agent_native": [
+      555.9418522868559,
+      -475.9801127662593
+    ],
+    "block_pose_native": [
+      250.3256319835896,
+      415.2471534757817,
+      -0.9357599279467794
+    ],
+    "block_velocity_native": [
+      0.0,
+      0.0
+    ],
+    "block_angular_velocity": 0.0,
+    "state_source": "exact_gym_replay"
+  }
+]

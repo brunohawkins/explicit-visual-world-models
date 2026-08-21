@@ -1,0 +1,9 @@
+# SAM-3 segmentation only — for P1/P2 when fit() needs segment / fit_pose_to_mask
+# but depth and mesh are not required. Avoids MoGe/mesh crashing on login nodes or
+# taking down port 5001 when depth fails without CUDA.
+
+segmentation:
+  conda_env: sam3
+  server_path: src/vdaworld/api/segmentation/server.py
+  port: 5001
+  cvd: "0"

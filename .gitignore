@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[oc]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.*
+
+# Run outputs (created locally when you run the demos)
+viz_output/
+logs/
+demo_output/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

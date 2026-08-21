@@ -1,0 +1,101 @@
+# ==============================================================================
+# VLLM Local LLM Server
+# Serves a local vision-language model via an OpenAI-compatible REST API.
+# The model config (models/vllm_*.yaml) must set base_url to match host:port.
+#
+# vllm_project_path: absolute path to the vllm uv project containing server.py
+# model:             HuggingFace model ID or local path
+# Uncomment and configure to enable; leave commented to use Gemini only.
+# ==============================================================================
+# vllm:
+#   type: vllm
+#   vllm_project_path: /scratch/foo22/git/vllm
+#   model: Qwen/Qwen3.6-35B-A3B
+#   host: 127.0.0.1
+#   port: 5006
+#   cvd: "0,1,2,3,4,5,6,7"
+#   gpu_memory_utilization: 0.9
+#   max_model_len: 262144
+#   tensor_parallel_size: 8
+#   trust_remote_code: false
+#   enable_auto_tool_choice: true
+#   tool_call_parser: qwen3_coder
+#   reasoning_parser: qwen3
+
+# ==============================================================================
+# Segmentation Microservice (SAM-3)
+# Git repo: https://github.com/facebookresearch/sam3.git
+# To use this backend, you must clone SAM-3 and install it directly within the
+# 'sam3' Conda environment. No explicit file path variable is required.
+# ==============================================================================
+segmentation:
+  conda_env: sam3
+  server_path: src/vdaworld/api/segmentation/server.py
+  port: 5001
+  cvd: "0" # CUDA_VISIBLE_DEVICES — GPU index inside the SLURM allocation (you got 1 GPU = index 0)
+
+# ==============================================================================
+# Depth Estimation Microservices
+# Enable exactly one backend.
+# Also update the toggle in src/vdaworld/core/api.py::estimate_3d_points.
+#
+# VGGT Backend:
+# Git repo: https://github.com/facebookresearch/vggt.git
+# Environment Variable: VGGT_PATH (e.g., export VGGT_PATH=/path/to/vggt)
+# ==============================================================================
+# depth_estimation:
+#   conda_env: vggt
+#   server_path: src/vdaworld/api/depth/server.py
+#   port: 5003
+#   cvd: "3"
+
+# ==============================================================================
+# MoGe Backend:
+# Git repo: https://github.com/microsoft/MoGe.git
+# Environment Variable: MOGE_PATH (e.g., export MOGE_PATH=/path/to/MoGe)
+# ==============================================================================
+depth_estimation:
+  conda_env: moge
+  server_path: src/vdaworld/api/depth/moge_server.py
+  port: 5004
+  cvd: "3"
+
+# ==============================================================================
+# Mesh Generation Microservice (SAM3D)
+# Git repo: https://github.com/facebookresearch/sam-3d-objects.git
+# Environment Variable: SAM3D_PATH (e.g., export SAM3D_PATH=/path/to/sam-3d-objects)
+# ==============================================================================
+mesh_generation:
+  conda_env: sam3d-objects
+  server_path: src/vdaworld/api/mesh/server.py
+  port: 5005
+  cvd: "3"
+
+# ==============================================================================
+# Cosmos Transfer (cosmos-transfer2.5)
+# Converts the simulation + segmentation videos into a photorealistic video.
+# Requires a CUDA 13 torch build managed by cosmos-transfer2.5's own uv env.
+# Run with: uv run --no-sync python generate.py (handled automatically).
+#
+# path: path to the cosmos-transfer2.5 repo root (relative to this file or absolute)
+# cvd:  CUDA_VISIBLE_DEVICES — which GPU to use
+# Uncomment to enable; leave commented to skip the Cosmos Transfer step.
+# ==============================================================================
+# cosmos_transfer:
+#   type: cosmos_transfer
+#   path: ../cosmos-transfer2.5
+#   cvd: "2"
+
+# ==============================================================================
+# Diffusion as Shader (DiffusionAsShader)
+# Converts the simulation video into a photorealistic video using point tracks.
+#
+# path: path to the DiffusionAsShader repo root (relative to this file or absolute)
+# cvd:  CUDA_VISIBLE_DEVICES — which GPU to use
+# tracker: tracking model to use (cotracker | spatracker)
+# Uncomment to enable; leave commented to skip this step.
+# ==============================================================================
+# diffusion_as_shader:
+#   path: ../DiffusionAsShader
+#   cvd: "2"
+#   tracker: cotracker

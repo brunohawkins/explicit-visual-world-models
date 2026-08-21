@@ -1,0 +1,2512 @@
+{
+  "schema_version": "v2",
+  "protocol": "lewm_aligned_n50_v1",
+  "benchmark": "reacher",
+  "selection_seed": 42,
+  "case_seed_start": 42,
+  "num_eval": 50,
+  "goal_offset_steps": 25,
+  "eval_budget": 50,
+  "dataset_name": "dmc/reacher_random",
+  "source_hdf5": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+  "sampling": {
+    "reference": "le-wm/eval.py",
+    "episode_column": "ep_idx",
+    "valid_start_rule": "step_idx <= episode_length - goal_offset_steps - 1",
+    "choice_population": "len(valid_indices) - 1",
+    "replace": false,
+    "selected_rows_sorted": true
+  },
+  "environment": {
+    "id": "swm/ReacherDMControl-v0",
+    "implementation": "stable_worldmodel",
+    "implementation_version": "0.1.1",
+    "native_resolution": 224,
+    "options": {
+      "task": "qpos_match",
+      "max_episode_steps": 100
+    }
+  },
+  "success": {
+    "name": "qpos_match",
+    "metric": "per_joint_raw_absolute_error",
+    "angle_wrapping": false,
+    "threshold": 0.05,
+    "comparator": "<",
+    "all_joints_required": true,
+    "evaluated_after_step_only": true,
+    "checked_after_each_action_repeat_substep": true,
+    "episode_success": "logical_or_of_terminated_over_eval_budget"
+  },
+  "action_contract": {
+    "space": {
+      "type": "Box",
+      "shape": [
+        2
+      ],
+      "dtype": "float64",
+      "low": [
+        -1.0,
+        -1.0
+      ],
+      "high": [
+        1.0,
+        1.0
+      ]
+    },
+    "semantics": "dm_control_reacher_normalized_torque",
+    "action_repeat": 2
+  },
+  "cases": [
+    {
+      "case_id": "lewm_reacher_seed42_row128267",
+      "seed": 42,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 128267,
+      "goal_dataset_row": 128292,
+      "episode_idx": 638,
+      "step_idx": 29,
+      "goal_step_idx": 54,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.3646354105572475,
+        -0.3587977736629431
+      ],
+      "qvel": [
+        1.6780229561324818,
+        -3.9838190494386465
+      ],
+      "goal_qpos": [
+        -0.06408243039062383,
+        -0.15505926947471063
+      ],
+      "goal_qvel": [
+        -1.8607631931506572,
+        2.3195471752166092
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 128267
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 128292
+      },
+      "dataset_target_pos": [
+        0.08309016015464604,
+        0.15750795080379437
+      ],
+      "goal_dataset_target_pos": [
+        0.08309016015464604,
+        0.15750795080379437
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row136513",
+      "seed": 43,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 136513,
+      "goal_dataset_row": 136538,
+      "episode_idx": 679,
+      "step_idx": 34,
+      "goal_step_idx": 59,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        2.3162971807462998,
+        -2.144203883306135
+      ],
+      "qvel": [
+        -0.817851329155828,
+        4.279191869009139
+      ],
+      "goal_qpos": [
+        2.06695166932435,
+        -2.351916550700958
+      ],
+      "goal_qvel": [
+        1.0868478358752713,
+        3.659921511418826
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 136513
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 136538
+      },
+      "dataset_target_pos": [
+        -0.0054517914898382395,
+        -0.11147997514146808
+      ],
+      "goal_dataset_target_pos": [
+        -0.0054517914898382395,
+        -0.11147997514146808
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row172735",
+      "seed": 44,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 172735,
+      "goal_dataset_row": 172760,
+      "episode_idx": 859,
+      "step_idx": 76,
+      "goal_step_idx": 101,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        2.8680665769967217,
+        -2.8051789506109346
+      ],
+      "qvel": [
+        -1.8194354394121939,
+        -1.6401656189014897
+      ],
+      "goal_qpos": [
+        2.51772231281483,
+        -2.8333927139389496
+      ],
+      "goal_qvel": [
+        -0.003628632602078685,
+        0.3209902358279475
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 172735
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 172760
+      },
+      "dataset_target_pos": [
+        -0.02967309412991046,
+        -0.08357731361295878
+      ],
+      "goal_dataset_target_pos": [
+        -0.02967309412991046,
+        -0.08357731361295878
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row179377",
+      "seed": 45,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 179377,
+      "goal_dataset_row": 179402,
+      "episode_idx": 892,
+      "step_idx": 85,
+      "goal_step_idx": 110,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        4.213377071757825,
+        -0.2024223931584494
+      ],
+      "qvel": [
+        2.220406798870031,
+        -2.8869069595999113
+      ],
+      "goal_qpos": [
+        4.536345501724266,
+        0.21755355617399433
+      ],
+      "goal_qvel": [
+        -1.264216503181482,
+        1.2498790038445091
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 179377
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 179402
+      },
+      "dataset_target_pos": [
+        -0.04507049622838097,
+        -0.1838781386534367
+      ],
+      "goal_dataset_target_pos": [
+        -0.04507049622838097,
+        -0.1838781386534367
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row185182",
+      "seed": 46,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 185182,
+      "goal_dataset_row": 185207,
+      "episode_idx": 921,
+      "step_idx": 61,
+      "goal_step_idx": 86,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.45557871447049,
+        0.1287534851513464
+      ],
+      "qvel": [
+        -2.3132189196519706,
+        1.7944609390653412
+      ],
+      "goal_qpos": [
+        -2.1062524170584718,
+        0.43530435329250244
+      ],
+      "goal_qvel": [
+        1.1179682848370471,
+        -2.572226566384333
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 185182
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 185207
+      },
+      "dataset_target_pos": [
+        0.028177165730552536,
+        -0.06934802466342184
+      ],
+      "goal_dataset_target_pos": [
+        0.028177165730552536,
+        -0.06934802466342184
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row189273",
+      "seed": 47,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 189273,
+      "goal_dataset_row": 189298,
+      "episode_idx": 941,
+      "step_idx": 132,
+      "goal_step_idx": 157,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.5024245818202447,
+        -1.9195854698630581
+      ],
+      "qvel": [
+        0.2654649310328259,
+        -2.491093568975948
+      ],
+      "goal_qpos": [
+        -0.9747242954782652,
+        -2.3373552687459536
+      ],
+      "goal_qvel": [
+        -2.153695584078026,
+        1.5639720414965894
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 189273
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 189298
+      },
+      "dataset_target_pos": [
+        0.11344997193095492,
+        -0.0313080518691647
+      ],
+      "goal_dataset_target_pos": [
+        0.11344997193095492,
+        -0.0313080518691647
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row257500",
+      "seed": 48,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 257500,
+      "goal_dataset_row": 257525,
+      "episode_idx": 1281,
+      "step_idx": 19,
+      "goal_step_idx": 44,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.7559622672872416,
+        0.5480616675648884
+      ],
+      "qvel": [
+        0.3978463195454327,
+        3.5049794671745795
+      ],
+      "goal_qpos": [
+        0.21435501371563306,
+        -0.4049087968307207
+      ],
+      "goal_qvel": [
+        2.291901429336059,
+        -5.219689208909456
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 257500
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 257525
+      },
+      "dataset_target_pos": [
+        -0.06180994386916371,
+        -0.0018533997180652747
+      ],
+      "goal_dataset_target_pos": [
+        -0.06180994386916371,
+        -0.0018533997180652747
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row332101",
+      "seed": 49,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 332101,
+      "goal_dataset_row": 332126,
+      "episode_idx": 1652,
+      "step_idx": 49,
+      "goal_step_idx": 74,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -1.6473931686641357,
+        -1.6924045223036857
+      ],
+      "qvel": [
+        0.8769517132165725,
+        2.0077928560613567
+      ],
+      "goal_qpos": [
+        -1.2040485804815133,
+        -1.8431082372793166
+      ],
+      "goal_qvel": [
+        -0.4244837527712413,
+        -3.6374745166312605
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 332101
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 332126
+      },
+      "dataset_target_pos": [
+        -0.1883149294254178,
+        -0.03643898926458498
+      ],
+      "goal_dataset_target_pos": [
+        -0.1883149294254178,
+        -0.03643898926458498
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row366907",
+      "seed": 50,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 366907,
+      "goal_dataset_row": 366932,
+      "episode_idx": 1825,
+      "step_idx": 82,
+      "goal_step_idx": 107,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.2458881920774556,
+        -0.7480023941629153
+      ],
+      "qvel": [
+        1.5857865034811645,
+        2.143220567083057
+      ],
+      "goal_qpos": [
+        -1.8515948861843923,
+        -0.1707312470445822
+      ],
+      "goal_qvel": [
+        -1.0936071977789894,
+        2.568053588261702
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 366907
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 366932
+      },
+      "dataset_target_pos": [
+        0.06296287857002848,
+        -0.031834092053757736
+      ],
+      "goal_dataset_target_pos": [
+        0.06296287857002848,
+        -0.031834092053757736
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row404927",
+      "seed": 51,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 404927,
+      "goal_dataset_row": 404952,
+      "episode_idx": 2014,
+      "step_idx": 113,
+      "goal_step_idx": 138,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.2192858007397747,
+        -0.7758387470866801
+      ],
+      "qvel": [
+        -1.2886566685908942,
+        0.1411824913370029
+      ],
+      "goal_qpos": [
+        2.0819884916610807,
+        -0.834301794358667
+      ],
+      "goal_qvel": [
+        3.214618963894909,
+        -3.761520409068039
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 404927
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 404952
+      },
+      "dataset_target_pos": [
+        0.007383330482746122,
+        0.1531158179249403
+      ],
+      "goal_dataset_target_pos": [
+        0.007383330482746122,
+        0.1531158179249403
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row456735",
+      "seed": 52,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 456735,
+      "goal_dataset_row": 456760,
+      "episode_idx": 2272,
+      "step_idx": 63,
+      "goal_step_idx": 88,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.4047245111089767,
+        1.9782937149767446
+      ],
+      "qvel": [
+        1.5785341418783394,
+        -2.2647759678994173
+      ],
+      "goal_qpos": [
+        1.2857659901839993,
+        1.4065015815085793
+      ],
+      "goal_qvel": [
+        1.6564510544518574,
+        -0.6619639558592064
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 456735
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 456760
+      },
+      "dataset_target_pos": [
+        -0.07065613425309558,
+        0.16334713829706957
+      ],
+      "goal_dataset_target_pos": [
+        -0.07065613425309558,
+        0.16334713829706957
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row556268",
+      "seed": 53,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 556268,
+      "goal_dataset_row": 556293,
+      "episode_idx": 2767,
+      "step_idx": 101,
+      "goal_step_idx": 126,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        2.601032035268251,
+        0.5640551784880536
+      ],
+      "qvel": [
+        -0.5463609229951438,
+        -0.3636953456459488
+      ],
+      "goal_qpos": [
+        2.5140933619578205,
+        0.5987824305347509
+      ],
+      "goal_qvel": [
+        0.7715266096989043,
+        -3.3723057256966404
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 556268
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 556293
+      },
+      "dataset_target_pos": [
+        0.033783005466287416,
+        -0.06683598694931503
+      ],
+      "goal_dataset_target_pos": [
+        0.033783005466287416,
+        -0.06683598694931503
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row712588",
+      "seed": 54,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 712588,
+      "goal_dataset_row": 712613,
+      "episode_idx": 3545,
+      "step_idx": 43,
+      "goal_step_idx": 68,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -1.604588973045335,
+        1.0065624323058548
+      ],
+      "qvel": [
+        0.3224756952972718,
+        -2.526813023985123
+      ],
+      "goal_qpos": [
+        -2.149282408531914,
+        1.4310923937899682
+      ],
+      "goal_qvel": [
+        -0.21976602324494787,
+        -2.4093518399973304
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 712588
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 712613
+      },
+      "dataset_target_pos": [
+        -0.12376232888030402,
+        0.059997490744797044
+      ],
+      "goal_dataset_target_pos": [
+        -0.12376232888030402,
+        0.059997490744797044
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row745268",
+      "seed": 55,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 745268,
+      "goal_dataset_row": 745293,
+      "episode_idx": 3707,
+      "step_idx": 161,
+      "goal_step_idx": 186,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.31225139795952933,
+        -2.863221241809132
+      ],
+      "qvel": [
+        -0.016824094721385796,
+        -0.5588077548414415
+      ],
+      "goal_qpos": [
+        -0.5601637797846886,
+        -2.56152424913396
+      ],
+      "goal_qvel": [
+        1.12163285279132,
+        -2.4288964276841982
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 745268
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 745293
+      },
+      "dataset_target_pos": [
+        0.08277131759714029,
+        -0.11514836344592198
+      ],
+      "goal_dataset_target_pos": [
+        0.08277131759714029,
+        -0.11514836344592198
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row808839",
+      "seed": 56,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 808839,
+      "goal_dataset_row": 808864,
+      "episode_idx": 4024,
+      "step_idx": 15,
+      "goal_step_idx": 40,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.7760195340858389,
+        2.283666078930881
+      ],
+      "qvel": [
+        -0.5612820648227306,
+        2.808640786021841
+      ],
+      "goal_qpos": [
+        1.2231989031279962,
+        2.8283018291582724
+      ],
+      "goal_qvel": [
+        0.331246402059589,
+        -0.16011485076879192
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 808839
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 808864
+      },
+      "dataset_target_pos": [
+        -0.0990707442077721,
+        0.14980133465485945
+      ],
+      "goal_dataset_target_pos": [
+        -0.0990707442077721,
+        0.14980133465485945
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row870336",
+      "seed": 57,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 870336,
+      "goal_dataset_row": 870361,
+      "episode_idx": 4330,
+      "step_idx": 6,
+      "goal_step_idx": 31,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.004602115208833557,
+        -0.18675294467725653
+      ],
+      "qvel": [
+        -0.8209653391588245,
+        2.704708348305332
+      ],
+      "goal_qpos": [
+        0.21309806033010348,
+        -0.13609519301184891
+      ],
+      "goal_qvel": [
+        0.23187586374654512,
+        -2.3560305741926415
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 870336
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 870361
+      },
+      "dataset_target_pos": [
+        0.1418070605589554,
+        -0.09476552705705657
+      ],
+      "goal_dataset_target_pos": [
+        0.1418070605589554,
+        -0.09476552705705657
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row882105",
+      "seed": 58,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 882105,
+      "goal_dataset_row": 882130,
+      "episode_idx": 4388,
+      "step_idx": 117,
+      "goal_step_idx": 142,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.8306205543927774,
+        -0.6106488940616612
+      ],
+      "qvel": [
+        -1.601143159829114,
+        3.996599386221901
+      ],
+      "goal_qpos": [
+        0.9681694366448432,
+        -0.10479253207340743
+      ],
+      "goal_qvel": [
+        0.01464594032209697,
+        -0.04527204136095442
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 882105
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 882130
+      },
+      "dataset_target_pos": [
+        0.1545532430172198,
+        0.11290209513923262
+      ],
+      "goal_dataset_target_pos": [
+        0.1545532430172198,
+        0.11290209513923262
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row891249",
+      "seed": 59,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 891249,
+      "goal_dataset_row": 891274,
+      "episode_idx": 4434,
+      "step_idx": 15,
+      "goal_step_idx": 40,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.9960263419289518,
+        -1.757597634152048
+      ],
+      "qvel": [
+        -0.3335403020567824,
+        2.7207931549366484
+      ],
+      "goal_qpos": [
+        2.3801910321518363,
+        -1.2533171775269876
+      ],
+      "goal_qvel": [
+        1.5851608469500644,
+        -0.16636416026442058
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 891249
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 891274
+      },
+      "dataset_target_pos": [
+        -0.020047556621320253,
+        -0.08797105909710226
+      ],
+      "goal_dataset_target_pos": [
+        -0.020047556621320253,
+        -0.08797105909710226
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row895808",
+      "seed": 60,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 895808,
+      "goal_dataset_row": 895833,
+      "episode_idx": 4456,
+      "step_idx": 152,
+      "goal_step_idx": 177,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.5753258943650692,
+        0.3104954409294847
+      ],
+      "qvel": [
+        -1.5601743366070788,
+        0.3086331924942353
+      ],
+      "goal_qpos": [
+        -1.0803116540699738,
+        0.21023740615413383
+      ],
+      "goal_qvel": [
+        -0.28694896129353675,
+        3.3524996174855937
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 895808
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 895833
+      },
+      "dataset_target_pos": [
+        -0.14490802599930366,
+        -0.02581614952272853
+      ],
+      "goal_dataset_target_pos": [
+        -0.14490802599930366,
+        -0.02581614952272853
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row905240",
+      "seed": 61,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 905240,
+      "goal_dataset_row": 905265,
+      "episode_idx": 4503,
+      "step_idx": 137,
+      "goal_step_idx": 162,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.2754063151033151,
+        -0.014540642560878492
+      ],
+      "qvel": [
+        -0.023942240041814195,
+        -1.7050679544831386
+      ],
+      "goal_qpos": [
+        0.22386733039470655,
+        0.7409107446401114
+      ],
+      "goal_qvel": [
+        -0.5909227083611259,
+        4.643449315517082
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 905240
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 905265
+      },
+      "dataset_target_pos": [
+        0.09013596457184647,
+        -0.02700532718475863
+      ],
+      "goal_dataset_target_pos": [
+        0.09013596457184647,
+        -0.02700532718475863
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row905399",
+      "seed": 62,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 905399,
+      "goal_dataset_row": 905424,
+      "episode_idx": 4504,
+      "step_idx": 95,
+      "goal_step_idx": 120,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.191528874322845,
+        2.0335372831539242
+      ],
+      "qvel": [
+        -1.5458320177603793,
+        -2.053463458094252
+      ],
+      "goal_qpos": [
+        1.3253166434558785,
+        2.638890859468649
+      ],
+      "goal_qvel": [
+        1.8056326168049561,
+        1.8927096274222137
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 905399
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 905424
+      },
+      "dataset_target_pos": [
+        -0.06792696168893558,
+        0.04998534940567842
+      ],
+      "goal_dataset_target_pos": [
+        -0.06792696168893558,
+        0.04998534940567842
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1005679",
+      "seed": 63,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1005679,
+      "goal_dataset_row": 1005704,
+      "episode_idx": 5003,
+      "step_idx": 76,
+      "goal_step_idx": 101,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -1.0793998264925204,
+        2.4757151183581256
+      ],
+      "qvel": [
+        -0.3229612126964787,
+        1.0765862039103467
+      ],
+      "goal_qpos": [
+        -0.6919774607897338,
+        2.403884453005574
+      ],
+      "goal_qvel": [
+        2.1528476407187105,
+        -0.2874952489557012
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1005679
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1005704
+      },
+      "dataset_target_pos": [
+        -0.1599282408981166,
+        -0.06513697496206143
+      ],
+      "goal_dataset_target_pos": [
+        -0.1599282408981166,
+        -0.06513697496206143
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1031561",
+      "seed": 64,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1031561,
+      "goal_dataset_row": 1031586,
+      "episode_idx": 5132,
+      "step_idx": 29,
+      "goal_step_idx": 54,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.780867156151807,
+        -2.4622514965837867
+      ],
+      "qvel": [
+        -2.0892917994768947,
+        -1.9300125772898735
+      ],
+      "goal_qpos": [
+        -2.902117018971356,
+        -2.795016152753578
+      ],
+      "goal_qvel": [
+        -2.1738695297374377,
+        0.9000225580064706
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1031561
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1031586
+      },
+      "dataset_target_pos": [
+        -0.03130308893253463,
+        0.10565084158486647
+      ],
+      "goal_dataset_target_pos": [
+        -0.03130308893253463,
+        0.10565084158486647
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1058181",
+      "seed": 65,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1058181,
+      "goal_dataset_row": 1058206,
+      "episode_idx": 5264,
+      "step_idx": 117,
+      "goal_step_idx": 142,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.379864690199731,
+        0.816847207110979
+      ],
+      "qvel": [
+        -0.340495206546563,
+        4.104193321816974
+      ],
+      "goal_qpos": [
+        -2.8104155068981207,
+        1.339283820225053
+      ],
+      "goal_qvel": [
+        -0.44827741853588665,
+        -2.9744834083168215
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1058181
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1058206
+      },
+      "dataset_target_pos": [
+        0.15536303295863552,
+        -0.10047835985911517
+      ],
+      "goal_dataset_target_pos": [
+        0.15536303295863552,
+        -0.10047835985911517
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1096293",
+      "seed": 66,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1096293,
+      "goal_dataset_row": 1096318,
+      "episode_idx": 5454,
+      "step_idx": 39,
+      "goal_step_idx": 64,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        2.126778975357712,
+        -1.087569553537196
+      ],
+      "qvel": [
+        0.9370001733399542,
+        -4.072151118801933
+      ],
+      "goal_qpos": [
+        2.459804763985685,
+        -1.353832518874422
+      ],
+      "goal_qvel": [
+        -2.1406523246995843,
+        -0.6460297624010206
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1096293
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1096318
+      },
+      "dataset_target_pos": [
+        -0.1200432719895354,
+        -0.053822985524504235
+      ],
+      "goal_dataset_target_pos": [
+        -0.1200432719895354,
+        -0.053822985524504235
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1114684",
+      "seed": 67,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1114684,
+      "goal_dataset_row": 1114709,
+      "episode_idx": 5545,
+      "step_idx": 139,
+      "goal_step_idx": 164,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.242515333561538,
+        0.3864345194125219
+      ],
+      "qvel": [
+        0.5533808969459987,
+        -3.418893295229569
+      ],
+      "goal_qpos": [
+        0.9526080696230056,
+        0.5048214651809015
+      ],
+      "goal_qvel": [
+        -3.056236941702103,
+        3.372580812720717
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1114684
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1114709
+      },
+      "dataset_target_pos": [
+        -0.1029424943287972,
+        0.015049742295641797
+      ],
+      "goal_dataset_target_pos": [
+        -0.1029424943287972,
+        0.015049742295641797
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1269622",
+      "seed": 68,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1269622,
+      "goal_dataset_row": 1269647,
+      "episode_idx": 6316,
+      "step_idx": 106,
+      "goal_step_idx": 131,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.139693422618872,
+        2.7078932472501407
+      ],
+      "qvel": [
+        0.7822608484016615,
+        -0.16872837873443025
+      ],
+      "goal_qpos": [
+        -1.4012845180967601,
+        2.521725544315627
+      ],
+      "goal_qvel": [
+        -1.23397793790576,
+        1.177844729715535
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1269622
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1269647
+      },
+      "dataset_target_pos": [
+        -0.1806103582920867,
+        0.0052829848710654135
+      ],
+      "goal_dataset_target_pos": [
+        -0.1806103582920867,
+        0.0052829848710654135
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1294136",
+      "seed": 69,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1294136,
+      "goal_dataset_row": 1294161,
+      "episode_idx": 6438,
+      "step_idx": 98,
+      "goal_step_idx": 123,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -1.655252557147877,
+        -2.6493876424233416
+      ],
+      "qvel": [
+        -3.2333389401270214,
+        -0.9756045073973159
+      ],
+      "goal_qpos": [
+        -2.6999712171651917,
+        -2.356089726290679
+      ],
+      "goal_qvel": [
+        0.5333642869284698,
+        1.4808311556079286
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1294136
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1294161
+      },
+      "dataset_target_pos": [
+        0.12827622765931457,
+        0.06335960238995494
+      ],
+      "goal_dataset_target_pos": [
+        0.12827622765931457,
+        0.06335960238995494
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1315639",
+      "seed": 70,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1315639,
+      "goal_dataset_row": 1315664,
+      "episode_idx": 6545,
+      "step_idx": 94,
+      "goal_step_idx": 119,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.2519940099297906,
+        -0.032569069086157594
+      ],
+      "qvel": [
+        1.7313407714148383,
+        -3.082057866248225
+      ],
+      "goal_qpos": [
+        0.7531139347292188,
+        0.6973146863526412
+      ],
+      "goal_qvel": [
+        -0.3612992964820419,
+        -1.0847520001044648
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1315639
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1315664
+      },
+      "dataset_target_pos": [
+        0.06963332698764939,
+        0.007055395729960664
+      ],
+      "goal_dataset_target_pos": [
+        0.06963332698764939,
+        0.007055395729960664
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1362611",
+      "seed": 71,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1362611,
+      "goal_dataset_row": 1362636,
+      "episode_idx": 6779,
+      "step_idx": 32,
+      "goal_step_idx": 57,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.9773998975335623,
+        0.14206133919430955
+      ],
+      "qvel": [
+        -0.034686077818943006,
+        -0.6356847877782816
+      ],
+      "goal_qpos": [
+        -3.595979835262927,
+        0.43344980518681947
+      ],
+      "goal_qvel": [
+        -0.507851218037715,
+        -1.9260229521539576
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1362611
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1362636
+      },
+      "dataset_target_pos": [
+        0.01005124414580883,
+        -0.12968886701149607
+      ],
+      "goal_dataset_target_pos": [
+        0.01005124414580883,
+        -0.12968886701149607
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1401662",
+      "seed": 72,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1401662,
+      "goal_dataset_row": 1401687,
+      "episode_idx": 6973,
+      "step_idx": 89,
+      "goal_step_idx": 114,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.4163767685457966,
+        -2.8315431184417914
+      ],
+      "qvel": [
+        1.6498932869357685,
+        -1.600226540708888
+      ],
+      "goal_qpos": [
+        0.871043410332953,
+        -2.766383078012402
+      ],
+      "goal_qvel": [
+        -2.97579420931594,
+        1.5734247058924395
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1401662
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1401687
+      },
+      "dataset_target_pos": [
+        -0.07292623984321088,
+        0.026011660902423416
+      ],
+      "goal_dataset_target_pos": [
+        -0.07292623984321088,
+        0.026011660902423416
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1408039",
+      "seed": 73,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1408039,
+      "goal_dataset_row": 1408064,
+      "episode_idx": 7005,
+      "step_idx": 34,
+      "goal_step_idx": 59,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -1.0596058014754306,
+        2.8176414408054233
+      ],
+      "qvel": [
+        -0.5601383511304139,
+        0.7512470921968514
+      ],
+      "goal_qpos": [
+        -1.2496139929861345,
+        2.4001669258057534
+      ],
+      "goal_qvel": [
+        1.1419135436243353,
+        2.966781819838271
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1408039
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1408064
+      },
+      "dataset_target_pos": [
+        -0.16925380337695278,
+        -0.03638440767915912
+      ],
+      "goal_dataset_target_pos": [
+        -0.16925380337695278,
+        -0.03638440767915912
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1442084",
+      "seed": 74,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1442084,
+      "goal_dataset_row": 1442109,
+      "episode_idx": 7174,
+      "step_idx": 110,
+      "goal_step_idx": 135,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        3.286469630516421,
+        2.131012821026499
+      ],
+      "qvel": [
+        -0.40944504251537484,
+        -3.7864873683038707
+      ],
+      "goal_qpos": [
+        3.519217509980579,
+        2.0659427269154675
+      ],
+      "goal_qvel": [
+        2.797322621751971,
+        0.92562713615276
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1442084
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1442109
+      },
+      "dataset_target_pos": [
+        0.03946453422350411,
+        -0.1872135035179035
+      ],
+      "goal_dataset_target_pos": [
+        0.03946453422350411,
+        -0.1872135035179035
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1478821",
+      "seed": 75,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1478821,
+      "goal_dataset_row": 1478846,
+      "episode_idx": 7357,
+      "step_idx": 64,
+      "goal_step_idx": 89,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.07127645720225532,
+        0.5064165335330327
+      ],
+      "qvel": [
+        -1.4496789535738142,
+        1.7886720493010548
+      ],
+      "goal_qpos": [
+        -0.7063406153101603,
+        0.10423544229362745
+      ],
+      "goal_qvel": [
+        0.4699661376587426,
+        0.3895666248111534
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1478821
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1478846
+      },
+      "dataset_target_pos": [
+        -0.011347392746496961,
+        -0.10504841852491648
+      ],
+      "goal_dataset_target_pos": [
+        -0.011347392746496961,
+        -0.10504841852491648
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1523727",
+      "seed": 76,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1523727,
+      "goal_dataset_row": 1523752,
+      "episode_idx": 7580,
+      "step_idx": 147,
+      "goal_step_idx": 172,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        3.3101258786245022,
+        -0.13641159170402434
+      ],
+      "qvel": [
+        -0.8359860158289194,
+        3.9205192538846787
+      ],
+      "goal_qpos": [
+        3.2531640617354056,
+        -0.5927200711203848
+      ],
+      "goal_qvel": [
+        -1.2284816622410664,
+        1.7410516378657894
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1523727
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1523752
+      },
+      "dataset_target_pos": [
+        0.0833672989575943,
+        0.12401810791565195
+      ],
+      "goal_dataset_target_pos": [
+        0.0833672989575943,
+        0.12401810791565195
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1529852",
+      "seed": 77,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1529852,
+      "goal_dataset_row": 1529877,
+      "episode_idx": 7611,
+      "step_idx": 41,
+      "goal_step_idx": 66,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.6429820453361927,
+        1.1916315141644422
+      ],
+      "qvel": [
+        1.34152753119879,
+        -1.1237044863221795
+      ],
+      "goal_qpos": [
+        2.2597063584089137,
+        2.1497531736964888
+      ],
+      "goal_qvel": [
+        -1.1803459546534278,
+        1.8357825419550706
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1529852
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1529877
+      },
+      "dataset_target_pos": [
+        -0.07590101576893897,
+        -0.012875539426492298
+      ],
+      "goal_dataset_target_pos": [
+        -0.07590101576893897,
+        -0.012875539426492298
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1555599",
+      "seed": 78,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1555599,
+      "goal_dataset_row": 1555624,
+      "episode_idx": 7739,
+      "step_idx": 60,
+      "goal_step_idx": 85,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.8215838793315908,
+        2.108014281175635
+      ],
+      "qvel": [
+        -1.3625030794420006,
+        1.5881993855435785
+      ],
+      "goal_qpos": [
+        2.027265953822572,
+        1.2079925880090832
+      ],
+      "goal_qvel": [
+        -1.3458725126008257,
+        1.1358195477058124
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1555599
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1555624
+      },
+      "dataset_target_pos": [
+        0.020335521937453353,
+        0.04650702985389714
+      ],
+      "goal_dataset_target_pos": [
+        0.020335521937453353,
+        0.04650702985389714
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1564529",
+      "seed": 79,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1564529,
+      "goal_dataset_row": 1564554,
+      "episode_idx": 7783,
+      "step_idx": 146,
+      "goal_step_idx": 171,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -1.6252383870220826,
+        -1.3965494905780607
+      ],
+      "qvel": [
+        -0.222926950545412,
+        -3.545731722837477
+      ],
+      "goal_qpos": [
+        -2.117690967695986,
+        -2.239773485954935
+      ],
+      "goal_qvel": [
+        -1.8589529031467196,
+        -1.0364472617056664
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1564529
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1564554
+      },
+      "dataset_target_pos": [
+        0.017515622038870783,
+        0.048587168795894975
+      ],
+      "goal_dataset_target_pos": [
+        0.017515622038870783,
+        0.048587168795894975
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1570913",
+      "seed": 80,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1570913,
+      "goal_dataset_row": 1570938,
+      "episode_idx": 7815,
+      "step_idx": 98,
+      "goal_step_idx": 123,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.2078340874139997,
+        0.9079287701884211
+      ],
+      "qvel": [
+        0.8934077984274698,
+        -0.4255063370967669
+      ],
+      "goal_qpos": [
+        -0.6869455115343723,
+        1.0861778850801351
+      ],
+      "goal_qvel": [
+        -0.22542960411556512,
+        1.3472585422128658
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1570913
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1570938
+      },
+      "dataset_target_pos": [
+        0.05390312518547713,
+        -0.0022413745621037676
+      ],
+      "goal_dataset_target_pos": [
+        0.05390312518547713,
+        -0.0022413745621037676
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1579945",
+      "seed": 81,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1579945,
+      "goal_dataset_row": 1579970,
+      "episode_idx": 7860,
+      "step_idx": 85,
+      "goal_step_idx": 110,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.04754957034320726,
+        0.10552706685272145
+      ],
+      "qvel": [
+        -0.2815455254203831,
+        3.521045476461478
+      ],
+      "goal_qpos": [
+        -0.23241314933639465,
+        -0.47438257266091627
+      ],
+      "goal_qvel": [
+        1.5766369312803523,
+        -4.319477268475868
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1579945
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1579970
+      },
+      "dataset_target_pos": [
+        -0.046617565014723944,
+        -0.14018467256098244
+      ],
+      "goal_dataset_target_pos": [
+        -0.046617565014723944,
+        -0.14018467256098244
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1653716",
+      "seed": 82,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1653716,
+      "goal_dataset_row": 1653741,
+      "episode_idx": 8227,
+      "step_idx": 89,
+      "goal_step_idx": 114,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -3.5300050851414166,
+        -2.3225639570482
+      ],
+      "qvel": [
+        -1.2170573464773686,
+        1.2985124436533801
+      ],
+      "goal_qpos": [
+        -3.4228755249434974,
+        -2.0564111153842664
+      ],
+      "goal_qvel": [
+        0.4993905907111287,
+        -1.26697255189146
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1653716
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1653741
+      },
+      "dataset_target_pos": [
+        0.14953699470470208,
+        -0.1276399438261379
+      ],
+      "goal_dataset_target_pos": [
+        0.14953699470470208,
+        -0.1276399438261379
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1663520",
+      "seed": 83,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1663520,
+      "goal_dataset_row": 1663545,
+      "episode_idx": 8276,
+      "step_idx": 44,
+      "goal_step_idx": 69,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -2.8521074522677283,
+        -1.8089598850333957
+      ],
+      "qvel": [
+        -0.8731211304405881,
+        -1.4291982927105304
+      ],
+      "goal_qpos": [
+        -4.113097090854227,
+        -0.7562974729131545
+      ],
+      "goal_qvel": [
+        -0.9645989761271876,
+        0.801339260382417
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1663520
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1663545
+      },
+      "dataset_target_pos": [
+        0.10826998571325482,
+        -0.08461599506680906
+      ],
+      "goal_dataset_target_pos": [
+        0.10826998571325482,
+        -0.08461599506680906
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1687855",
+      "seed": 84,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1687855,
+      "goal_dataset_row": 1687880,
+      "episode_idx": 8397,
+      "step_idx": 58,
+      "goal_step_idx": 83,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.5156950185569937,
+        1.9121430155810872
+      ],
+      "qvel": [
+        -0.7049061312133542,
+        0.9336629800548947
+      ],
+      "goal_qpos": [
+        0.23668641212565253,
+        1.2896283759202662
+      ],
+      "goal_qvel": [
+        -1.9300546967229837,
+        1.3999769297744853
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1687855
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1687880
+      },
+      "dataset_target_pos": [
+        0.1234189933343736,
+        -0.11823843687093046
+      ],
+      "goal_dataset_target_pos": [
+        0.1234189933343736,
+        -0.11823843687093046
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1725130",
+      "seed": 85,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1725130,
+      "goal_dataset_row": 1725155,
+      "episode_idx": 8582,
+      "step_idx": 148,
+      "goal_step_idx": 173,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.5282766496839766,
+        -2.409021248991189
+      ],
+      "qvel": [
+        -2.16509031246845,
+        -0.0715925293756452
+      ],
+      "goal_qpos": [
+        -0.29233606995880224,
+        -1.5108125681633056
+      ],
+      "goal_qvel": [
+        0.7091697130663446,
+        1.6806497764818935
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1725130
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1725155
+      },
+      "dataset_target_pos": [
+        0.07378309266322615,
+        0.011313393450977304
+      ],
+      "goal_dataset_target_pos": [
+        0.07378309266322615,
+        0.011313393450977304
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1725718",
+      "seed": 86,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1725718,
+      "goal_dataset_row": 1725743,
+      "episode_idx": 8585,
+      "step_idx": 133,
+      "goal_step_idx": 158,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -0.9796677880152698,
+        1.7145528675667328
+      ],
+      "qvel": [
+        -2.738315760683627,
+        1.8172404875971628
+      ],
+      "goal_qpos": [
+        -0.01491471812849169,
+        2.152280794743324
+      ],
+      "goal_qvel": [
+        1.8840555958096605,
+        -3.0753746888057467
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1725718
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1725743
+      },
+      "dataset_target_pos": [
+        0.055940802029122695,
+        0.07009927822702909
+      ],
+      "goal_dataset_target_pos": [
+        0.055940802029122695,
+        0.07009927822702909
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1784621",
+      "seed": 87,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1784621,
+      "goal_dataset_row": 1784646,
+      "episode_idx": 8878,
+      "step_idx": 143,
+      "goal_step_idx": 168,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        1.9141307770917364,
+        -2.71958894298033
+      ],
+      "qvel": [
+        -1.21840304947005,
+        -0.6167868369797327
+      ],
+      "goal_qpos": [
+        2.798950405934462,
+        -2.2988438228248462
+      ],
+      "goal_qvel": [
+        2.8519805129545635,
+        0.23479038209717895
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1784621
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1784646
+      },
+      "dataset_target_pos": [
+        -0.014889734266592593,
+        0.15579105641894672
+      ],
+      "goal_dataset_target_pos": [
+        -0.014889734266592593,
+        0.15579105641894672
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1795165",
+      "seed": 88,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1795165,
+      "goal_dataset_row": 1795190,
+      "episode_idx": 8931,
+      "step_idx": 34,
+      "goal_step_idx": 59,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        2.025948504254797,
+        -2.109456086100683
+      ],
+      "qvel": [
+        -2.889090589076966,
+        0.01565865601763594
+      ],
+      "goal_qpos": [
+        0.5137530030642904,
+        -2.8265438921507955
+      ],
+      "goal_qvel": [
+        -2.1481400893605853,
+        0.04172950179324553
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1795165
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1795190
+      },
+      "dataset_target_pos": [
+        0.17169903370068895,
+        -0.0017857235024646687
+      ],
+      "goal_dataset_target_pos": [
+        0.17169903370068895,
+        -0.0017857235024646687
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1862756",
+      "seed": 89,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1862756,
+      "goal_dataset_row": 1862781,
+      "episode_idx": 9267,
+      "step_idx": 89,
+      "goal_step_idx": 114,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -3.2029832848411695,
+        -1.2644709242373944
+      ],
+      "qvel": [
+        1.369577781321168,
+        -2.8968726912454694
+      ],
+      "goal_qpos": [
+        -3.6707171653069346,
+        -2.279843102414508
+      ],
+      "goal_qvel": [
+        1.3954270798284476,
+        -1.1328146572434912
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1862756
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1862781
+      },
+      "dataset_target_pos": [
+        -0.04932564358085383,
+        0.025764614027308213
+      ],
+      "goal_dataset_target_pos": [
+        -0.04932564358085383,
+        0.025764614027308213
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1951073",
+      "seed": 90,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1951073,
+      "goal_dataset_row": 1951098,
+      "episode_idx": 9706,
+      "step_idx": 167,
+      "goal_step_idx": 192,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        -3.418124370451237,
+        -0.7025504080240491
+      ],
+      "qvel": [
+        -0.89127486050511,
+        -0.8828468554354129
+      ],
+      "goal_qpos": [
+        -2.992187726026717,
+        -2.5288870313141962
+      ],
+      "goal_qvel": [
+        -3.852007227869512,
+        -3.5981310198802348
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1951073
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1951098
+      },
+      "dataset_target_pos": [
+        -0.08598177219101205,
+        -0.11401169515229434
+      ],
+      "goal_dataset_target_pos": [
+        -0.08598177219101205,
+        -0.11401169515229434
+      ]
+    },
+    {
+      "case_id": "lewm_reacher_seed42_row1960957",
+      "seed": 91,
+      "benchmark": "reacher",
+      "dataset_name": "dmc/reacher_random",
+      "dataset_row": 1960957,
+      "goal_dataset_row": 1960982,
+      "episode_idx": 9756,
+      "step_idx": 1,
+      "goal_step_idx": 26,
+      "goal_offset_steps": 25,
+      "eval_budget": 50,
+      "qpos": [
+        0.9608165375276642,
+        2.566374183630931
+      ],
+      "qvel": [
+        -0.25249303035851517,
+        -2.011270225439536
+      ],
+      "goal_qpos": [
+        1.8379303290824642,
+        1.9369934752515678
+      ],
+      "goal_qvel": [
+        -1.7839035328717578,
+        1.9831277957799682
+      ],
+      "start_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1960957
+      },
+      "goal_image": {
+        "type": "hdf5_dataset_row",
+        "path": "/lus/lfs1aip2/scratch/u6el/brunoh04.u6el/lewm_stablewm/datasets/dmc/reacher_random.h5",
+        "key": "pixels",
+        "row": 1960982
+      },
+      "dataset_target_pos": [
+        0.012193340877074126,
+        -0.16103577248389503
+      ],
+      "goal_dataset_target_pos": [
+        0.012193340877074126,
+        -0.16103577248389503
+      ]
+    }
+  ]
+}

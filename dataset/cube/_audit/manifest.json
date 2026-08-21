@@ -1,0 +1,19 @@
+{
+  "schema_version": "fixed_budget_audit_v1",
+  "benchmark": "cube",
+  "source_manifest": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/cube_curated_ablations_opaque/all_four/manifest.json",
+  "source_manifest_sha256": "9e5586e282cc357e651802f0ea22820253dcf5599241c1ca89db03d63f446341",
+  "source_indices": [
+    9
+  ],
+  "trajectories": [
+    {
+      "trajectory_index": 0,
+      "type": "expert",
+      "source_trajectory_index": 9,
+      "source_path": "/home/u6el/brunoh04.u6el/MLMI_research_project/Datasets/cube_curated_ablations_opaque/all_four/trajectory_0009",
+      "n_frames": 68,
+      "n_actions": 67
+    }
+  ]
+}
